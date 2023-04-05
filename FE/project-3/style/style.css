@@ -1,0 +1,49 @@
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: rgb(30, 45, 60);
+    color: rgb(184, 233, 148);
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.schedule {
+    list-style-type: upper-roman;
+}
+
+.schedule li {
+    font-size:  28px;
+}
+
+.schedule li:hover {
+    text-decoration: underline;
+    color: rgb(106, 253, 0);
+}
+
+.schedule li:nth-child(even):hover {
+    color: rgb(235, 47, 6);
+}
+
+table,
+table td,
+table th {
+    border: 1px solid rgb(236, 240, 241);
+    border-collapse: collapse;
+    color: white;
+}
+
+ td {
+    font-size: 24px;
+    padding: 8px;
+ }
+
+ th {
+    font-size: 28px;
+    padding: 8px;
+ }
