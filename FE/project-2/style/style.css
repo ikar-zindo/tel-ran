@@ -1,54 +1,95 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: rgb(30, 45, 60);
-    color: rgb(127, 196, 182);
-    text-align: center;
+    color: #e2f7d3;
+    /* text-align: center; */
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
-/* Wrapper */
-.wrapper {
-    /* display: flex;
-    flex-direction: row-reverse;
-    background-color: #ffffff; */
-    width: 95%;
-    margin: 0 auto;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.item {
+    width: 960px;
+    height: 540px;
+    background-color: rgb(60, 99, 130);
+    margin: 10px;
 }
 
-/* sidebar */
-.sidebar {
-    width: 40%;
-    background-color: rgb(52, 73, 94);
+.item-1 {
+    background-image: url(../img/space-01.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-/* main content */
-.main_content {
-	width: 100%;
-	background-color: rgb(155, 89, 182);
+.item-2 {
+    background-image: url(../img/space-02.jpg);
+    background-size: 100%;
 }
 
-h1 {
-	margin-bottom: 20px;
+.item-3 {
+    background-image: url(../img/space-03.jpg);
+    background-size: 100%;
 }
 
-p {
-	background-color: rgb(26, 188, 156);
-	color: black;
-	margin-bottom: 40px;
-	margin-left: 30px;
-	margin-right: 30px;
-	padding-bottom: 40px;
+.item-4 {
+    background-image: url(../img/space-04.jpg);
+    background-size: 100%;
 }
 
-a {
-	background-color: rgb(231, 76, 60);
-	color: rgb(255, 255, 255);
-	margin-right: 20px;
-}	
+.item-5 {
+    background-image: url(../img/space-05.jpg);
+    background-size: 100%;
+}
+
+.item-6 {
+    background-image: url(../img/space-06.jpg);
+    background-size: 100%;
+}
+
+.item-7 {
+    background-image: url(../img/space-07.jpg);
+    background-size: 100%;
+}
+
+.item-8 {
+    background-image: url(../img/space-08.jpg);
+    background-size: 100%;
+}
+
+.item-9 {
+    background-image: url(../img/space-09.jpg);
+    background-size: 100%;
+}
+
+.item-10 {
+    background-image: url(../img/space-10.jpg);
+    background-size: 100%;
+}
+
+.item-11 {
+    background-image: url(../img/space-11.jpg);
+    background-size: 100%;
+}
+
+.item-12 {
+    background-image: url(../img/space-12.jpg);
+    background-size: 100%;
+}
+
+.item-13 {
+    background-image: url(../img/space-13.jpg);
+    background-size: 100%;
+}
+
+.item-14 {
+    background-image: url(../img/space-14.jpg);
+    background-size: 100%;
+}
+
+.item-15 {
+    background-image: url(../img/space-15.jpg);
+    background-size: 100%;
+}
