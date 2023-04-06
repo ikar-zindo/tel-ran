@@ -1,12 +1,48 @@
 * {
-    /* margin: 0; */
-    /* padding: 0; */
-    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: rgb(30, 45, 60);
     color: rgb(184, 233, 148);
+    font-family: 'Alkatra', cursive;
+}
+
+.item-1 {
+    width: 700px;
+    height: 100px;
+    background-color: rgb(155, 89, 182);
+    margin: 40px auto 0;
+}
+
+.item-2 {
+    width: 50%;
+    height: 100px;
+    background-color: rgb(113, 150, 150);
+    margin: 40px auto 0;
+}
+
+p {
+    background-color: rgb(46, 204, 113);
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.item-2 p {
+}
+
+/* Таблицы и списки */
+
+.themes-list {
+    padding: 0 20px;
+}
+
+.themes-list li {
+    margin-left: 45px;
 }
 
 ul {
@@ -18,7 +54,7 @@ ul {
 }
 
 .schedule li {
-    font-size:  28px;
+    font-size: 28px;
 }
 
 .schedule li:hover {
@@ -30,20 +66,47 @@ ul {
     color: rgb(235, 47, 6);
 }
 
+
+table {
+    background-color: rgb(21, 62, 54);
+}
+
+
 table,
 table td,
 table th {
     border: 1px solid rgb(236, 240, 241);
     border-collapse: collapse;
-    color: white;
+    color: #fad390;
+    /* background-color: rgb(22, 160, 133); */
 }
 
- td {
+thead th {
+    color: rgb(230, 126, 34);
+}
+
+tfoot td {
+    color: rgb(231, 76, 60);
+}
+
+td {
     font-size: 24px;
     padding: 8px;
- }
+}
 
- th {
+th {
     font-size: 28px;
     padding: 8px;
- }
+}
+
+.table-num {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(16, 119, 98);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(36, 166, 140);
+}

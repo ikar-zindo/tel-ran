@@ -5,60 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Document</title>
 </head>
+
 <body>
 
+    <div class="item-1">
+        <p class="text">Hello</p>
+    </div>
+
+    <div class="item-2">
+        <p>Hello</p>
+    </div>
+
+
+
+
+
+    <!-- Таблицы и списки  -->
     <h1>Спички и таблицы</h1>
 
-    <ul>
-        <li>
-            Mersedes
-        </li>
-        <li>
-            BMW
-        </li>
-    </ul>
+    <div class="themes-list">
+        <ul>
+            <li>
+                Mersedes
+            </li>
+            <li>
+                BMW
+            </li>
+        </ul>
+    </div>
+    
 
-    <ol>
-        <li>Введение в HTML и CSS</li>
-        <li>Созжание блога</li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ol>
-
-    <ol class="schedule">
+    <div class="themes-list">
+       <ol class="schedule">
         <li>Встал</li>
         <li>Завтрак</li>
         <li>Почистил зубы</li>
         <li>Иду на занятия Tel-Ran</li>
         <li>Joga</li>
-    </ol>
+    </ol> 
 
-    <table>
-        <tr>
-            <th>Номер</th>
-            <th>Страна производитель</th>
-            <th>Бренд</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Германия</td>
-            <td>Mersedes-Benz</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Япония</td>
-            <td>Toyota</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>США</td>
-            <td>Ford</td>
-        </tr>
-        
-    </table>
+    </div>
     
+
+    
+
+
+    <!-- Таблица -->
+    <table>
+        <thead>
+            <tr>
+                <th>Номер</th>
+                <th>Страна производитель</th>
+                <th>Бренд</th>
+                <th>Цена</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Германия</td>
+                <td>Mersedes-Benz</td>
+                <td>20.000$</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Япония</td>
+                <td>Toyota</td>
+                <td>15.000$</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>США</td>
+                <td>Ford</td>
+                <td>20.000$</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Франция</td>
+                <td>Peugeot</td>
+                <td>18.000$</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Итого</td>
+                <td>73.000$</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
+
 </html>

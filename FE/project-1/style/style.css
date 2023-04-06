@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,7 +13,7 @@ h1 {
     text-align: center;
     color: rgb(155, 89, 182);
     font-size: 40px;
-    margin: 16px 0 32px 0;
+    margin: 16px 0 32px;
 }
 
 h3 {
@@ -27,6 +28,7 @@ p {
     font-size: 24px;
     margin-bottom: 4px;
     text-align: center;
+    width: 80%;
 }
 
 img {
@@ -39,7 +41,7 @@ img {
 }
 
 img:hover {
-    width: 410px;
+    width: 420px;
     border: solid 10px rgb(255, 204, 0);
     box-shadow: 0px 0px 4px 4px rgba(255, 204, 0, 0.7);
 }
@@ -52,10 +54,10 @@ a {
 
 
  .wrapper {
-    margin: 0 20px;
+    /* margin: 0 20px; */
     /* display: flex;
-    flex-direction: row-reverse;
-    width: 1200px; */
+    /*flex-direction: row-reverse;*/
+    /* width: 95%; */
 }
 
 .country {
