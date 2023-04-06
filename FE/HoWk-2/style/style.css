@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(30, 45, 60);
+    color: rgb(184, 233, 148);    
+    font-family: 'Alkatra', cursive;
+}
+
+h3 {
+    font-size: 28px;
+    margin: 20px;
+}
+
+.currencies {
+    margin: 0 40px;
+}
+
+.exchange_rates {
+    margin: 0 20px;
+}
+
+tr {
+    margin: 20px;
+}
+
+table {
+    box-shadow: 0 0 6px 6px rgb(246, 185, 59);
+}
+table,
+table td,
+table th {
+    border: 2px solid rgb(246, 185, 59);
+    margin: 10px;
+}
+
+th {
+    padding: 8px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+td:hover {
+    color: rgb(231, 76, 60);
+}
+
+td {
+    padding: 4px;
+    font-size: 14px;   
+}
+
+img {
+    width: 48px;
+}
+
+td img:nth-child(even) {
+    margin-left: 6px;
+}
+
+
+
+
