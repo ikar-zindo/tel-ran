@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+}
+
+/* Header */
+
+header {
+    height: 70px;
+    background-color: rgba(26, 188, 156, 1);
+}
+
+.social-media {
+    
+}
+/* Main content */
+
+.main-content {
+
+}
+
+/* Footer */
+
+footer {
+
+}

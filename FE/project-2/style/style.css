@@ -11,85 +11,86 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .item {
-    width: 960px;
-    height: 540px;
+    width: calc(100% / 2 - 20px); /*ширина*/
+    height: 540px; /*высота*/
     background-color: rgb(60, 99, 130);
     margin: 10px;
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 .item-1 {
     background-image: url(../img/space-01.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
 }
 
 .item-2 {
     background-image: url(../img/space-02.jpg);
-    background-size: 100%;
+    /* background-size: 100%; */
 }
 
 .item-3 {
     background-image: url(../img/space-03.jpg);
-    background-size: 100%;
 }
 
 .item-4 {
     background-image: url(../img/space-04.jpg);
-    background-size: 100%;
 }
 
 .item-5 {
     background-image: url(../img/space-05.jpg);
-    background-size: 100%;
 }
 
 .item-6 {
     background-image: url(../img/space-06.jpg);
-    background-size: 100%;
 }
 
 .item-7 {
     background-image: url(../img/space-07.jpg);
-    background-size: 100%;
 }
 
 .item-8 {
     background-image: url(../img/space-08.jpg);
-    background-size: 100%;
 }
 
 .item-9 {
     background-image: url(../img/space-09.jpg);
-    background-size: 100%;
 }
 
 .item-10 {
     background-image: url(../img/space-10.jpg);
-    background-size: 100%;
 }
 
 .item-11 {
     background-image: url(../img/space-11.jpg);
-    background-size: 100%;
 }
 
 .item-12 {
     background-image: url(../img/space-12.jpg);
-    background-size: 100%;
 }
 
 .item-13 {
     background-image: url(../img/space-13.jpg);
-    background-size: 100%;
 }
 
 .item-14 {
     background-image: url(../img/space-14.jpg);
-    background-size: 100%;
 }
 
 .item-15 {
     background-image: url(../img/space-15.jpg);
-    background-size: 100%;
+}
+
+.item-16 {
+    background-image: url(../img/space-16.jpg);
 }
