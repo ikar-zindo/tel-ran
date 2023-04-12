@@ -1,3 +1,30 @@
-body {
-    background-color: rgb(30, 45, 60);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+
+}
+
+section {
+    background-color: rgb(238, 239, 241);
+    padding: 100px 0;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: rgb(114, 114, 114);
+    width: 30%;
+    margin: 50px auto 65px;
+}
+
