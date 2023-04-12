@@ -26,25 +26,27 @@ h3 {
 p {
     color: rgb(241, 196, 15);
     font-size: 24px;
-    margin-bottom: 4px;
+    margin: auto;
     text-align: center;
     width: 80%;
 }
 
 img {
     width: 400px;
-    text-align: center;
+    /* text-align: center; */
     border-radius: 30px;
     border: solid 10px rgb(142, 68, 173);
     box-shadow: 0px 0px 4px 4px rgba(142, 68, 173, 0.7);
-    
+    transition: 0.2s;    
 }
 
 img:hover {
-    width: 420px;
+    transform: scale(1.07);
     border: solid 10px rgb(255, 204, 0);
     box-shadow: 0px 0px 4px 4px rgba(255, 204, 0, 0.7);
 }
+
+
 
 a {
     font-size: 18px;
@@ -54,10 +56,10 @@ a {
 
 
  .wrapper {
-    /* margin: 0 20px; */
+    margin: auto;
     /* display: flex;
     /*flex-direction: row-reverse;*/
-    /* width: 95%; */
+    width: 95%;
 }
 
 .country {
@@ -73,16 +75,13 @@ a {
     flex-direction: row-reverse;    
 } 
 
-.img {
-    margin-left: 6%;
-}
 
 .berlin,
 .kyiv,
 .paris,
 .oslo
  {
-    margin-left: 6%;
+ 
 }
 
 
