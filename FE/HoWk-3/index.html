@@ -7,17 +7,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 
-	<!-- Styles -->
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+	
+	<!-- Style -->
 	<link rel="stylesheet" href="./style/style.css">
+
 </head>
 
 <body>
 
-	
-	<div class="general-form">
+	<section class="window-registration-form">
 
-	</div>
+		<a class="link-cross" href="#">
+			<img src="./img/close.png" alt="close" class="img-cross">
+		</a>		
+		
+		<form class="registration-form">
+			<div>
+				<h3>Регистрация</h3>					
 
+				<input type="email" placeholder="alexander@mail.com" required>
+				<input type="password" placeholder="Пароль" required>
+
+				<p class="privacy-information">
+					Регистрируясь на сайте, вы соглашаетесь с нашими 
+					Правилами и Политикой конфиденциальности и соглашаетесь на
+					информационную рассылку.
+				</p>
+
+				<input type="submit" value="Зарегистрироваться" class="button-form-registratin button-sing-up">
+				<input type="submit" value="Войти" class="button-form-registratin button-sing-up">
+			</div>	
+		</form>
+	</section>
 </body>
 
 </html>

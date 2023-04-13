@@ -4,4 +4,102 @@
 	box-sizing: border-box;
 }
 
-body {}
+body {
+	font-family: 'Nunito';
+	background-color: rgb(245, 245, 245);
+	font-weight: 400;
+}
+
+.window-registration-form {
+	margin: 40px auto;
+	width: 420px;
+	padding: 16px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+	box-shadow: 0px 2px 8px rgba(40, 41, 61, 0.08), 0px 20px 32px rgba(96, 97, 112, 0.24);
+}
+
+
+
+.link-close {
+	padding: 5px;
+	width: 24px;
+}
+
+.img-cross {
+	padding: 5px;
+	float: right;
+}
+
+.registration-form {
+	padding: 24px 16px 16px 16px;
+}
+
+h3 {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 28px;
+	margin-bottom: 24px;
+}
+
+
+/* Fields registration */
+input[type="email"],
+input[type="password"] {
+	width: 100%;
+	height: 48px;
+	border: 1px solid rgb(207, 216, 220);
+	border-radius: 12px;
+	caret-color: rgb(255, 170, 13);
+	font-family: 'Nunito';
+	
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+	border: 1px solid rgb(255, 228, 77);
+	border-radius: 12px;
+}
+
+input[type="email"] {
+	padding-top: 20px;
+	padding-left: 15px;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: #1A1A1A;
+	font-weight: 800;
+	margin-bottom: 8px;
+}
+
+input[type="password"] {
+	padding: 16px;
+}
+
+.privacy-information {
+	font-size: 12px;
+	color: rgb(123, 142, 152);
+	margin: 24px 0;
+}
+
+
+/* Buttons registration*/
+.button-form-registratin {
+	width: 100%;
+	border: none;
+	padding: 14px;
+	font-weight: 700;
+	font-size: 16px;
+	font-family: 'Nunito';
+}
+
+.button-sing-up {
+	margin-bottom: 8px;
+	background: rgb(255, 228, 77);
+	border-radius: 55px;
+}
+
+.button-sing-in {
+	border: 1px solid rgb(207, 216, 220);
+	border-radius: 87px;
+	background-color: rgb(255, 255, 255);
+}
