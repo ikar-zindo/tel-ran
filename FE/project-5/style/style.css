@@ -1,30 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-
+	font-family: 'Roboto';
 }
 
 section {
-    background-color: rgb(238, 239, 241);
-    padding: 100px 0;
+	background-color: rgb(238, 239, 241);
+	padding: 100px 0;
 }
 
 h1 {
-    font-weight: 500;
-    font-size: 32px;
-    text-align: center;
+	font-weight: 500;
+	font-size: 32px;
+	text-align: center;
 }
 
 p {
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    color: rgb(114, 114, 114);
-    width: 30%;
-    margin: 50px auto 65px;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	color: rgb(114, 114, 114);
+	width: 30%;
+	margin: 50px auto 65px;
 }
+
+form {
+	width: 30%;
+	margin: auto;
+}
+
+.form-control {
+	display: flex;
+	gap: 30px;
+	margin-bottom: 20px;	
+}
+
+input[type="text"],
+input[type="email"] {
+	width: 50%;
+	padding: 20px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	caret-color: rgb(142, 68, 173);
+}
+
+textarea {
+	width: 100%;
+	padding: 20px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+}
+
+.button {
+	display: block;
+	margin: 50px auto 0;
+	border: none;
+	outline: none;
+	color: rgb(255, 255, 255);
+	background-color: rgb(52, 84, 122);
+	padding: 20px 44px;
+	font-size: 14px;
+	letter-spacing: 0.15em;
+}
+
+
 
