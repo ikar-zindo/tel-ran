@@ -1,8 +1,78 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
+	background-color: rgb(30, 45, 60);
+	color: rgb(130, 204, 221);
 }
+
+
+
+header {
+	height: 70px;
+	background-color: rgb(60, 99, 130);
+	position: fixed;
+	width: 100%;
+}
+
+nav {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+}
+
+a {
+	color: black;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+a[href="#projects"] {
+	background-color: rgb(39, 174, 96);
+	padding: 12px;
+	border-radius: 20px;
+}
+
+a[href="#lessons"] {
+	background-color: rgb(231, 76, 60);
+	padding: 12px;
+	border-radius: 20px;
+}
+
+a[href="#team"] {
+	background-color: rgb(241, 196, 15);
+	padding: 12px;
+	border-radius: 20px;
+}
+
+a[href="#about"] {
+	background-color: rgb(41, 128, 185);
+	padding: 12px;
+	border-radius: 20px;
+}
+
+section {
+	height: 100vh;
+}
+
+#projects {
+	background-color: rgb(39, 174, 96);
+}
+
+#lessons {
+	background-color: rgb(231, 76, 60);
+}
+
+#team {
+	background-color: rgb(241, 196, 15);
+}
+
+#about {
+	background-color: rgb(41, 128, 185);
+}
+
