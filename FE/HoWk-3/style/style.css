@@ -24,10 +24,15 @@ body {
 	width: 24px;
 }
 
-.img-cross {
+.la-times {
 	padding: 5px;
 	float: right;
 }
+
+/* .img-cross {
+	padding: 5px;
+	float: right;
+} */
 
 .registration-form {
 	padding: 24px 16px 16px 16px;
