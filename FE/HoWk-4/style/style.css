@@ -16,7 +16,7 @@ body {
    max-width: 1512px;
 }
 
-/* Header */
+/*! Header */
 header {
    height: 70px;
    background-color: #1ABC9C;
@@ -24,7 +24,7 @@ header {
    align-items: center
 }
 
-.wrapper {
+.wrapper-header {
    width: 90%;
    margin: auto;
    display: flex;
@@ -32,23 +32,62 @@ header {
 }
 
 .logo {
-   /* height: 30px; */
+   height: 30px;
 }
 
 
 
 nav {}
 
+.social-icons {
+   width: 160px;
+   display: flex;
+   justify-content: space-between;
+}
+
 .social-icon {
-   /* width: 40px; */
-   /* margin-left: 20px; */
+   width: 40px;
+}
+
+/*! Main */
+.about-us {
+   width: 95%;
+   display: flex;
+   flex-direction: reverse;
+}
+
+.img-room {
+   background-image: url(../img/room.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 50%;
+}
+
+.info-about-us {
+   width: 50%;
+}
+
+.projects {
+   background-color: #DCFFEB;
+   padding: 124px 64px;
+   width: 100%;
+}
+
+.project-galery {
+   display: flex;
+   flex-direction: reverse;
+   gap: 40px;
+}
+
+.project-galery-photo {
+
+}
+
+.galery-photo-info {
+   position: relative;
+   bottom: 0;
+   z-index: 2;
 }
 
 
-
-
-/* Main */
-
-
-
-/* Footer */
+/*! Footer */
