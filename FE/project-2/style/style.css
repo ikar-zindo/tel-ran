@@ -34,15 +34,16 @@ h1:hover {
 
 /* Main */
 .container {
-    width: 85%;
+    width: 95%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
 .item {
-    width: calc(100% / 2 - 20px); /*ширина*/
-    height: calc(100vh / 2.5 ); /*высота*/
+    width: calc(100% / 2 - 20px); /*ширина */
+    /* height: calc(100vh / 2.5 ); высота */ 
+    aspect-ratio: 16 / 9;
     background-color: rgb(60, 99, 130);
     margin: 10px;
     background-size: cover; 
