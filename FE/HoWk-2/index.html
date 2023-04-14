@@ -11,82 +11,79 @@
 </head>
 <body>
 
-    <!-- Список валют -->
-    <h3>Список валют</h3>
+	<!-- Список валют -->
+	<h3>Список валют</h3>
+
+	<div class="currencies">
+		<ul>
+			<li>&#x20AC; (EUR) - Евро (Страны Еврозоны)</li>
+			<li>&#x24; (USD) - Доллар (США)</li>
+			<li>&#xA3; (GBP) - Фунт стерлинг (Великобритания)</li>
+			<li>&#xA5; (JPY) - Иена (Япония)</li>
+			<li>&#x20BE; (GEL) - Лари (Грузия)</li>
+		</ul>
+	</div>
 
 
-    <div class="currencies">
-       <ul>
-            <li>&#x20AC; (EUR) - Евро (Страны Еврозоны)</li>
-            <li>&#x24; (USD) - Доллар (США)</li>
-            <li>&#xA3; (GBP) - Фунт стерлинг (Великобритания)</li>
-            <li>&#xA5; (JPY) - Иена (Япония)</li>
-            <li>&#x20BE; (GEL) - Лари (Грузия)</li>
-        </ul> 
-    </div>
-    
+	<!-- Курс на сегодня -->
+	<h3>Курс на сегодня</h3>
 
-    <!-- Курс на сегодня -->
-    <h3>Курс на сегодня</h3>
+	<!-- table>(thead>tr>th*3+tbody>tr*4>td*3) -->
+	<table class="exchange_rates">
+		<thead>
+			<tr>
+				<th>Флаг</th>
+				<th>Валюта</th>
+				<th>Курс</th>
+			</tr>
+		</thead>
 
-    <!-- table>(thead>tr>th*3+tbody>tr*4>td*3) -->
-    <table class="exchange_rates">
-        <thead>
-            <tr>
-                <th>Флаг</th>
-                <th>Валюта</th>
-                <th>Курс</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>
-                    <img src="./img/flag_of_usa.jpg" alt="USD"><img src="./img/flag_of_europe.jpg" alt="EUR">
-                </td>
-                <td>
-                    &#x24; (USD) / &#x20AC; (EUR)
-                </td>
-                <td>
-                    0,93&#x20AC;
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./img/flag_of_the_united_kingdom.jpg" alt="GBP"><img src="./img/flag_of_europe.jpg" alt="EUR">
-                </td>
-                <td>
-                    &#xA3; (GBP) / &#x20AC; (EUR)
-                </td>
-                <td>
-                    1,17&#x20AC;
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./img/flag_of_japan.jpg" alt="JPY"><img src="./img/flag_of_europe.jpg" alt="EUR">
-                </td>
-                <td>
-                    &#xA5; (JPY) / &#x20AC; (EUR)
-                </td>
-                <td>
-                    0,0073&#x20AC;
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="./img/flag_of_georgia.jpg" alt="GEL"><img src="./img/flag_of_europe.jpg" alt="EUR">
-                </td>
-                <td>
-                    &#x20BE; (GEL) / &#x20AC; (EUR)
-                </td>
-                <td>
-                    0,32&#x20AC;
-                </td>
-            </tr>
-        </tbody>        
-    </table>
-
-    
+		<tbody>
+			<tr>
+				<td>
+					<img src="./img/flag_of_usa.jpg" alt="USD"><img src="./img/flag_of_europe.jpg" alt="EUR">
+				</td>
+				<td>
+					&#x24; (USD) / &#x20AC; (EUR)
+				</td>
+				<td>
+					0,93&#x20AC;
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="./img/flag_of_the_united_kingdom.jpg" alt="GBP"><img src="./img/flag_of_europe.jpg" alt="EUR">
+				</td>
+				<td>
+					&#xA3; (GBP) / &#x20AC; (EUR)
+				</td>
+				<td>
+					1,17&#x20AC;
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="./img/flag_of_japan.jpg" alt="JPY"><img src="./img/flag_of_europe.jpg" alt="EUR">
+				</td>
+				<td>
+					&#xA5; (JPY) / &#x20AC; (EUR)
+				</td>
+				<td>
+					0,0073&#x20AC;
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="./img/flag_of_georgia.jpg" alt="GEL"><img src="./img/flag_of_europe.jpg" alt="EUR">
+				</td>
+				<td>
+					&#x20BE; (GEL) / &#x20AC; (EUR)
+				</td>
+				<td>
+					0,32&#x20AC;
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>
