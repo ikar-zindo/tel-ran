@@ -5,16 +5,15 @@
 }
 
 body {
-    background-color: #ecf0f1;
+    background-color: rgb(236, 240, 241);
 }
 
-h1 {
+h3 {
     margin: 20px;
 }
 
-
-.description {
-    background-color: #34495E;
+p {
+    background-color: rgb(52, 73, 94);
     border-radius: 20px;
     padding: 21px;
     margin: 20px 20px;
