@@ -42,7 +42,7 @@ h3 {
 }
 
 
-/* Fields registration */
+/** Fields registration */
 input[type="email"],
 input[type="password"] {
 	width: 100%;
@@ -79,7 +79,7 @@ input[type="password"] {
 	margin: 24px 0;
 }
 
-/* Buttons registration*/
+/**Buttons registration*/
 .button-form-registratin {
 	width: 100%;
 	border: none;
