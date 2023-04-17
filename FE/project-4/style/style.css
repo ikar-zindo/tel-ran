@@ -62,7 +62,7 @@ h1 {
 
 .intro-text {
 	font-size: 20px;
-	width: 83%;
+	width: 85%;
 	margin: auto;
 	text-align: justify;
 	text-indent: 20px;
@@ -77,23 +77,39 @@ h1 {
 .projects-wrapper {
 	width: 90%;
 	margin: auto;
-	
+}
+
+.projects-title {
+	margin-bottom: 50px;
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 35px;
 }
 
 .projects-list {
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	gap: 20px;
+	gap: 40px;
 }
 
 .projects-item {
-	width: calc(100% / 3 - 20px);
+	/* width: calc(100% / 3); */
+	/* position: relative; */
+}
+
+.projects-item-img {
+	width: 100%;
+	/* position: absolute; */
 }
 
 .projects-item-hover {
+	/* position: absolute; */
+	
 }
 
 .projects-item-title {
+	margin-bottom: 14px;
 	font-family: 'Oswald';
 	font-weight: 500;
 	font-size: 24px;
@@ -108,9 +124,64 @@ h1 {
 }
 
 /*! Footer */
+footer {
+	padding: 80px 0;
+}
 
+.contacts-wrapper {
+	width: 90%;
+	margin: auto;
+}
+
+.contacts-title {
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 35px;
+	margin-bottom: 75px;
+}
+
+.contacts-list {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts-item {
+
+}
+
+.contacts-item-img {
+	width: 40px;
+	margin-bottom: 40px;
+}
+
+.contacts-item-title {
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-style: normal;
+	font-size: 24px;
+	text-align: center;
+	color: rgb(153, 153, 153);
+}
+
+.contacts-item-text {
+	font-family: 'Oswald';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	text-align: center;
+}
+
+.contacts-item-email {
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 24px;
+	font-style: normal;
+	text-align: center;
+	color: rgb(247, 101, 74);
+}
 /* 
-font-family: 'Inter',sans-serif;
+font-fam#f7654anter',sans-serif;
 font-family: 'Open Sans',sans-serif;
 font-family: 'Oswald',sans-serif;
 */
