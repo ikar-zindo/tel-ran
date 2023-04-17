@@ -14,18 +14,13 @@ header {
 }
 
 .wrapper {
-	width: 82%;
+	width: 90%;
 	height: 70px;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
-/* nav {
-	display: flex;
-	gap:20px;
-} */
 
 .nav-link {
 	font-size: 25px;
@@ -80,17 +75,36 @@ h1 {
 }
 
 .projects-wrapper {
-	width: 82%;
+	width: 90%;
 	margin: auto;
+	
 }
 
 .projects-list {
 	display: flex;
 	justify-content: space-between;
+	gap: 20px;
 }
 
 .projects-item {
-	width: calc(100% / 3);
+	width: calc(100% / 3 - 20px);
+}
+
+.projects-item-hover {
+}
+
+.projects-item-title {
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 24px;
+	color: rgb(255, 255, 255);
+}
+
+.projects-item-text {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+	color: rgb(255, 255, 255);
 }
 
 /*! Footer */
