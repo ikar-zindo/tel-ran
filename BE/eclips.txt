@@ -1,0 +1,2 @@
+Ctrl+Space
+Alt+Shift+R - Rename

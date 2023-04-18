@@ -108,6 +108,7 @@ h1 {
 .projects-item-hover {
 	position: absolute;
 	bottom: 0;
+	margin: 0 36px 20px;
 }
 
 .projects-item:hover {
@@ -126,8 +127,6 @@ h1 {
 	font-weight: 400;
 	font-size: 16px;
 }
-
-
 
 /*! Footer */
 footer {

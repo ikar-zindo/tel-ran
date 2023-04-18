@@ -1,0 +1,8 @@
+ls -la
+pwd
+cd
+mkdir -p
+echo
+tree
+rm rmdir -r
+cp mv

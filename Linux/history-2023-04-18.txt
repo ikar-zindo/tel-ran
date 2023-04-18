@@ -1,0 +1,58 @@
+   0 tree
+   2 pwd
+   3 mkdir Dir1/Dir2/Dir3/Dir4/Dir5
+   4 mkdir Dir1/Dir2/Dir3/Dir4/Dir5/
+   5 mkdir Dir1/Dir2/Dir3/Dir4/Dir5 -p
+   6 rmdir Dir1/Dir2/Dir3/Dir4/Dir5
+   7 cd Dir1/Dir2/Dir3/Dir4
+   8 cd
+   9 echo > "Helo" > Dir1/Dir2/Dir3/Dir4/File1.txt
+  10 rmdir Dir1/Dir2/Dir3/Dir4
+  11 rm -r Dir1/Dir2/Dir3/Dir4
+  12 tree
+  13 mkdir Dir1/Dir2/Dir3/Dir4
+  14 tree
+  15 cd
+  16 ls -la Dir1/
+  17 ls -la Dir1/Dir2/
+  18 mkdir Dir1/Dir2/Dir3_1
+  19 rmdir Dir1/Dir2/Dir3_1
+  20 > Dir1/Dir2/Dir3/Dir4/File2.txt
+  21 ls -la  Dir1/Dir2/Dir3/Dir4/File2.txt
+  22 ls -la  Dir1/Dir2/Dir3/Dir4/
+  23 > Dir1/Dir2/Dir3/Dir4/File1.txt
+  27 rm Dir1/Dir2/Dir3/Dir4/File*
+  28 ls -la  Dir1/Dir2/Dir3/Dir4/File1.txt
+  29 ls -la  Dir1/Dir2/Dir3/Dir4/
+  30 > Dir1/Dir2/Dir3/Dir4/File1.txt
+  31 ls -al Dir1/Dir2/Dir3/Dir4/File1.txt
+  32 ls -al Dir1/Dir2/Dir3/Dir4/
+  33 > Dir1/Dir2/Dir3/Dir4/Fsdl
+  34 ls -la Dir1/Dir2/Dir3/Dir4/
+  35 rm Dir1/Dir2/Dir3/Dir4/*.txt
+  36 ls -la Dir1/Dir2/Dir3/Dir4/
+  37 rm -r Dir1/Dir2/Dir3/Dir4/
+  38 ls -la Dir1/Dir2/Dir3/
+  39 ls -la
+  40 touch File1 file1 File2 file2 File2.txt
+  41 ls -la
+  42 cp file1 Dir1/Dir2/Dir3/File1.txt
+  43 ls
+  44 ls -la
+  45 ls -la Dir1/Dir2/Dir3/
+  46 mv file1 Dir1/Dir2/
+  47 ls Dir1/Dir2/
+  48 ls -la
+  49 cd /home/
+  50 ls
+  51 pwd
+  52 mv /root/Dir1/Dir2/ /home/
+  53 tree
+  54 cd
+  55 tree
+  56 cd /home
+  57 ls
+  58 ls Dir2/
+  59 ls Dir2/Dir3/
+  60 history > /root/history-2023-04
+  61 export_file /root/history-2023-04
