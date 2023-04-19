@@ -1,2 +1,3 @@
+Тернарная операция
 Ctrl+Space
 Alt+Shift+R - Rename
