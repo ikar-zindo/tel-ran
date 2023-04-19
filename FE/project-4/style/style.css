@@ -95,9 +95,12 @@ h1 {
 .projects-item {
 	width: calc(100% / 3 - 40px);
 	position: relative;
-	/* * */
-	transition: 0.3s;
+	transition: 1s;
 	margin-bottom: 125px;
+}
+
+.projects-item:hover .projects-item-hover{
+	display: block;
 }
 
 .projects-item-img {
@@ -105,15 +108,12 @@ h1 {
 }
 
 .projects-item-hover {
+	display: none;
 	position: absolute;
 	bottom: 0;
 	padding: 15px 35px;
 	background: rgba(0, 0, 0, 0.38);
 }
-
-/* .projects-item:hover {
-	color: rgb(255, 255, 255);
-} */
 
 .projects-item-title {
 	margin-bottom: 14px;
@@ -148,21 +148,21 @@ footer {
 }
 
 .contacts-list {
-	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
 
 .contacts-item {
-	text-align: center;
+
 }
 
 .contacts-item-img {
-	width: 40px;
-	margin-bottom: 40px;
+	display: block;
+	margin: auto;
 }
 
 .contacts-item-title {
+	margin: 25px 0;
 	font-family: 'Oswald';
 	font-weight: 500;
 	font-style: normal;
@@ -172,11 +172,12 @@ footer {
 }
 
 .contacts-item-text {
-	font-family: 'Oswald';
+	font-family: 'Oswald', sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 24px;
 	text-align: center;
+	color: rgb(0, 0, 0);
 }
 
 .contacts-item-email {
