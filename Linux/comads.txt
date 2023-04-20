@@ -1,8 +1,34 @@
 ls -la
-pwd
+pwd посмотреть путь
 cd
-mkdir -p
-echo
+mkdir -p //создать дерево папок
+touch //создать файл
+echo "Hello, World!" //Вывод текста
 tree
 rm rmdir -r
 cp mv
+ls -R
+wc //подсчёт количества строк  {слов}{строк}{сиволы}
+| 'pipe' //переадресация *cat /etc/group | tail
+cat // посмотреть внутрь файла и вывести на экран
+cat /etc/group | head -2 | tail -1 //вытащить строки tail(yb head 
+grep //поиск по символу -w //словоцеликом
+awk /утилита для извлечения текста
+
+!Стандартный поток данных
+histoy
+0. стандартый поток ввод данных//Standert out put
+1. стандартый поток вывод данных //Standert in put
+2. стандартый поток вовыда ошибок //Standert out errow
+
+date +'%H_%M:%S' '%U' //вывод даты
+
+df //DiscFull - занятость разделов, память -h //human reed
+
+> // перезапись файла (все предыдущие данные будут удалены)
+>> // дозапись в файл в конец
+
+localhost:~# df -h | grep -w / | awk '{print $5}'
+47%
+localhost:~# df -h | grep -w / | awk '{print $5}' | sed 's/%/&&/g'
+
