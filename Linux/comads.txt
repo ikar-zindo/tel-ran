@@ -8,12 +8,15 @@ tree
 rm rmdir -r
 cp mv
 ls -R
+history > /root/history-2023-04
+export_file /root/history-2023-04
 wc //подсчёт количества строк  {слов}{строк}{сиволы}
 | 'pipe' //переадресация *cat /etc/group | tail
 cat // посмотреть внутрь файла и вывести на экран
-cat /etc/group | head -2 | tail -1 //вытащить строки tail(yb head 
-grep //поиск по символу -w //словоцеликом
+cat /etc/group | head -2 | tail -1 //вытащить строки tail(снизу) head(сверху)
+grep //поиск по символу -w //слово целиком
 awk /утилита для извлечения текста
+df -h | grep -w / | awk '{print $5}' выведет на экран 5й столбец
 
 !Стандартный поток данных
 histoy
