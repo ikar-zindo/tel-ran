@@ -53,9 +53,10 @@
 
 const r = 153
 const g = 153
-const b  = 153
+const b = 153
 
-rgb({ r }, { g }, { b })
+console.log(`rgb(${r}, ${g}, ${b})`)
 
-https://doka.guide/js/var-let/
+// rgb({ r }, { g }, { b })
 
+// https://doka.guide/js/var-let/
