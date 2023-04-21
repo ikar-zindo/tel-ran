@@ -51,12 +51,81 @@
 // let birthYears = 2023 - userAge
 // console.log(`Вы роделись в ${birthYears} году.`)
 
-const r = 153
-const g = 153
-const b = 153
+// const r = 153
+// const g = 153
+// const b = 153
 
-console.log(`rgb(${r}, ${g}, ${b})`)
+// console.log(`rgb(${r}, ${g}, ${b})`)
 
 // rgb({ r }, { g }, { b })
 
 // https://doka.guide/js/var-let/
+
+//TODO: exercise 4
+// let int = prompt("Введите число");
+// console.log(int ** 2);
+// alert(Math.pow(int, 3));
+
+// const e = Math.E;
+// console.log(e);
+
+// let int1 = prompt("Введите число 1");
+// let int2 = prompt("Введите число 2");
+// let sum = Number(int1) + Number(int2);
+// alert(sum);
+
+/*//! Типы данных
+
+      1. Number - целое число
+      2. string 
+
+
+
+
+*/
+/*
+! Сравнение (if)
+//*Операторы спавнения
+   >
+   <
+
+   */
+// let int1 = prompt("Введите число");
+
+// if (int1 > 50) {
+//    alert("больше пятидесяти");
+// } else if (int1 < 50){
+//    alert("Меньше пятидесяти");
+// } else {
+//    alert("50. Молодец");
+// }
+
+//  let int1 = +prompt("Введите число");
+// alert(int1 > 50 ? "больше пятидесяти" : "Меньше пятидесяти");
+// const result = num > 50 ? "Больше" : num == 50 ? "Равно" : "Меньше"
+
+// let int1 = +prompt("Введите число");
+// const result = int1 > 50 ? "Больше" : num == 50 ? "Равно" : "Меньше"
+
+let int1 = +prompt("Введите число");
+let int2 = +prompt("Введите число");
+// if (int1 > int2) {
+//    alert("Первое больше");
+// } else if (int1 < int2){
+//    alert("Втроре больше");
+// } else {
+//    alert("Равны");
+// }
+
+alert(int1 > int2 ? "Первое больше" : int1 < int2 ? "Втроре больше" : "Равны")
+
+
+
+// alert(int1 > int2 ? "Первое больше");
+// if (int1 > 50) {
+//    alert("больше пятидесяти");
+// } else if (int1 == 50) {
+//    alert("50. Молодец");
+// } else {
+//    alert("Меньше пятидесяти");
+// }
