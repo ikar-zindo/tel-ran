@@ -1,3 +1,8 @@
+Джентльменские соглашения:
+1. "Текст пришется в ковычках"
+2. Переменных пешется БОЛЬШИМИ БУВАМИ
+
+
 ls -la
 pwd посмотреть путь
 cd
@@ -17,6 +22,7 @@ cat /etc/group | head -2 | tail -1 //вытащить строки tail(сниз
 grep //поиск по символу -w //слово целиком
 awk /утилита для извлечения текста
 df -h | grep -w / | awk '{print $5}' выведет на экран 5й столбец
+env стандартые переменные по умолсанию
 
 !Стандартный поток данных
 histoy
@@ -35,3 +41,23 @@ localhost:~# df -h | grep -w / | awk '{print $5}'
 47%
 localhost:~# df -h | grep -w / | awk '{print $5}' | sed 's/%/&&/g'
 
+vi
+Ctrl + Z
+	1. попадаем в командный режим
+ZZ (Note: capitals) - Save and exit
+:q! - discard all changes, since the last save, and exit
+:w - save file but don't exit
+:wq - again, save and exit
+:x - again, save and exit
+G  (shift g) - move to the last line
+/ - search (n - next) 
+i - insert text, edit mode. ECS to exit 
+u - undo last action
+dd - delete the current line ( i mode not needed) 
+Del - delete single character ( i mode not needed)
+
+export MYVAR=hello //добавление переменных
+unset NAME MYVAR // умолсание переменных
+history | grep VAR //отобразить историю переменных
+
+напомнить о GitHub

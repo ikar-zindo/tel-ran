@@ -1,0 +1,14 @@
+Some tests:
+
+- Compile hello.c with gcc (or tcc):
+
+  gcc hello.c -o hello
+  ./hello
+
+- Run QuickJS:
+
+  qjs hello.js
+
+- Run python:
+
+  python3 bench.py

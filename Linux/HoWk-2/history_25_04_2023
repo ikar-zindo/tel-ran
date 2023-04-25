@@ -1,0 +1,9 @@
+   0 mkdir -p /opt/test/IVAN
+   1 cat readme.txt >> /opt/test/IVAN/test.txt
+   2 ps -ef | head -2 >> /opt/test/IVAN/test.txt 
+   3 mkdir -p /tmp/test2/IVAN2
+   4 mv /opt/test/IVAN/test.txt /tmp/test2/IVAN2/new2.txt
+   5 vi /tmp/test2/IVAN2/new2.txt
+   6 export_file /tmp/test2/IVAN2/new2.txt
+   7 histor > history_04_25_2023
+   8 history > history_04_25_2023
