@@ -43,7 +43,6 @@ salary: 500
 // }
 
 //! Exercise 3
-      //const last_elem = numbers_squared[numbers_squared.length - 1];
 // const last_elem = numbers_squared[6];
 
 //! Exercise 4
