@@ -5,5 +5,4 @@
    4 mv /opt/test/IVAN/test.txt /tmp/test2/IVAN2/new2.txt
    5 vi /tmp/test2/IVAN2/new2.txt
    6 export_file /tmp/test2/IVAN2/new2.txt
-   7 histor > history_04_25_2023
-   8 history > history_04_25_2023
+   7 history > history_04_25_2023
