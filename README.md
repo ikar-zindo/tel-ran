@@ -1,7 +1,8 @@
 tel-ran
 tel-ran projects
 
-ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de //server tel-ran
+//server tel-ran
+ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
 
 git init
 
