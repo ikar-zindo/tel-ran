@@ -40,12 +40,13 @@ salary: 500
 // for (let i = 0; i < numbers.length; i++) {
 //    let squared = numbers[i] ** 2;
 //    numbers_squared.push(squared);
-// }
+}
 
-//! Exercise 3
+// //! Exercise 3
+// // const last_elem = numbers_squared[numbers_squared.length - 1]; //*access the last element of the array
 // const last_elem = numbers_squared[6];
 
-//! Exercise 4
+// //! Exercise 4
 const user = {
    first_name: "Ivan",
    last_name: "Bukrieiev",
