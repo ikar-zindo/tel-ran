@@ -47,11 +47,11 @@ salary: 500
 // const last_elem = numbers_squared[6];
 
 // //! Exercise 4
-const user = {
-   first_name: "Ivan",
-   last_name: "Bukrieiev",
-   age: 29,
-   salary: 500,
-};
+// const user = {
+//    first_name: "Ivan",
+//    last_name: "Bukrieiev",
+//    age: 29,
+//    salary: 500,
+// };
 
-console.log(`User's name is ${user.first_name} ${user.last_name}. He is ${user.age}years old.`);
+// console.log(`User's name is ${user.first_name} ${user.last_name}. He is ${user.age}years old.`);
