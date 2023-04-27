@@ -1,13 +1,13 @@
-tel-ran
 tel-ran projects
 
-ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de //server tel-ran
+ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de     //server tel-ran
 
 git init
 
 git status
 
 *git add .
+
 *git commit -m "initial commit"
 
 git log
