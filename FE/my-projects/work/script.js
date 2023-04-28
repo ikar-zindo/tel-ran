@@ -99,19 +99,25 @@
 //    alert(`Draw`);
 // }
 
-const i = +prompt("Number");
+// const i = +prompt("Number");
 
-if (i % 10 == 8) {
-   console.log("Число заканчивается на 8");
-}
+// if (i % 10 == 8) {
+//    console.log("Число заканчивается на 8");
+// }
 
 
-let username = prompt("Введите Ваше имя: ");
-let userAge = prompt("Введите Ваш возраст:");
-let currentYear = new Date().getFullYear();
+// let username = prompt("Введите Ваше имя: ");
+// let userAge = prompt("Введите Ваш возраст:");
+// let currentYear = new Date().getFullYear();
 
-if (userAge < (currentYear - (currentYear - 18))) {
-   console.log(`Hi, ${username}`);
-} else {
-   console.log(`Hello, ${username}`);
-}
+// if (userAge < (currentYear - (currentYear - 18))) {
+//    console.log(`Hi, ${username}`);
+// } else {
+//    console.log(`Hello, ${username}`);
+// }
+
+let flightStart = +prompt("")
+let flightTime = +prompt(`Время полёта`);
+let returnTime = (flightTime * 2) % 24;
+let returnDays = Math.trunc((flightTime * 2) / 24);
+console.log(`Самолёт вернётся в ${returnTime}:00 через ${returnDays} дней`);
