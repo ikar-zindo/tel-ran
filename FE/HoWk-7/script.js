@@ -13,33 +13,33 @@
 */
 
 //! Exercise 0
-function chekEven(int1, int2) { // Объявление функции
-   if (int1 > int2) {  // Проверяем какое число больше
-      if(int1 % 2 == 0) { // Проверяем большее число на чётновсть
-         for (let i = int1; i >= int2; i -= 2) { // Цикл от большего к меньшему
-            console.log(i); // Вывод числа
-         }
-      } else if ((int1 - 1) % 2 == 0) { // Проверяе следующее число на чётновсть
-         for (let i = int1 - 1; i >= int2; i -= 2) { // Цикл от большего к меньшему
-            console.log(i); // Выыод числа
-         }
-      }
-   } else {
-      if (int2 % 2 == 0) { // Проверяем большее число на чётновсть
-         for (let i = int2; i >= int1; i -= 2) { // Цикл от большего к меньшему
-            console.log(i); // Вывод числа
-         }
-      } else if ((int2 - 1) % 2 == 0) { // Проверяе следующее число на чётновсть
-         for (let i = int2 - 1; i >= int1; i -= 2) { // Цикл от большего к меньшему
-            console.log(i); // Выыод числа
-         }
-      } 
-   }
-}
+// function chekEven(int1, int2) { // Объявление функции
+//    if (int1 > int2) {  // Проверяем какое число больше
+//       if(int1 % 2 == 0) { // Проверяем большее число на чётновсть
+//          for (let i = int1; i >= int2; i -= 2) { // Цикл от большего к меньшему
+//             console.log(i); // Вывод числа
+//          }
+//       } else if ((int1 - 1) % 2 == 0) { // Проверяе следующее число на чётновсть
+//          for (let i = int1 - 1; i >= int2; i -= 2) { // Цикл от большего к меньшему
+//             console.log(i); // Выыод числа
+//          }
+//       }
+//    } else {
+//       if (int2 % 2 == 0) { // Проверяем большее число на чётновсть
+//          for (let i = int2; i >= int1; i -= 2) { // Цикл от большего к меньшему
+//             console.log(i); // Вывод числа
+//          }
+//       } else if ((int2 - 1) % 2 == 0) { // Проверяе следующее число на чётновсть
+//          for (let i = int2 - 1; i >= int1; i -= 2) { // Цикл от большего к меньшему
+//             console.log(i); // Выыод числа
+//          }
+//       } 
+//    }
+// }
 
-let int1 = +prompt("Введи число 1:");
-let int2 = +prompt("Введи число 2:");
-chekEven(int1, int2); // Вызов функции
+// let int1 = +prompt("Введи число 1:");
+// let int2 = +prompt("Введи число 2:");
+// chekEven(int1, int2); // Вызов функции
 
 //! Exercise 1
 // function power(x, y) { // Объявление функции
@@ -103,17 +103,17 @@ chekEven(int1, int2); // Вызов функции
 // count(n, m); //Вызов функции
 
 //! Exercise 4
-// function stringLengthCheck (array) { //Объявление функции
-//    let stringArray = ""; // Объявляем пустую строку
-//    for (let i = 0; i < array.length; i++) { 
-//       if (stringArray.length < array[i].length) { // Ищем самую длинную строку
-//          stringArray = array[i];
-//       } else {
-//          stringArray = stringArray;
-//       }
-//    }
-//    return stringArray == "" ? null : stringArray; // Возвращаем строку либо null
-// }
+function stringLengthCheck (array) { //Объявление функции
+   let stringArray = ""; // Объявляем пустую строку
+   for (let i = 0; i < array.length; i++) { 
+      if (stringArray.length < array[i].length) { // Ищем самую длинную строку
+         stringArray = array[i];
+      } else {
+         stringArray = stringArray;
+      }
+   }
+   return stringArray == "" ? null : stringArray; // Возвращаем строку либо null
+}
 
-// const array = ["one", "two", "three"]; //Дан массив
-// console.log(stringLengthCheck(array)); //Вызов функции
+const array = ["one", "two", "three"]; //Дан массив
+console.log(stringLengthCheck(array)); //Вызов функции
