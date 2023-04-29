@@ -21,9 +21,9 @@ salary: 500
 */
 
 //! Exercise 0
-// for (let i = 0; i <= 10; i = i + 2) {
-//    console.log(i);
-// }
+for (let i = 1; i <= 10; i = i + 2) {
+   console.log(i);
+}
 
 //! Exercise 1
 // for (let i = 55; i >= 20; i--) {
@@ -51,7 +51,7 @@ salary: 500
 //    first_name: "Ivan",
 //    last_name: "Bukrieiev",
 //    age: 29,
-//    salary: 500,
+//    salary: 3500,
 // };
 
 // console.log(`User's name is ${user.first_name} ${user.last_name}. He is ${user.age}years old.`);
