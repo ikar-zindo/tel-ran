@@ -8,7 +8,7 @@
 // main.appendChild(title);
  
 //! Добавление тегов в HTML Способ 1
-const main = document.querySelector("main");
+const main = document.querySelector("main"); // Сюда будем добавлять наш контент
 // main.innerHTML += `<section>
 //                      <h2>Добавление тегов в HTML</h2>
 //                   </section>`;
@@ -83,7 +83,13 @@ for(let i = 0; i < products.length; i++) {
                            <h5>${products[i].name}</h5>
                            <p>${products[i].price}</p>
                      </div>`;
-}                       
+}             
+
+let sum_cost = 0;
+for (let i = 0; i < products.length; i++) {
+    sum_cost += products[i].price;
+}
+main.innerHTML += `<h2>Общая стоимость: ${sum_cost}</h2>`;
 
 /*
    <section class="product">
