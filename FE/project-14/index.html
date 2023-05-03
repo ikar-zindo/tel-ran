@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Project 13</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         color: rgb(243, 156, 18);
+         /* color: rgb(22, 160, 133); */
+      }
+      body {
+         background-color: rgb(30, 45, 60);         
+      }
+      h1, h2, h3, h4, h5, h6 {
+         color: rgb(22, 160, 133);
+         text-align: center;
+      }
+      h1 {
+         margin-bottom: 24px;
+      }
+      main {
+         width: 60%;
+         margin: 52px auto;
+         padding: 28px;
+         text-align: center;
+         border: 0 solid rgb(243, 156, 18);
+         box-shadow: 0px 0px 12px 8px rgb(243, 156, 18);
+         border-radius: 12px;         
+      }
+      .btm {
+         margin-top: 40px;
+         padding: 8px 28px;
+         font-weight: 600;
+         color: rgb(22, 160, 133);
+         font-size: 20px;
+         background-color: rgb(37, 101, 88);
+         /* background-color: rgba(37, 101, 88, 0.51); */
+         border: 0 solid rgb(243, 156, 18);
+         border-radius: 12px;
+      }
+      .btm:hover {
+         box-shadow: 0px 0px 12px 4px rgb(243, 156, 18);
+         color: rgb(243, 156, 18);
+
+      }
+      .colors {
+         height: 400px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         box-shadow: 0px 0px 20px 20px rgb(243, 156, 18)
+      }
+      .colors-btm {
+         width: 200px;
+         outline: none;
+      }
+      #red:hover {
+         box-shadow: 0px 0px 12px 4px rgb(231, 76, 60);
+         color: rgb(243, 156, 18);
+      }
+      #green:hover {
+         box-shadow: 0px 0px 12px 4px rgb(39, 174, 96);
+         color: rgb(243, 156, 18);
+      }
+      #blue:hover {
+         box-shadow: 0px 0px 12px 4px rgb(41, 128, 185);
+         color: rgb(243, 156, 18);      
+      }
+      #yellow:hover {
+         box-shadow: 0px 0px 12px 4px rgb(241, 196, 15);
+         color: rgb(243, 156, 18);
+      }
+
+      /*
+      green: rgb(39, 174, 96)
+      blue rgb(41, 128, 185)
+      red rgb(231, 76, 60)
+      yellow rgb(241, 196, 15)
+      */
+   </style>
+</head>
+<body>
+      <h1>Project 14</h1>
+
+      <main>
+         <h2>0</h2>
+         <button class="btm btm-1">Инкремент (+1)</button>
+         <button class="btm btm-2">Декремент (-1)</button>
+      </main>
+
+      <main class="colors">
+         <button class="btm colors-btm" id="red" >Red</button>
+         <button class="btm colors-btm" id="blue">Blue</button>
+         <button class="btm colors-btm" id="green">Green</button>
+         <button class="btm colors-btm" id="yellow">Yellow</button>
+         <button class="btm colors-btm" id="img">Image</button>
+      </main>
+
+   <script src="./script.js"></script>
+</body>
+</html>
