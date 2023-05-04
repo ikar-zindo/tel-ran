@@ -1,0 +1,24 @@
+body {
+   background-color: rgb(30, 45, 60); /* Фон */
+   color: rgb(243, 156, 18);  /*Цвет текста*/
+}
+
+h1 {
+   color: rgb(22, 160, 133);
+}
+
+div {   
+   box-shadow: 0px 0px 12px 8px rgb(243, 156, 18);
+}
+
+button {
+   background-color: rgba(37, 101, 88, 0.51); /* Прозрачный фон */
+   background-color: rgb(34, 73, 74); /* Непрозрачный фон */
+}
+
+ /*
+   red rgb(231, 76, 60)
+   green: rgb(39, 174, 96)
+   blue rgb(41, 128, 185)
+   yellow rgb(241, 196, 15)
+*/
