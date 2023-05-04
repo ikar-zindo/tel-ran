@@ -8,7 +8,7 @@
 // main.appendChild(title);
  
 //! Добавление тегов в HTML Способ 1
-const main = document.querySelector("main"); // Сюда будем добавлять наш контент
+// const main = document.querySelector("main"); // Сюда будем добавлять наш контент
 // main.innerHTML += `<section>
 //                      <h2>Добавление тегов в HTML</h2>
 //                   </section>`;
@@ -63,33 +63,33 @@ const main = document.querySelector("main"); // Сюда будем добавл
 // }
 
 //TODO: Exercise 6
-const products = [
-   {
-       name: "Iphone 14",
-       price: 70000
-   },
-   {
-       name: "Iphone 13",
-       price: 60000
-   },
-   {
-       name: "Samsung S30",
-       price: 65000
-   }
-]
+// const products = [
+//    {
+//        name: "Iphone 14",
+//        price: 70000
+//    },
+//    {
+//        name: "Iphone 13",
+//        price: 60000
+//    },
+//    {
+//        name: "Samsung S30",
+//        price: 65000
+//    }
+// ]
 
-for(let i = 0; i < products.length; i++) {
-   main.innerHTML += `<div class="product">
-                           <h5>${products[i].name}</h5>
-                           <p>${products[i].price}</p>
-                     </div>`;
-}             
+// for(let i = 0; i < products.length; i++) {
+//    main.innerHTML += `<div class="product">
+//                            <h5>${products[i].name}</h5>
+//                            <p>${products[i].price}</p>
+//                      </div>`;
+// }             
 
-let sum_cost = 0;
-for (let i = 0; i < products.length; i++) {
-    sum_cost += products[i].price;
-}
-main.innerHTML += `<h2>Общая стоимость: ${sum_cost}</h2>`;
+// let sum_cost = 0;
+// for (let i = 0; i < products.length; i++) {
+//     sum_cost += products[i].price;
+// }
+// main.innerHTML += `<h2>Общая стоимость: ${sum_cost}</h2>`;
 
 /*
    <section class="product">
@@ -97,6 +97,98 @@ main.innerHTML += `<h2>Общая стоимость: ${sum_cost}</h2>`;
       <p>Product price</p>
    </section>
 */
+
+//TODO: Exercise 7
+const users = [ // Объявляем массив
+    {
+        email: "test@mail.com",
+        login: "Test"
+    },
+    {
+        email: "start@mail.com",
+        login: "Start"
+    },
+    {
+        email: "admin@mail.com",
+        login: "Admin"
+    }
+]
+
+const usersConmtanier = document.querySelector(".users-contanier");
+for(let i = 0; i < users.length; i++) {
+    usersConmtanier.innerHTML += `<div class="user">
+                                    <h5>${users[i].email}</h5>
+                                    <p>${users[i].login}</p>
+                                </div>`;
+} 
+
+
+//TODO: Exercise 8
+const posts = [ // Объявляем массив
+    {
+        title: "My first title",
+        descr: "My descr",
+        author: "Test"
+    },
+    {
+        title: "My second title",
+        descr: "My second descr",
+        author: "Admin"
+    },
+    {
+        title: "My third title",
+        descr: "My third descr",
+        author: "Starta University"
+    }
+]
+
+const postsContanier = document.querySelector(".posts-contanier");
+for(let i = 0; i < users.length; i++) {
+    postsContanier.innerHTML += `
+        <div class="post">
+            <h6>${posts[i].title}</h6>
+            <p>${posts[i].author}</p>
+            <p>${posts[i].descr}</p>
+        </div>
+    `;
+}
+
+//TODO: Exercise 8.1
+posts.forEach(function(post, index) {
+    if(index > 0 ) {
+    postsContanier.innerHTML += `
+        <div class="post">
+            <h6>${post.title}</h6>
+            <p>${post.author}</p>
+            <p>${post.descr}</p>
+        </div>
+    `
+    }
+})
+
+//TODO: Exercise 9
+const numbers = [10, 30, 25, 60, 13]; // Объявляем массив
+numbers.forEach(function(int) {
+    console.log(int);
+});
+
+//TODO: Exercise 9.1
+const arrayNames = ["Ivan", "Maja", "Bartek", "Monika"] // Объявляем массив
+const names = document.querySelector(".names");
+arrayNames.forEach(function(name) {
+    names.innerHTML += `
+    <p>Hello, ${name}</p>
+    `
+});
+
+//TODO: Exercise 10
+const usersConmtanier1 = document.querySelector(".users-contanier1");
+users.forEach(function(user) { // Вывод posts с помощью forEach
+    usersConmtanier1.innerHTML += `<div class="user">
+                                    <h5>${user.email}</h5>
+                                    <p>${user.login}</p>
+                                </div>`;
+});
 
 
 //*Конспект
