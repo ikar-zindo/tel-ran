@@ -39,22 +39,22 @@ const array_colors = [ // Объявляем массив цветов
     {
         nameColor: "red",
         rgb: "rgb(231, 76, 60)",
-        img: null
+        img: "none"
     },
     {
         nameColor: "blue",
         rgb: "rgb(41, 128, 185)",
-        img: null
+        img: "none"
     },
     {
         nameColor: "green",
         rgb: "rgb(39, 174, 96)",
-        img: null
+        img: "none"
     },
     {
         nameColor: "yellow",
         rgb: "rgb(241, 196, 15)",
-        img: null
+        img: "none"
     },
     {
         nameColor: "img",
