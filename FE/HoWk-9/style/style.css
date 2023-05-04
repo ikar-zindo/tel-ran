@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: rgb(30, 45, 60); 
+	font-family: 'Alkatra', cursive;
+}
+
+h1 {
+	margin: 20px;
+	color: rgb(22, 160, 133);
+	font-size: 44px;	
+	text-align: center;
+}
+
+h2 {
+	color: rgb(225, 55, 55);
+	font-size: 36px;
+}
+
+.exercise {
+	width: 80%;
+	margin: 30px auto 60px;
+	padding: 12px;
+	border: 1px solid rgb(243, 156, 18);
+	border-radius: 12px;         
+	box-shadow: 0px 0px 12px 8px rgba(243, 157, 18);
+	color: rgb(243, 156, 18);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.btm {
+	margin: 20px;
+	padding: 8px 28px;
+	font-weight: 600;
+	color: rgb(22, 160, 133);
+	font-size: 20px;
+	background-color: rgba(37, 101, 88, 0.51);
+	border: none;
+	outline: none;
+	border-radius: 12px;
+	font-family: 'Alkatra', cursive;
+	letter-spacing: 0.1em;
+}
+
+.btm:hover {
+	box-shadow: 0px 0px 12px 8px rgb(243, 156, 18);
+	color: rgb(243, 156, 18);
+}
+
+.btm:active {
+	box-shadow: 0px 0px 12px 8px rgb(126, 80, 8);
+	color: rgb(126, 80, 8);
+}
+
+.red-square-wrapper {
+	width: 200px;
+	aspect-ratio: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.red-square {
+	width: 200px;
+	aspect-ratio: 1;
+	background-color: rgb(231, 76, 60);
+}
+
+.pink-square {
+	width: 200px;
+	aspect-ratio: 1;
+	background-color: rgb(232, 67, 147);
+}
+
+.square {
+	width: 0;
+	aspect-ratio: 1;
+	background-color: rgb(0, 0, 0);
+}
+
+.square-wrapper {
+	width: 150px;
+	aspect-ratio: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.root1 {
+	height: 100px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.text {
+	font-size: 24px;
+	text-align: center;
+}
