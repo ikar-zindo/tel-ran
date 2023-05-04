@@ -113,44 +113,45 @@ const green = document.querySelector("#green"); // Заносим значени
 const yellow = document.querySelector("#yellow"); // Заносим значение id=yellow в переменную
 const img = document.querySelector("#img"); // Заносим значение id=img в переменную
 
-const array_colors = [ // Объявляем массив цветов
-    {
-        nameColor: "red",
-        rgb: "rgb(231, 76, 60)",
-        img: "none"
-    },
-    {
-        nameColor: "blue",
-        rgb: "rgb(41, 128, 185)",
-        img: "none"
-    },
-    {
-        nameColor: "green",
-        rgb: "rgb(39, 174, 96)",
-        img: "none"
-    },
-    {
-        nameColor: "yellow",
-        rgb: "rgb(241, 196, 15)",
-        img: "none"
-    },
-    {
-        nameColor: "img",
-        rgb: "rgb(243, 156, 18)",
-        img: "url(../project-2/img/space-10.jpg)"
-    }
+const array_colors = [
+	// Объявляем массив цветов
+	{
+		nameColor: "red",
+		rgb: "rgb(231, 76, 60)",
+		img: "none",
+	},
+	{
+		nameColor: "blue",
+		rgb: "rgb(41, 128, 185)",
+		img: "none",
+	},
+	{
+		nameColor: "green",
+		rgb: "rgb(39, 174, 96)",
+		img: "none",
+	},
+	{
+		nameColor: "yellow",
+		rgb: "rgb(241, 196, 15)",
+		img: "none",
+	},
+	{
+		nameColor: "img",
+		rgb: "rgb(243, 156, 18)",
+		img: "url(../project-2/img/space-10.jpg)",
+	},
 ];
 
 const buttons = document.querySelectorAll(".colors-btm") // Массив с кнопками
 
-for(let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function(event) {
-        for(let j = 0; j < array_colors.length; j++) {
-            if(event.target.id == array_colors[j].nameColor) {
-                colors.style.backgroundColor = array_colors[j].rgb;
-                colors.style.backgroundImage = array_colors[j].img;
-                colors.style.boxShadow = `0px 0px 20px 20px ${array_colors[j].rgb}`;
-            } 
-        }
-    })
+for (let i = 0; i < buttons.length; i++) {
+	buttons[i].addEventListener("click", function (event) {
+		for (let j = 0; j < array_colors.length; j++) {
+			if (event.target.id == array_colors[j].nameColor) {
+				colors.style.backgroundColor = array_colors[j].rgb;
+				colors.style.backgroundImage = array_colors[j].img;
+				colors.style.boxShadow = `0px 0px 20px 20px ${array_colors[j].rgb}`;
+			}
+		}
+	});
 }
