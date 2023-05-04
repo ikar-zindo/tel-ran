@@ -1,5 +1,6 @@
 /*
 		!Модуль 5. Домашнее задание 1.
+		*Level 1
 	//TODO: Exrcise 0
 *Создать кнопку и красный квадрат с размерами 200х200px. При клике на кнопку менять у квадрата цвет заднего фона на зеленый и уменьшать его до размеров 100х100px.
 	//TODO: Exrcise 1
@@ -10,8 +11,13 @@
 *Создать кнопку и div с классом root. При клике на кнопку в div создается параграф синего цвета. Текст параграфа произвольный.
 	//TODO: Exrcise 4
 *Создать кнопку и div с классом root. При клике на кнопку в div создаются по очереди параграфы синего и зеленого цветов. Первый цвет синий.
+
+		*Level 2
+	//TODO: Exrcise 0
+	*Если после картинки нажимаем на цвет, то цвет не меняется. Сделать так, чтобы после нажатия на картинку можно было поменять и цвет
 */
 
+//! Level 1
 //! Exrcise 0
 const redSquareBtm = document.querySelector(".red-square-btm"); // Поиск кнопки по классу для красного квадрата
 const redSquare = document.querySelector(".red-square"); // Поиск красного квадрата по классу
@@ -90,3 +96,61 @@ rootBtm2.addEventListener("click", function() { // Слушатель событ
 		}
 	}	
 });
+
+//! Level 2
+//! Exercise 0
+
+// Меняем цвет фона по нажатию на кнопку
+
+// Заносим все значения полей HTML в переменные JS
+const body = document.body;
+//* body.style.backgroundColor = "rgb(231, 76, 60)";
+const colors = document.querySelector(".colors"); // main class=colors
+
+const red = document.querySelector("#red"); // Заносим значение id=red в переменную
+const blue = document.querySelector("#blue"); // Заносим значение id=blue в переменную
+const green = document.querySelector("#green"); // Заносим значение id=green в переменную
+const yellow = document.querySelector("#yellow"); // Заносим значение id=yellow в переменную
+const img = document.querySelector("#img"); // Заносим значение id=img в переменную
+
+const array_colors = [ // Объявляем массив цветов
+    {
+        nameColor: "red",
+        rgb: "rgb(231, 76, 60)",
+        img: "none"
+    },
+    {
+        nameColor: "blue",
+        rgb: "rgb(41, 128, 185)",
+        img: "none"
+    },
+    {
+        nameColor: "green",
+        rgb: "rgb(39, 174, 96)",
+        img: "none"
+    },
+    {
+        nameColor: "yellow",
+        rgb: "rgb(241, 196, 15)",
+        img: "none"
+    },
+    {
+        nameColor: "img",
+        rgb: "rgb(243, 156, 18)",
+        img: "url(../project-2/img/space-10.jpg)"
+    }
+];
+
+const buttons = document.querySelectorAll(".colors-btm") // Массив с кнопками
+
+for(let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function(event) {
+        for(let j = 0; j < array_colors.length; j++) {
+            if(event.target.id == array_colors[j].nameColor) {
+                colors.style.backgroundColor = array_colors[j].rgb;
+                colors.style.backgroundImage = array_colors[j].img;
+                colors.style.boxShadow = `0px 0px 20px 20px ${array_colors[j].rgb}`;
+            } 
+        }
+    })
+}
