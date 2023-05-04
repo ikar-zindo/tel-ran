@@ -7,17 +7,22 @@ h1 {
    color: rgb(22, 160, 133); /* Шрифт заголовка */
 }
 
-div {   
-   box-shadow: 0px 0px 12px 8px rgb(243, 156, 18);
-   width: 100vh;
-   aspect-ratio: 1;
+div {
+   box-shadow: 0px 0px 12px 12px rgb(243, 156, 18);
    background-image: url(./project-2/img/space-10.jpg);
+   width: 100vh;
+   aspect-ratio: 1;   
 }
 
 button {
    background-color: rgba(37, 101, 88, 0.51); /* Прозрачный фон */
    background-color: rgb(34, 73, 74); /* Непрозрачный фон */   
    color: rgb(22, 160, 133);
+}
+
+section {
+	background-color: rgb(60, 99, 130);
+	box-shadow: 0px 0px 10px 10px rgba(142, 68, 173,0.58);
 }
 
  /*
