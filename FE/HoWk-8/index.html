@@ -8,6 +8,8 @@
    <style>
       * {
          margin: 0;
+         padding: 0;
+         box-sizing: border-box;
       }
       body {
          background-color: rgb(30, 45, 60); 
@@ -35,18 +37,23 @@
          margin: 30px auto;
          box-shadow: 0px 0px 8px 8px rgba(243, 157, 18, 0.681);
       }
-
       .users_container {
          display: flex;
-         justify-content: space-between;
-         gap: 16px;
+         /* justify-content: space-around; */
+         flex-wrap: wrap;
+         gap: 8px;
       }
-
-      .user_card {
-         width: 50%;
+      .user-card {
+         margin: auto;
+         width: calc((100% / 2) - 4px);
+         border: 2px solid rgb(22, 160, 133);
+         border-radius: 12px;
+         padding: 12px;
       }
-   </style>
-   
+      .user-card-title {
+         color: rgb(22, 160, 133);
+      }
+   </style>   
 </head>
 <body>
    <h1>Homework 8</h1>   
@@ -54,9 +61,8 @@
    <div class="exrcise numbers">
       <h2>Exrcise 0</h2>
    </div>
-
    
-   <div class="exrcise strings_container">
+   <div class="exrcise strings-container">
       <h2>Exrcise 1</h2>
    </div>
 
@@ -64,7 +70,6 @@
       <h2>Exrcise 2</h2>
       <div class="users_container"></div>
    </div>
-
 
    <script src="./script.js"></script>
 </body>
