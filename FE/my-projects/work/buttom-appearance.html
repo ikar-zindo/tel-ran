@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+
+   <style>
+      * {
+         margin: 0;
+      }
+
+      .gallery {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 1px;
+         max-width: 960px;
+         width: 100%;
+      }
+
+      figure {
+         line-height: 0;
+         width: calc(100% / 4 - 3px / 4);
+      }
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      .wrapper {
+         display: flex;
+         justify-content: center;
+      }
+
+      .appearance-mode {
+         display: flex;
+         flex-direction: column;
+         gap: 1px;
+      }
+   </style>
+</head>
+<div>
+   <button class="appearance-mode-button" onclick="toggle_theme()">Appearance Mode</button>
+   <div class="wrapper">
+      <div class="gallery">
+         <figure>
+            <img src="https://via.placeholder.com/150x120" alt="" />
+         </figure>
+         <figure>
+            <img src="https://via.placeholder.com/150x120" alt="" />
+         </figure>
+         <figure>
+            <img src="https://via.placeholder.com/150" alt="" />
+         </figure>
+         <figure>
+            <img src="https://via.placeholder.com/150" alt="" />
+         </figure>
+         <figure>
+            <img src="https://via.placeholder.com/150" alt="" />
+         </figure>
+         <figure>
+            <img src="https://via.placeholder.com/150" alt="" />
+         </figure>
+         <figure>
+            <img src="https://via.placeholder.com/150" alt="" />
+         </figure>
+         <figure>
+            <img src="https://via.placeholder.com/150" alt="" />
+         </figure>
+         <figure>
+            <img src="https://via.placeholder.com/150" alt="" />
+         </figure>
+         <figure>
+            <img src="https://via.placeholder.com/150" alt="" />
+         </figure>
+      </div>
+   </div>
+
+   <script>
+      function toggle_theme() {
+         const target = document.querySelector('.gallery'); // Найти элемент
+
+         target.classList.toggle('appearance-mode'); // Переключения класса
+      }
+   </script>
+   </body>
+
+</html>
