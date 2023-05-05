@@ -37,7 +37,6 @@
 			text-align: center;
 			background-color: rgb(153, 173, 189);
 		}
-
 		p{
 			font-size: 32px;
 		}
@@ -85,7 +84,7 @@
 		const result = document.querySelector(".result");
 
 		radius.addEventListener("input", function() {
-			let square = Math.PI * (radius.value ** 2);
+			let square = Math.PI * radius.value ** 2;
 			result.textContent = square;
 		})
 
