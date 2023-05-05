@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Счётсчик символов</title>
+</head>
+<body>
+	<div>
+		<textarea name="" id="text" cols="30" rows="2" maxlength="20"></textarea>
+	</div>
+	
+	<p>
+		Колличество символов
+		<span id="counter">20</span> / 20
+	</p>
+
+	<form action="">
+		<h3>Расчёт площади</h3>
+		<input type="number" name="" id="" class="radius">
+		<p>
+			Площадь круга
+			<span class="result"></span>
+		</p>
+
+			
+
+	</form>
+
+	<script>
+		const text = document.querySelector("textarea");
+		const counter = document.querySelector("#counter");
+
+		text.addEventListener("input", function() {
+			// const maxLength = text.maxLength;
+			const maxLength = text.getAttribute("maxlength");
+			const count = text.value.length;
+			counter.textContent = maxLength - count;
+		});
+
+		//! Square
+		const radius = document.querySelector(".radius");
+		const result = document.querySelector(".result");
+
+		radius.addEventListener("input", function() {
+			let square = Math.PI * (radius.value ** 2);
+			result.textContent = square;
+		})
+
+
+
+	</script>
+</body>
+</html>
