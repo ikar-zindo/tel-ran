@@ -5,39 +5,80 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Счётсчик символов</title>
+	<style>
+		body {
+			background-color: rgb(30, 45, 60);
+			color: rgb(243, 156, 18);
+			
+		}
+		.wrapper {
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		h3 {
+			font-size: 36px;
+			color: rgb(22, 160, 133);
+		}
+		section {
+			height: 400px;
+			background-color: rgb(60, 99, 130);
+			box-shadow: 0px 0px 10px 10px rgb(243, 156, 18);
+			border-radius: 12px;
+			padding: 12px;
+			text-align: center;
+		}
+		.radius {
+			border: none;
+			outline: none;
+			font-size: 24px;
+			width: 60%;
+			text-align: center;
+			background-color: rgb(153, 173, 189);
+		}
+
+		p{
+			font-size: 32px;
+		}
+		.result {
+			color: rgb(225, 55, 55);
+		}
+
+	</style>
 </head>
 <body>
-	<div>
+	<!-- <div>
 		<textarea name="" id="text" cols="30" rows="2" maxlength="20"></textarea>
-	</div>
+	</div> -->
 	
-	<p>
+	<!-- <p>
 		Колличество символов
 		<span id="counter">20</span> / 20
-	</p>
-
-	<form action="">
-		<h3>Расчёт площади</h3>
-		<input type="number" name="" id="" class="radius">
-		<p>
-			Площадь круга
-			<span class="result"></span>
-		</p>
-
-			
-
-	</form>
+	</p> -->
+	<div class="wrapper">
+		<section>
+			<form action="">
+				<h3>Расчёт площади</h3>
+				<input type="number" name="" id="" class="radius">
+				<p>
+					Площадь круга<br>
+					<span class="result"></span>
+				</p>
+			</form>		
+		</section>
+	</div>
 
 	<script>
-		const text = document.querySelector("textarea");
-		const counter = document.querySelector("#counter");
+		// const text = document.querySelector("textarea");
+		// const counter = document.querySelector("#counter");
 
-		text.addEventListener("input", function() {
-			// const maxLength = text.maxLength;
-			const maxLength = text.getAttribute("maxlength");
-			const count = text.value.length;
-			counter.textContent = maxLength - count;
-		});
+		// text.addEventListener("input", function() {
+		// 	// const maxLength = text.maxLength;
+		// 	const maxLength = text.getAttribute("maxlength");
+		// 	const count = text.value.length;
+		// 	counter.textContent = maxLength - count;
+		// });
 
 		//! Square
 		const radius = document.querySelector(".radius");
