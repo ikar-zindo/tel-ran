@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Выезжающее меню</title>
+	<style>
+		body {
+			transition: .5s;
+		}
+		.is-dark {
+			background-color: rgb(30, 45, 60);
+			color: rgb(22, 160, 133);
+			transition: .5s;
+		}
+		.row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		/* Выезжающее меню */
+		aside {
+			position: fixed;
+			left: 0;
+			top: 0;
+			background-color: rgb(60, 99, 130);
+			height: 100%;
+			width: 250px;
+			transform: translateX(-250px);
+			transition: 1s; /* Плавное появлние */
+			opacity: 0;  /* Прозрачное появление */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+		.is-open {
+			transform: translateX(0);
+			opacity: 1; /* Прозрачное появление */
+		}
+
+		.menu-button {
+			padding: 8px;
+		}
+	</style>
+	
+	<script>
+		function toggle_theme() {
+			const target = document.querySelector('body'); // Найти элемент
+
+			target.classList.toggle('is-dark'); // Переключения класса
+		}
+
+		function toggle_menu() {
+			const sidebar = document.querySelector('aside');
+			sidebar.classList.toggle('is-open');
+		}
+	</script>
+</head>
+
+<body>
+
+	<aside onclick="toggle_menu()">
+		<button class="is-dark-click" onclick="toggle_theme()">Сменить тему</button>	
+	</aside>	
+
+	<div class="row">
+		<h1>About company</h1>
+		<button class="menu-button" onclick="toggle_menu()">Menu</button>
+	</div>	
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem nisi praesentium incidunt, labore, quia eos nulla necessitatibus, fugit magni quidem dolore iure molestias! Dignissimos magnam nostrum, maxime repudiandae, eligendi quam aliquid animi reiciendis deleniti minus ex ut. Iure iste deleniti rerum eum, ea nobis accusamus sunt quaerat vel delectus ut, laudantium sapiente, suscipit error quos cumque vitae aspernatur unde dicta repellat dolorem in doloremque. Voluptates repellendus aliquam odio corporis ut incidunt assumenda corrupti magnam et, quos laboriosam ratione expedita. Commodi qui aperiam explicabo ad eveniet beatae obcaecati. Laboriosam molestias incidunt corporis perferendis voluptatibus quia debitis exercitationem aspernatur quaerat sint cumque natus, qui odio repellat placeat ipsam assumenda? Voluptatem, fuga? Beatae veniam consequuntur dolores. Laudantium earum nemo sequi asperiores nam dolor eaque sed veritatis reprehenderit laboriosam beatae tempore officiis aut repudiandae debitis vel animi, laborum amet quo harum consectetur commodi dignissimos adipisci! Modi explicabo perferendis exercitationem pariatur amet velit quas commodi sint suscipit nobis cum dolor nostrum tempore quasi incidunt provident et animi asperiores optio, voluptatibus adipisci! Accusamus eos amet, natus voluptate eum earum quidem dolores quaerat cum alias? Consequuntur quasi ratione facere dolorum labore enim harum, vitae deserunt quaerat. Placeat consectetur quia earum voluptatum id sapiente tempora impedit iste veniam labore? Iure necessitatibus consequatur magnam saepe. Nemo obcaecati ea consequatur error porro dicta consectetur voluptatibus nesciunt perspiciatis esse laudantium debitis cum ipsam quod adipisci amet, voluptatum facilis. Itaque, ipsum suscipit? Vero perspiciatis eaque quae fuga iusto praesentium obcaecati quia incidunt dolore. Voluptas deleniti doloremque, possimus aliquid expedita error, corporis aperiam magnam delectus mollitia amet unde enim, omnis reiciendis! Veritatis minima molestias quidem beatae quae sed quaerat illo optio voluptate delectus nihil sapiente excepturi, culpa consequuntur architecto veniam, aperiam earum perspiciatis dolores magni adipisci doloribus deleniti. Nemo fugit vel doloribus repudiandae obcaecati sapiente dolorem suscipit iste dignissimos assumenda laudantium, sit libero accusantium natus distinctio cum nihil tenetur ipsam temporibus voluptatem sint dicta facere magni rerum! Ducimus laudantium rem repellat quos accusamus quasi blanditiis expedita officia voluptatem, nesciunt exercitationem distinctio facilis ad quidem numquam accusantium illo saepe deleniti iste aliquid explicabo voluptatibus consequatur quam optio! Nihil beatae, possimus eos illum culpa error magnam nam exercitationem corrupti. Debitis nihil accusamus hic recusandae! Porro quo quaerat vero praesentium eos nemo earum perferendis quasi sed. Sed blanditiis totam velit incidunt maiores quo voluptatibus excepturi placeat mollitia, consequatur laborum atque, cumque odit eos at porro obcaecati saepe debitis, consequuntur modi? Voluptas optio esse minima, accusamus suscipit officia est dolorem eligendi perspiciatis beatae dicta mollitia tempore veritatis. Veniam beatae quos natus perspiciatis, eius, maxime omnis commodi cum ipsa aperiam laborum voluptatem odit tenetur? Eum nulla iusto atque ipsum delectus? Recusandae, similique ipsum obcaecati laborum nesciunt praesentium nemo, exercitationem accusamus nisi labore nostrum, architecto fuga atque neque minima laboriosam facere laudantium impedit voluptatum officia blanditiis corporis modi cumque. Dignissimos, eligendi saepe consequatur quae architecto enim animi ullam earum illo natus. Praesentium aspernatur incidunt temporibus explicabo illo fuga debitis repellat necessitatibus illum iste ea reprehenderit vitae beatae, aliquid quam neque dolore dignissimos commodi et totam sequi assumenda, id numquam!
+
+	</p>
+</body>
+</html>
