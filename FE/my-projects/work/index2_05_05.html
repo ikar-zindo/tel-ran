@@ -9,7 +9,6 @@
 		body {
 			background-color: rgb(30, 45, 60);
 			color: rgb(243, 156, 18);
-			
 		}
 		.wrapper {
 			height: 100vh;
@@ -22,7 +21,7 @@
 			color: rgb(22, 160, 133);
 		}
 		section {
-			height: 400px;
+			height: 260px;
 			background-color: rgb(60, 99, 130);
 			box-shadow: 0px 0px 10px 10px rgb(243, 156, 18);
 			border-radius: 12px;
@@ -39,11 +38,11 @@
 		}
 		p{
 			font-size: 32px;
+			margin: 12px 0;
 		}
 		.result {
 			color: rgb(225, 55, 55);
 		}
-
 	</style>
 </head>
 <body>
@@ -55,15 +54,14 @@
 		Колличество символов
 		<span id="counter">20</span> / 20
 	</p> -->
+
 	<div class="wrapper">
 		<section>
-			<form action="">
+			<form>
 				<h3>Расчёт площади</h3>
-				<input type="number" name="" id="" class="radius">
-				<p>
-					Площадь круга<br>
-					<span class="result"></span>
-				</p>
+				<input type="number" class="radius">
+				<p>Площадь круга</p>
+				<p><span class="result"></span></p>
 			</form>		
 		</section>
 	</div>
@@ -86,10 +84,7 @@
 		radius.addEventListener("input", function() {
 			let square = Math.PI * radius.value ** 2;
 			result.textContent = square;
-		})
-
-
-
+		});
 	</script>
 </body>
 </html>
