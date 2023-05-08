@@ -1,0 +1,78 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: rgb(30, 45, 60); /* Фон */
+   color: rgb(243, 156, 18); /*Цвет текста*/
+}
+
+h1 {
+   color: rgb(22, 160, 133); /* Шрифт заголовка */
+}
+
+h2 {
+   color: rgb(225, 55, 55); /* red */
+}
+
+.wrapper {
+   width: 70%;
+   margin: 36px auto;
+   min-height: 80vh;
+   background-color: rgb(60, 99, 130);
+   box-shadow: 0px 0px 10px 10px rgb(243, 156, 18);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+}
+
+.btm {
+   margin: 40px;
+   padding: 8px 28px;
+   font-weight: 600;
+   color: rgb(22, 160, 133);
+   font-size: 20px;
+   background-color: rgb(37, 101, 88);
+   border: 0 solid rgb(243, 156, 18);
+   border-radius: 12px;
+}
+
+.btm:hover {
+   box-shadow: 0px 0px 12px 4px rgb(243, 156, 18);
+   color: rgb(243, 156, 18);
+}
+
+div:nth-child(even) {
+   color: rgb(41, 128, 185);
+}
+
+div:nth-child(odd) {
+   color: rgb(39, 174, 96);
+}
+
+section {
+   width: 80%;
+   margin: 36px auto;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   border: 2 solid rgb(243, 156, 18);
+   box-shadow: 0px 0px 10px 10px rgb(243, 156, 18);
+}
+
+.todo {
+   margin: 24px;
+   width: 40%;
+   padding: 16px;
+   background-color: rgb(37, 101, 88);
+   border-radius: 12px;
+   color: rgb(243, 156, 18);
+}
+
+.done {
+   background-color: rgb(241, 196, 15);
+   color: rgb(0, 0, 0);
+}
