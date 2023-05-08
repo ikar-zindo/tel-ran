@@ -134,19 +134,31 @@ const array_colors = [ // Объявляем массив цветов
 //! Способ 3 с циклом из массива цветов из массива кнопок
 const buttons = document.querySelectorAll(".colors-btm") // Массив с кнопками
 
-for(let i = 0; i < buttons.length; i++) {
-    buttons[i].addEventListener("click", function(event) {
-        for(let j = 0; j < array_colors.length; j++) {
-            if(event.target.id == array_colors[j].nameColor) {
-                colors.style.backgroundColor = array_colors[j].rgb;
-                colors.style.backgroundImage = array_colors[j].img;
-                colors.style.boxShadow = `0px 0px 20px 20px ${array_colors[j].rgb}`;
-            } 
-        }
-    })
-}
+// for(let i = 0; i < buttons.length; i++) // Смена цвета фона по нажатию на кнопку с помощью цикла for
+//     buttons[i].addEventListener("click", function(event) {
+//         for(let j = 0; j < array_colors.length; j++) {
+//             if(event.target.id == array_colors[j].nameColor) {
+//                 colors.style.backgroundColor = array_colors[j].rgb;
+//                 colors.style.backgroundImage = array_colors[j].img;
+//                 colors.style.boxShadow = `0px 0px 20px 20px ${array_colors[j].rgb}`;
+//             } 
+//         }
+//     })
+// }
 
 // red rgb(231, 76, 60)
 // blue rgb(41, 128, 185)
 // green: rgb(39, 174, 96)
 // yellow rgb(241, 196, 15)
+
+buttons.forEach(function(button) { // Смена цвета фона по нажатию на кнопку с помощью цикла forEach
+    button.addEventListener("click", function(event) {
+        array_colors.forEach(function(color) {
+            if (event.target.id == color.nameColor) {
+                colors.style.backgroundColor = color.rgb;
+                colors.style.backgroundImage = color.img;
+                colors.style.boxShadow = `0px 0px 20px 20px ${color.rgb}`;         
+            }
+        });
+    });
+});
