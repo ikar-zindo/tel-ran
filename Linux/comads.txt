@@ -61,3 +61,33 @@ unset NAME MYVAR // умолсание переменных
 history | grep VAR //отобразить историю переменных
 
 напомнить о GitHub
+
+top // процессы запущенные на сервере
+load average: // перегруженость системы (0.5)
+Tasks: 242 total,  // Кол-во запущенных процессов
+1 running, // запущенные процессы на устройстве
+194 sleeping, // спящие процессы
+0 stopped // процессы завершены принудительно
+0 zombie // зомби процессы
+%Cpu(s):  1.2 us,  1.7 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.2 si,  2.3 st // Информация для сисадминов
+KiB Mem :  3967972 total,   745032 free,  1026160 used,  2196780 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.  2650088 avail Mem
+
+PID // Номер процесса
+%CPU %MEM // Загруженость память и оперативной памяти
+
+ps -ef запущенные процессы
+killall - убавает все процессы по имени
+# Копирование файла на сервере/c сервера
+scp history.txt ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo
+scp ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo/his.txt c:/tel-ran/Linux
+
+# Запуск скрипта   & - запуск программы в фоновом режиме
+./demo_tail.sh &
+
+# посмотреть список запущенных процессов
+ps -ef | grep demo_tail
+
+-type 
+f – простые файлы;
+d – каталоги;
