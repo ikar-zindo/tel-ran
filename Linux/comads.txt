@@ -91,3 +91,18 @@ ps -ef | grep demo_tail
 -type 
 f – простые файлы;
 d – каталоги;
+
+# изменение прав на исполнение файла
+chmod 744 script.sh
+
+# информация о терминале
+cat /etc/os-release
+
+# принудительно запускает программу в оболочке (если ошибка в 1й строчке)
+bash script.sh
+
+# что это
+env
+
+# делаем на скрипт команлой по-умлочанию
+mv /opt/280323_morning/ikar-zindo/script.sh /home/ec2-user/bin/ikar-zindo
