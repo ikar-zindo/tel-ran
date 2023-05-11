@@ -1,0 +1,335 @@
+    1  git config --global user.name "ikar-zindo"
+    2  git config --global user.email "plag.ikar@gmail.com"
+    3  git config list
+    4  gitpwd
+    5  pwd
+    6  git init
+    7  ls - la
+    8  ls -la
+    9  git status
+   10  git add .
+   11  git status
+   12  clear
+   13  git commit -m "initial commit"
+   14  git status
+   15  git log
+   16  ssh-keygen
+   17  cd ~/.ssh
+   18  ls
+   19  cat ~/. ssh/id_rsa.
+   20  cd ~/.ssh/id_rsa
+   21  cd ~/.ssh
+   22  cat id_rsa
+   23  cat id_rsa.pub
+   24  notepad id_rsa.pub
+   25  cd c:\project
+   26  git remote add origin git@github.com:ikar-zindo/project_123.git
+   27  cd ~/.ssh
+   28  ls
+   29  cd c:/project
+   30  ls
+   31  git init
+   32  pwd
+   33  ls -la
+   34  git start
+   35  git status
+   36  git add .
+   37  git status
+   38  clear
+   39  git commit -m "initial commit"
+   40  git status
+   41  git log
+   42  git remote add origin git@github.com:ikar-zindo/project_123.git
+   43  git push -u origin master
+   44  y
+   45  git remote add origin git@github.com:ikar-zindo/project_123.git
+   46  git push -u origin master
+   47  git@github.com:ikar-zindo/ikar.git
+   48  git remote add origin git@github.com:ikar-zindo/ikar.git
+   49  git init
+   50  cd c:\project
+   51  git remote add origin git@github.com:ikar-zindo/ikar.git
+   52  cd C:\project\tel-ran
+   53  cd c:\project\tel-ran
+   54  cd C:\program files
+   55  cd C:\Program Files
+   56  cd c:cd c:cd C:\Program Files
+   57  cd c:\project
+   58  cd c:\users
+   59  cd c:\
+   60  cd c:\project\tel-ran
+   61  cd C:\project\tel-ran
+   62  clear
+   63  git config --global -l
+   64  ssh -T git@github.com
+   65  cat ~/.ssh/id_rsa.pub
+   66  git config --global -l
+   67  cd /
+   68  cd c:/tel-ran
+   69  cd c:/tel-ran/git
+   70  cd ~
+   71  cd c:\
+   72  cd c:\
+   73  cd c:
+   74  cd \
+   75  cd ~
+   76  cd c:\projects
+   77  ls -la
+   78  ls
+   79  echo "Some text" file.txt
+   80  ls
+   81  ls -la
+   82  echo "Some text" > file.txt
+   83  ls
+   84  rm file.txt
+   85  pwd
+   86  ls
+   87  ls -la
+   88  git init
+   89  ls -la
+   90  git branch
+   91  cd .git
+   92  ls
+   93  cd objects
+   94  ls -la
+   95  cd ..
+   96  cd ..
+   97  ls -la
+   98  clear
+   99  ls
+  100  ls -la
+  101  git status
+  102  cd .git
+  103  ls
+  104  cd objects
+  105  ls
+  106  cd ..
+  107  cd ..
+  108  cd c:/tel-ran
+  109  git status
+  110  git status
+  111  git add .
+  112  git commit -m "Linux history && comans $$ FE display flex"
+  113  git push -u origin master
+  114  cd c:/tel-ran
+  115  git status
+  116  git status
+  117  cd fe
+  118  git status
+  119  git add .
+  120  git status
+  121  git commit -m "project-7"
+  122  git push -u origin master
+  123  cd ..
+  124  git add .
+  125  git commit -m "Linux history"
+  126  git push -u origin master
+  127  cd c:/tel-ran
+  128  git status
+  129  git add fe/linux/comads.txt
+  130  git add /fe/linux/comads.txt
+  131  git add FE/Linux/comads.txt
+  132  git status
+  133  git add .
+  134  git status
+  135  git commit -m "comands update"
+  136  git push -u origin master
+  137  cd c:/telren
+  138  cd c:/tel-ren
+  139  cd c:/tel-ran
+  140  git add .
+  141  git commit -m "question"
+  142  git push -u origin master
+  143  cd c:/tel-ran/Linux
+  144  git add . 
+  145  git commit -m "HoWk-2"
+  146  git push -u origin master
+  147  cd c:/tel-ran
+  148  cd Linux
+  149  git status
+  150  git add .
+  151  git commit -m "HoWk-2.1"
+  152  git push -u origin master
+  153  cd c:/tel-ran
+  154  git status
+  155  cd c:/tel-ran/FE
+  156  git status
+  157  git add .
+  158  git status
+  159  git commit -m "project-11 script"
+  160  git push -u origin master
+  161  cd ..
+  162  gti add .
+  163  git add .
+  164  git status
+  165  git commit -m "tel-ran server"
+  166  git push -u origin master
+  167  git add .
+  168  git commit -m "tel-ran server"
+  169  git push -u origin master
+  170  git add .
+  171  git push -u origin master
+  172  git status
+  173  git add .
+  174  git commit -m "tel-ran server"
+  175  git push -u origin master
+  176  git add .
+  177  git commit -m "update README"
+  178  git push -u origin master
+  179  git diff
+  180  git add .
+  181  git commit -m "update README"
+  182  git push -u origin master
+  183  git add .
+  184  git commit -m "update"
+  185  git push -u origin master
+  186  cd c:/tel-ran/FE
+  187  git status
+  188  git add .
+  189  git commit -m "HoWk-6"
+  190  git push -u origin master
+  191  cat .ssh/id_rsa.pub
+  192  cd /
+  193  cd
+  194  cat .ssh/id_rsa.pub
+  195  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  196  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  197  nano .ssh/authorized_keys
+  198  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  199  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  200  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  201  cd c:/tel-ran
+  202  git add .
+  203  git commit -m "square"
+  204  git push -u origin master
+  205  cd e:/gastronomicznysos
+  206  cd ..
+  207  git clone git@github.com:ikar-zindo/gastronomicznysos.git
+  208  cd gastronomicznysos/
+  209  ls
+  210  ls -la
+  211  cd c:/tel-ran
+  212  git status
+  213  git add .
+  214  git commit -m "HoWk-7"
+  215  git push -u origin master
+  216  git add .
+  217  git commit -m "HoWk-7"
+  218  git push -u origin master
+  219  lwd
+  220  pwd
+  221  pwd
+  222  ls
+  223  cd /usr
+  224  lwd
+  225  pwd
+  226  cd .
+  227  cd ..
+  228  ls -la
+  229  cd
+  230  ls
+  231  ls -la
+  232  cd .ssh
+  233  ls
+  234  ls-la
+  235  ls -la
+  236  ssh ec2-user@linux.telran-edu.de
+  237  cat id_rsa.pub
+  238  cat id_rsa
+  239  св
+  240  cd
+  241  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  242  cd
+  243  cat .ssh/
+  244  ls -al ~/. ssh 
+  245  cd .ssh
+  246  ls
+  247  cat id_rsa
+  248  cat id_rsa.pub
+  249  cd
+  250  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  251  kill 11450
+  252  kill 26690
+  253  kill 11779
+  254  kill 27279
+  255  kill 26055
+  256  kill 11450
+  257  No such process
+  258  26054
+  259  kill 26054
+  260  kill 28012
+  261  ps -ef | grep ssh
+  262  ps -ef | grep ssh
+  263  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  264  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  265  cd e:/CodeWars
+  266  cd e:/codewars
+  267  cd
+  268  cd /
+  269  pwd
+  270  cd
+  271  pws
+  272  pwd
+  273  cd e:
+  274  cd edu/codewars
+  275  mkdir 8kyu
+  276  cd 8kyu/
+  277  cd ..
+  278  code .
+  279  git init
+  280  cd
+  281  cd e:/edu/codewars
+  282  cd
+  283  cd e:/edu/codewars
+  284  cd e:/edu/
+  285  mkdir codewars
+  286  cd e:/edu/codewars
+  287  git init
+  288  git add .
+  289  git commit -m "codewars initial commit"
+  290  git remote add origin git@github.com:ikar-zindo/codewars.git
+  291  git push -u origin master
+  292  git push -u origin master
+  293  git commit -m "codewars initial commit"
+  294  git push -u origin master
+  295  git add .
+  296  git commit -m "codewars initial commit"
+  297  git remote add origin git@github.com:ikar-zindo/codewars.git
+  298  git push -u origin master
+  299  cd c:/tel-ran
+  300  git statsu
+  301  git status
+  302  git add .
+  303  git commit -m "upload HoWk"
+  304  git status
+  305  git push -u origin master
+  306  ssh/id_rsa ec2-user@linux.telran-edu.de
+  307  cd
+  308  ssh/id_rsa ec2-user@linux.telran-edu.de
+  309  cd
+  310  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  311  cd
+  312  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  313  cd c:/tel-ran
+  314  git status
+  315  git add .
+  316  git commit -m "ikar-zindo"
+  317  git push -u origin master
+  318  git add .
+  319  git commit -m "ikar-zindo"
+  320  git push -u origin master
+  321  git add .
+  322  git commit -m "ikar-zindo"
+  323* 
+  324  history
+  325  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  326  nslookup linux.telran-edu.de
+  327  ssh ec2-user@3.123.230.216
+  328  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  329  history
+  330  ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
+  331  history
+  332  cd c:/tel-ran
+  333  ls
+  334  cd git
+  335  history >> history.txt
