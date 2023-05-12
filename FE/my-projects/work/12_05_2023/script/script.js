@@ -23,8 +23,10 @@ function hit() { // дойствие при попадании
 
 function miss(event) { // дойствие при промахивание
    if (event.target.id == "area") {
-      console.log("miss");
+      score--; 
+      count_score.innerText = `${score}`;
    }
+
 }
 
 let score = 0; // очки
