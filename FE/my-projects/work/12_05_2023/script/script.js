@@ -1,11 +1,14 @@
-// const count_score = document.querySelector("#count_score");
+
+const count_score = document.querySelector("#count_score");
 
 function start_game() {
    object.classList.toggle('start');
+   score = 0;
+   count_score.innerText = `0`;
+
 }
 
 function hit(event) {
-   const count_score = document.querySelector("#count_score");
    score++;
    count_score.innerText = `${score}`;
 }
