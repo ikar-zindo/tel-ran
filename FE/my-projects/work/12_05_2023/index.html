@@ -15,12 +15,12 @@
 
    <div id="playground">
       <header>
-         <button class="btm">Start</button>
-         <h4 class="score">Score: 0</h4>
+         <button class="btm" onclick="start_game()">Start</button>
+         <h4 class="score">Score: <span id="count_score">0</span></h4>
       </header>
 
-      <div class="game_feald" id="area">
-         <div id="object"></div>
+      <div id="area" onclick="miss(event)">
+         <div id="object" onclick="hit()"></div>
       </div>
    </div>
 
