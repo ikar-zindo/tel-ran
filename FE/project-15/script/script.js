@@ -40,7 +40,7 @@ form.addEventListener("submit", function(event) {
 
 	showProducts(); // Вызов функции продуктов после добавления продукта
 	clearInputs(); // Вызов функция отчистки полей ввода
-	showNotoficatin(); // Вызов уведомления
+	showNotoficatinAdd(); // Вызов уведомления
 });
 
 function clearInputs() { // Функция отчистки полей ввода
@@ -89,16 +89,26 @@ function deleteProduct() {
 			const id = btm.id; // Получаем id эл
 			products.splice(id, 1); // Удаление эл по индексу
 			showProducts(); // Рендер продуцтов после удаления
+			showNotoficatinDelete();// Появдение уведомления
 		});
 	});   
 }
 
 // Появдение уведомления о добвлении продукта
-function showNotoficatin() {
-	const notification = document.querySelector(".notification");
+function showNotoficatinAdd() {
+	const notification = document.querySelector(".notification-add");
 	notification.style.display = "block";
 	setTimeout(function () {
 		notification.style.display = "none";
 	}, 2000);
 }
-showNotoficatin();
+// Появдение уведомления о удалении продукта
+function showNotoficatinDelete() {
+	const notification = document.querySelector(".notification-delete");
+	notification.style.display = "block";
+	setTimeout(function () {
+		notification.style.display = "none";
+	}, 2000);
+}
+// showNotoficatinAdd();
+// showNotoficatinDelete();
