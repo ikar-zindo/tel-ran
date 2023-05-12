@@ -40,6 +40,11 @@ header {
    align-items: center;
 }
 
+.las {
+   font-size: 26px;
+   color: rgb(231, 76, 60);
+}
+
 .btm {
    margin: 0 25px;
    padding: 8px 28px;
@@ -87,7 +92,7 @@ header {
 
 #object.start {
    animation-name: movement;
-   animation-duration: 1.5s; /*  плавное анимация */
+   animation-duration: 2s; /*  плавное анимация */
    animation-iteration-count: infinite; /* бесклнечная анимация */
    animation-timing-function: linear; /*  плавное анимация */
 }
