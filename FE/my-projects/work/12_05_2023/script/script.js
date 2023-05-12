@@ -1,5 +1,5 @@
 
-const count_score = document.querySelector("#count_score");
+const count_score = document.querySelector("#count_score"); 
 const body = document.querySelector.body;
 const area = document.querySelector('#area');
 
@@ -7,7 +7,7 @@ function start_game() {
    object.classList.toggle('start');
    score = 0; // обнуление очков
    count_score.innerText = `0`;
-   // game_level_music.currentTime = 0;
+   game_level_music.currentTime = 0;
    game_level_music.play();  // Звук
 }
 
@@ -31,7 +31,7 @@ function miss(event) { // дойствие при промахивание
    if (event.target.id == "area") {
       score--; 
       count_score.innerText = `${score}`;
-         if (score == -1) {
+         if (score < 0) {
             finish_game();
          }
       miss_sound.currentTime = 0; // Звук
@@ -45,18 +45,17 @@ function finish_game() {
    area.classList.add('finish');
    object.classList.remove('start');
    count_score.innerText = `0`;
-	gameOver.style.display = "block";
 
+   gameOver.style.display = "block";
    setTimeout(function () {
-		notification.style.display = "none";
-	}, 1000);
+      gameOver.style.display = "none";
+   }, 1000);
 
    game_level_music.pause(); // Звук
 }
-
 
 let score = 0; // очки
 let object = document.querySelector('#object'); // Ищем объект Луна
 const hit_sound = new Audio('sounds/hit.wav'); // Звук
 const miss_sound = new Audio('sounds/miss.wav'); // Звук
-const game_level_music = new Audio('sounds/game-level-music.wav'); // Звук
+const game_level_music = new Audio('sounds/level-music.wav'); // Звук
