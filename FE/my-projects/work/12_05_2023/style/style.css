@@ -66,7 +66,7 @@ header {
    color: rgb(103, 72, 22);
 }
 
-#area {
+.area {
    width: 500px;
    aspect-ratio: 1;
    margin: 20px auto;
@@ -74,6 +74,7 @@ header {
    box-shadow: 0px 0px 10px 10px rgb(243, 156, 18);
    overflow: hidden;
    /* display: none; */
+
 }
 
 #object {
@@ -97,8 +98,8 @@ header {
    animation-timing-function: linear; /*  плавное анимация */
 }
 
-#area.finish {
-   
+.area.finish {
+   background-image: none;
 }
 
 /* анимация движения */
@@ -112,11 +113,9 @@ header {
 
 
 /* Game Over */
+
 .game-over {
 	display: none;
-	position: absolute;
-	right: 30px;
-	top: 20px;
 	padding: 20px 30px;
 	border-radius: 12px;
 	background-color: rgba(60, 99, 130, .8);
@@ -124,5 +123,6 @@ header {
 }
 
 .game-over-text {
+   text-align: center;
 	color: rgb(243, 156, 18);
 }

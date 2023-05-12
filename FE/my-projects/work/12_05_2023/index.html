@@ -21,15 +21,20 @@
          <h4 class="score">Score: <span id="count_score">0</span></h4>
       </header>
 
-      <div id="area" onclick="miss(event)">
+      <div  class="area" id="area" onclick="miss(event)">
          <div id="object" onclick="hit()"></div>
+         
+         <!-- Уведомление GameOver -->
+         <div class="wrapper">
+            <div class="game-over">            
+               <p class="game-over-text">Game Over</p>
+            </div>            
+         </div>
+
       </div>
    </div>
 
-   <div class="game-over"> 
-		<!-- Уведомление GameOver -->
-		<p class="game-over-text">Game Over</p>
-	</div>
+
 
    <script src="./script/script.js"></script>
 </body>
