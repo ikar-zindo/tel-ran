@@ -1,10 +1,18 @@
 
 const count_score = document.querySelector("#count_score"); 
-const body = document.querySelector.body;
 const area = document.querySelector('#area');
+const gameOver = document.querySelector(".game-over");
+
+let score = 0; // очки
+let object = document.querySelector('#object'); // Ищем объект Луна
+const hit_sound = new Audio('sounds/hit.wav'); // Звук
+const miss_sound = new Audio('sounds/miss.wav'); // Звук
+const game_level_music = new Audio('sounds/level-music.wav'); // Звук
 
 function start_game() {
+   area.classList.remove('finish');
    object.classList.toggle('start');
+   gameOver.style.display = "none";
    score = 0; // обнуление очков
    count_score.innerText = `0`;
    game_level_music.currentTime = 0;
@@ -47,15 +55,6 @@ function finish_game() {
    count_score.innerText = `0`;
 
    gameOver.style.display = "block";
-   setTimeout(function () {
-      gameOver.style.display = "none";
-   }, 1000);
 
    game_level_music.pause(); // Звук
 }
-
-let score = 0; // очки
-let object = document.querySelector('#object'); // Ищем объект Луна
-const hit_sound = new Audio('sounds/hit.wav'); // Звук
-const miss_sound = new Audio('sounds/miss.wav'); // Звук
-const game_level_music = new Audio('sounds/level-music.wav'); // Звук
