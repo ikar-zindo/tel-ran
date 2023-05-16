@@ -10,6 +10,7 @@ public class Main {
 
       System.out.print("Enter decimal number: ");
       int num = sc.nextInt(); // Заносим в переменную число из консоли
+      sc.close(); // закрываем Scanner
 
       System.out.println("Decimal:  " + num); // 10
       System.out.println("Binary:  " + Integer.toBinaryString(num)); // 10 -> 2
