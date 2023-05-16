@@ -8,6 +8,7 @@ public class Main {
    public static void main(String[] args) {
       Scanner sc = new Scanner(System.in); // Запускаем Scanner
 
+      System.out.print("Enter decimal number: ");
       int num = sc.nextInt(); // Заносим в переменную число из консоли
 
       System.out.println("Decimal:  " + num); // 10
