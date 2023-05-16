@@ -6,9 +6,10 @@ import java.util.Scanner;
 */
 public class Main {
    public static void main(String[] args) {
-      Scanner sc = new Scanner(System.in); // Запускаем Scanner
-
+      
       System.out.print("Enter decimal number: ");
+
+      Scanner sc = new Scanner(System.in); // Запускаем Scanner
       int num = sc.nextInt(); // Заносим в переменную число из консоли
       sc.close(); // закрываем Scanner
 
