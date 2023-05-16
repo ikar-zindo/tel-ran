@@ -20,5 +20,4 @@ public class Car {
       String result = "Our auto is " + fabric + ", year = " + year;
       System.out.println(result);
    }
-
 }

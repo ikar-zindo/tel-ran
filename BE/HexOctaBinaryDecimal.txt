@@ -1,0 +1,14 @@
+// 16 -> 10
+int q16 = 0x21e;
+// 10 -> 16
+System.out.println(Integer.toHexString(q));
+
+// 8 -> 10
+int q8 = 01036;
+// 8 -> 10
+System.out.println(Integer.toOctalString(542));
+
+// 2 -> 10
+int q2 = 0b1000011110;
+// 10 -> 2
+System.out.println(Integer.toBinaryString(q));
