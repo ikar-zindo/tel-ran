@@ -7,6 +7,10 @@ h1 {
    color: rgb(22, 160, 133); /* Шрифт заголовка */
 }
 
+h2 {
+	 color: rgb(225, 55, 55); /* red */
+}
+
 div {
    box-shadow: 0px 0px 12px 8px rgb(243, 156, 18);
    background-image: url(./project-2/img/space-10.jpg);
@@ -31,3 +35,20 @@ section {
    blue rgb(41, 128, 185)
    yellow rgb(241, 196, 15)
 */
+
+/* Выезжающее меню */
+aside {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgb(60, 99, 130);
+	height: 100%;
+	width: 250px;
+	transform: translateX(-250px);
+	transition: 1s; /* Плавное появлние */
+	opacity: 0;  /* Прозрачное появление */
+}
+.is-open {
+	transform: translateX(0);
+	opacity: 1; /* Прозрачное появление */
+}
