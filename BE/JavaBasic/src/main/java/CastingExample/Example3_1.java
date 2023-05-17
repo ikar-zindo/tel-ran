@@ -1,6 +1,6 @@
 package CastingExample;
 
-public class Example3 {
+public class Example3_1 {
    public static void main(String[] args) {
       // S = Pi * r^2
 
