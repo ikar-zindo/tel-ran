@@ -43,7 +43,7 @@ public class BinaryExample {
       System.out.println(Integer.toBinaryString(q));
 
       // более долгий путь 2 -> 10
-      double result = 1*Math.pow(2, 9) + 1*Math.pow(2, 4) + 1*Math.pow(2, 3) + 1*Math.pow(2, 2) + 1*Math.pow(2, 1);
+      double result = 1 * Math.pow(2, 9) + 1 * Math.pow(2, 4) + 1 * Math.pow(2, 3) + 1 * Math.pow(2, 2) + 1 * Math.pow(2, 1);
 
       // более короткий путь 2 -> 10
       System.out.println(q2);
