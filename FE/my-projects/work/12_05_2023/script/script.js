@@ -1,4 +1,3 @@
-
 const count_score = document.querySelector("#count_score");  // Ищем объект Луна
 const area = document.querySelector('#area'); // Ищем объект игровое поле
 const gameOver = document.querySelector(".game-over") // Ищем сообшение Game Over
@@ -55,7 +54,6 @@ function miss(event) { // дойствие при промахивание
 }
 
 function finish_game() {
-   const gameOver = document.querySelector(".game-over");
    object.classList.remove('start');
    count_score.innerText = `0`;
    gameOver.style.display = "block";
