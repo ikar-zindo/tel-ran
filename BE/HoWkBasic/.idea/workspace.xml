@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_19_05_23/ScannerExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_19_05_23/Сondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/FirstHoWk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/SecondHoWk.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FirstHoWk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FirstHoWk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SecondHoWk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SecondHoWk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/target/classes/SS_19_05_23/Example1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/target/classes/SS_19_05_23/Example1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +48,24 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/tel-ran/BE/HoWkBasic"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="SecondHoWk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SecondHoWk" />
+      <module name="HoWkBasic" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SecondHoWk" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
