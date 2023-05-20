@@ -5,29 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HoWkBasic/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HoWkBasic/src/main/java/FirstHoWk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../HoWkBasic/src/main/java/SecondHoWk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_19_05_23/ArrayExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_19_05_23/CharExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_19_05_23/Example.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_19_05_23/Example1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_19_05_23/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SS_19_05_23/Example.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SS_19_05_23/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_19_05_23/ScannerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_19_05_23/Сondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HoWkBasic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HoWkBasic/src/main/java/FirstHoWk.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/src/main/java/FirstHoWk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HoWkBasic/src/main/java/SecondHoWk.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/src/main/java/SecondHoWk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SS_19_05_23/Example1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SS_19_05_23/Example1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Example1">
+  <component name="RunManager" selected="Application.Сondition">
     <configuration name="ArrayExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SS_19_05_23.ArrayExample" />
       <module name="SummarySession" />
@@ -96,19 +81,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_19_05_23.Example" />
-      <module name="SummarySession" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SS_19_05_23.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Example1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SS_19_05_23.Example1" />
       <module name="SummarySession" />
@@ -122,8 +94,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_19_05_23.Main" />
+    <configuration name="ScannerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_19_05_23.ScannerExample" />
+      <module name="SummarySession" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SS_19_05_23.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Сondition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_19_05_23.Сondition" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
@@ -137,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Сondition" />
+        <item itemvalue="Application.ScannerExample" />
         <item itemvalue="Application.Example1" />
         <item itemvalue="Application.ArrayExample" />
         <item itemvalue="Application.CharExample" />
-        <item itemvalue="Application.Example" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +140,17 @@
       <updated>1684482820684</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
