@@ -8,6 +8,15 @@ import java.util.Scanner;
 
 public class SecondHoWk {
    public static void main(String[] args) {
+      char c = '4'; // объявляем char
 
+      int q = Integer.parseInt(String.valueOf(c)); // 1й метод char -> int
+      int w = Character.getNumericValue(c); // 2й метод char -> int
+
+      int result1 = q + 6; // 1я проверка
+      int result2 = w + 6; // 2я проверка
+
+      System.out.println("First output: " + result1); // Вывод: 10
+      System.out.println("Second output: " + result2); // Вывод: 10
    }
 }
