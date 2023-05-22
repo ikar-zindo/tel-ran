@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/target/classes/FirstHoWk.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/SecondHoWk.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Third.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExample1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExample2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExample3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExample4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExample4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/Third.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SecondHoWk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SecondHoWk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SimpleMathOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SimpleMathOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/com/auto/germany/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/com/auto/germany/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/target/classes/com/auto/germany/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/target/classes/com/auto/germany/Car.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +53,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/tel-ran/BE/HoWkBasic"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/tel-ran/BE/HoWkBasic&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Application.Third">
     <configuration name="SecondHoWk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SecondHoWk" />
       <module name="HoWkBasic" />
@@ -60,8 +70,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Third" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Third" />
+      <module name="HoWkBasic" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Third" />
         <item itemvalue="Application.SecondHoWk" />
       </list>
     </recent_temporary>
