@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Third.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExample1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExample2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExample3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExample4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExample4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/Third.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/src/main/java/First.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SecondHoWk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SecondHoWk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SimpleMathOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SimpleMathOperations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/StringExamples.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/com/auto/germany/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/com/auto/germany/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/target/classes/com/auto/germany/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/target/classes/com/auto/germany/Car.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
