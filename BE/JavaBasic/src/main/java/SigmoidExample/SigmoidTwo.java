@@ -15,7 +15,7 @@ public class SigmoidTwo {
       sum();
       div();
 
-      System.out.println(getClass().getName() + " = " + resultFinal);
+      System.out.println(resultFinal);
    }
 
    public double neg() {
