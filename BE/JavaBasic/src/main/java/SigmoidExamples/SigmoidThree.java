@@ -1,4 +1,4 @@
-package SigmoidExample;
+package SigmoidExamples;
 
 public class SigmoidThree {
    //      final 4 stage

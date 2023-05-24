@@ -1,4 +1,4 @@
-package SigmoidExample;
+package SigmoidExamples;
 
 public class SigmoidInit {
    public static void main(String[] args) {
