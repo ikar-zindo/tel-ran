@@ -56,7 +56,7 @@ public class First {
       average = sumMyArray2 / myArray2.length; // вычесляем среднее арифметическое
       System.out.println("Среднее арифметическое массива double: " + average); // Выыод значения в консоль
 
-      // Exercise 4
+      // !!! Exercise 4
       List<String> st = new ArrayList<>(); // Список строк
       st.add("Ivan");
       st.add("Ivan");
@@ -84,6 +84,15 @@ public class First {
          }
       }
       System.out.println(st);
+
+      // Exercise 5
+      int[] myArray3 = {78, 14, 13, 54, 35, 16, 75}; // массив целых чисел для манипуляций
+
+      for (int i = 0; i < myArray3.length; i++) {
+         if (myArray1[i] > myArray3[i + 1]) {
+
+         }
+      }
    }
 
    // Метод для Exercise 2
