@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /*
 0. Напишите программу, которая принимает массив целых чисел и выводит на экран только нечетные числа.
 1. Напишите программу, которая находит сумму элементов в массиве целых чисел.
@@ -54,6 +57,33 @@ public class First {
       System.out.println("Среднее арифметическое массива double: " + average); // Выыод значения в консоль
 
       // Exercise 4
+      List<String> st = new ArrayList<>(); // Список строк
+      st.add("Ivan");
+      st.add("Ivan");
+      st.add("Ivan");
+      st.add("Maja");
+      st.add("Maja");
+      st.add("Maja");
+      st.add("Monika");
+      st.add("Monika");
+      st.add("Bartek");
+
+      for (int i = 0; i < st.size(); i++) {
+         System.out.println(st);
+         for (int j = i + 1; j < st.size(); j++) {
+            if (st.get(i) == st.get(j)) {
+
+               System.out.println(st.get(0));
+               System.out.println(st.get(1));
+               System.out.println(st.get(2));
+               st.remove(i);
+            }
+            System.out.println(i);
+            System.out.println(j);
+            System.out.println();
+         }
+      }
+      System.out.println(st);
    }
 
    // Метод для Exercise 2

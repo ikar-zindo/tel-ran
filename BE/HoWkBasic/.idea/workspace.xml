@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/src/main/java/First.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/Third/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/Third/Third.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
