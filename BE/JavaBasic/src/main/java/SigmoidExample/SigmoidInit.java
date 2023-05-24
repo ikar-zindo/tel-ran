@@ -4,7 +4,7 @@ public class SigmoidInit {
    public static void main(String[] args) {
       // S(x) = 1 / (1 + e^(-x))
 
-      double x = 1.7;
+      double x = 1.15;
 
       // classic
       double result0 = 1 / (1+ Math.pow(Math.E, (x * (-1))));
