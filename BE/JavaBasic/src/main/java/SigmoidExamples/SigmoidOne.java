@@ -1,4 +1,4 @@
-package SigmoidExample;
+package SigmoidExamples;
 
 public class SigmoidOne {
    // S(x) = 1 / (1 + e^(-x))
