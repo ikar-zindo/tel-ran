@@ -6,20 +6,24 @@
 ls -la
 pwd посмотреть путь
 cd
-mkdir -p //создать дерево папок
-touch //создать файл
-echo "Hello, World!" //Вывод текста
+mkdir -p # создать дерево папок
+touch # создать файл
+echo "Hello, World!" # Вывод текста
 tree
 rm rmdir -r
 cp mv
 ls -R
 history > /root/history-2023-04
 export_file /root/history-2023-04
-wc //подсчёт количества строк  {слов}{строк}{сиволы}
-| 'pipe' //переадресация *cat /etc/group | tail
-cat // посмотреть внутрь файла и вывести на экран
-cat /etc/group | head -2 | tail -1 //вытащить строки tail(снизу) head(сверху)
-grep //поиск по символу -w //слово целиком
+wc # подсчёт количества строк  {слов}{строк}{сиволы}
+| 'pipe' # переадресация *cat /etc/group | tail
+cat # посмотреть внутрь файла и вывести на экран
+cat /etc/group | head -2 | tail -1 # вытащить строки tail(снизу) head(сверху)
+
+./demo_tail.sh &
+tail -f File.txt # динамически отображает изменение в файле
+
+grep # поиск по символу -w # слово целиком
 awk /утилита для извлечения текста
 df -h | grep -w / | awk '{print $5}' выведет на экран 5й столбец
 env стандартые переменные по умолсанию
@@ -32,14 +36,17 @@ histoy
 
 date +'%H_%M:%S' '%U' //вывод даты
 
-df //DiscFull - занятость разделов, память -h //human reed
+df # DiscFull - занятость разделов, память -h //human reed
 
-> // перезапись файла (все предыдущие данные будут удалены)
->> // дозапись в файл в конец
+> # перезапись файла (все предыдущие данные будут удалены)
+>> # дозапись в файл в конец
 
 localhost:~# df -h | grep -w / | awk '{print $5}'
 47%
 localhost:~# df -h | grep -w / | awk '{print $5}' | sed 's/%/&&/g'
+
+sed -i 's/:/-/g' File.txt
+sed -i '4d' # удалит 4ю сроки
 
 vi
 Ctrl + Z
@@ -56,9 +63,9 @@ u - undo last action
 dd - delete the current line ( i mode not needed) 
 Del - delete single character ( i mode not needed)
 
-export MYVAR=hello //добавление переменных
-unset NAME MYVAR // умолсание переменных
-history | grep VAR //отобразить историю переменных
+export MYVAR=hello # добавление переменных
+unset NAME MYVAR # умолсание переменных
+history | grep VAR # отобразить историю переменных
 
 напомнить о GitHub
 
@@ -76,8 +83,9 @@ KiB Swap:        0 total,        0 free,        0 used.  2650088 avail Mem
 PID // Номер процесса
 %CPU %MEM // Загруженость память и оперативной памяти
 
-ps -ef запущенные процессы
-killall - убавает все процессы по имени
+ps -ef # запущенные процессы
+killall # убавает все процессы по имени
+
 # Копирование файла на сервере/c сервера
 scp history.txt ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo
 scp ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo/his.txt c:/tel-ran/Linux
@@ -95,14 +103,14 @@ d – каталоги;
 # изменение прав на исполнение файла
 chmod 744 script.sh
 
+
 # информация о терминале
 cat /etc/os-release
 
 # принудительно запускает программу в оболочке (если ошибка в 1й строчке)
 bash script.sh
 
-# что это
-env
+env # вернет нам все объявленные переменные
 
-# делаем на скрипт команлой по-умлочанию
+# делаем скрипт командой по-умлочанию
 mv /opt/280323_morning/ikar-zindo/script.sh /home/ec2-user/bin/ikar-zindo
