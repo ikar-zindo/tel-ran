@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_19_05_23/ScannerExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_19_05_23/Сondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HoWkBasic/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HoWkBasic/src/main/java/FirstHoWk.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/src/main/java/FirstHoWk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HoWkBasic/src/main/java/SecondHoWk.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/src/main/java/SecondHoWk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/RandomExamples/Example2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HoWk_25_05_23/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_26_05_23/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_26_05_23/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_26_05_23/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_26_05_23/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_26_05_23/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_26_05_23/Main3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SS_19_05_23/Example1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SS_19_05_23/Example1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +53,18 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/tel-ran/BE/SummarySession"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Сondition">
-    <configuration name="ArrayExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_19_05_23.ArrayExample" />
+  <component name="RunManager" selected="Application.Main3">
+    <configuration name="HoWk_25_05_23.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HoWk_25_05_23.Main" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_19_05_23.*" />
+          <option name="PATTERN" value="HoWk_25_05_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CharExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_19_05_23.CharExample" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_26_05_23.Main" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_19_05_23.*" />
+          <option name="PATTERN" value="SS_26_05_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Example1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_19_05_23.Example1" />
+    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_26_05_23.Main1" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_19_05_23.*" />
+          <option name="PATTERN" value="SS_26_05_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScannerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_19_05_23.ScannerExample" />
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_26_05_23.Main2" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_19_05_23.*" />
+          <option name="PATTERN" value="SS_26_05_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Сondition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_19_05_23.Сondition" />
+    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_26_05_23.Main3" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_19_05_23.*" />
+          <option name="PATTERN" value="SS_26_05_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Сondition" />
-        <item itemvalue="Application.ScannerExample" />
-        <item itemvalue="Application.Example1" />
-        <item itemvalue="Application.ArrayExample" />
-        <item itemvalue="Application.CharExample" />
+        <item itemvalue="Application.Main3" />
+        <item itemvalue="Application.HoWk_25_05_23.Main" />
+        <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Main1" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
