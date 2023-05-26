@@ -51,11 +51,11 @@
 }]]></component>
   <component name="RunManager" selected="Application.Fifth">
     <configuration name="Fifth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FourthHoWk.Fifth" />
+      <option name="MAIN_CLASS_NAME" value="Fifth" />
       <module name="HoWkBasic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FourthHoWk.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,7 +68,7 @@
       <module name="HoWkBasic" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FourthHoWk.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
