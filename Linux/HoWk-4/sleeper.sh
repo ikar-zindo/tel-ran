@@ -7,7 +7,7 @@
 #	sleep 5
 	done
 
-	lscpu >> /opt/280323_morning/ikar-zindo/info.txt
+	lscpu > /opt/280323_morning/ikar-zindo/info.txt
 
 	cat /etc/os-release | head -1 | awk 'BEGIN{RS="NAME="}{print $1}' | sed 's/"//' >> /opt/280323_morning/ikar-zindo/info.txt
 
