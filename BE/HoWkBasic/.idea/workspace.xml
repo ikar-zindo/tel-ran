@@ -49,6 +49,11 @@
     "last_opened_file_path": "C:/tel-ran/BE/JavaBasic"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Fifth">
     <configuration name="Fifth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fifth" />
