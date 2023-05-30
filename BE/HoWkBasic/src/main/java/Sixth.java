@@ -15,6 +15,7 @@ public class Sixth {
    public static void endTimeInHours(int hour) {
       System.out.println(getTime(hour));
    }
+   
    public static String getTime(int hour) {
       if (hour < 1) {
          return "До конца смены осталось меньше часа.";
