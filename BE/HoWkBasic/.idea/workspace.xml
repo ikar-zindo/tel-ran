@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Sixth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sixth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Seventh.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/tel-ran/BE/JavaBasic"
+    "last_opened_file_path": "C:/tel-ran/BE/HoWkBasic"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -54,7 +54,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sixth">
+  <component name="RunManager" selected="Application.Seventh">
     <configuration name="Fifth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fifth" />
       <module name="HoWkBasic" />
@@ -81,8 +81,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecondHoWk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SecondHoWk" />
+    <configuration name="Seventh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Seventh" />
       <module name="HoWkBasic" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -104,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Seventh" />
         <item itemvalue="Application.Sixth" />
         <item itemvalue="Application.Fifth" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Third" />
-        <item itemvalue="Application.SecondHoWk" />
       </list>
     </recent_temporary>
   </component>
