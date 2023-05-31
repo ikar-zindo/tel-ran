@@ -4,7 +4,7 @@ public class Seventh {
    public static void main(String[] args) {
 
       Scanner sc = new Scanner(System.in);
-      System.out.print("Введите число от 1 до 7 (номер для недели: ");
+      System.out.print("Введите число от 1 до 7 (номер для недели): ");
       int date = sc.nextInt();
       sc.close();
 
