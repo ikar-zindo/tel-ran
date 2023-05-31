@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="" />
+    <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/Sixth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Sixth.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/tel-ran/BE/HoWkBasic"
+    "last_opened_file_path": "C:/tel-ran/BE/JavaBasic"
   }
 }]]></component>
   <component name="RecentsManager">
