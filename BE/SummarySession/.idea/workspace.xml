@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../HoWkBasic/src/main/java/FourthHoWk/Fifth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HoWkBasic/target/classes/Seventh.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/target/classes/Seventh.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,13 +36,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2Q0Fv0P6Kzma51lgb0XHXjC9yY5" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -41,15 +44,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/tel-ran/BE/SummarySession"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/tel-ran/BE/SummarySession&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main3">
     <configuration name="HoWk_25_05_23.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HoWk_25_05_23.Main" />
@@ -134,8 +143,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684482820684</updated>
+      <workItem from="1685606248418" duration="985000" />
+      <workItem from="1685607354019" duration="710000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

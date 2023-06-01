@@ -3,15 +3,20 @@
 2. Переменных пешется БОЛЬШИМИ БУВАМИ
 
 
+Ричард МакКаллистер
+
+
 ls -la
 pwd посмотреть путь
 cd
-mkdir -p # создать дерево папок
+mkdir -p # создать дерево папокwc
 touch # создать файл
-echo "Hello, World!" # Вывод текста
+echo "Hello, World!" # Вывод текста 
+	-n не переводить строку
 tree
 rm rmdir -r
 cp mv
+	-r # для рекурсивного удаления/копирования (со всеми вложениями)
 ls -R
 history > /root/history-2023-04
 export_file /root/history-2023-04
@@ -95,6 +100,8 @@ scp ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo/his.txt c:/tel-r
 
 # посмотреть список запущенных процессов
 ps -ef | grep demo_tail
+ps -ef | tail -n +2 | wc -l
+
 
 -type 
 f – простые файлы;
@@ -103,6 +110,7 @@ d – каталоги;
 # изменение прав на исполнение файла
 chmod 744 script.sh
 
+#!/bin/bash
 
 # информация о терминале
 cat /etc/os-release
@@ -114,3 +122,10 @@ env # вернет нам все объявленные переменные
 
 # делаем скрипт командой по-умлочанию
 mv /opt/280323_morning/ikar-zindo/script.sh /home/ec2-user/bin/ikar-zindo
+
+# спросить Славу о НаТаскс и группы?
+
+crontab 
+	-l
+	-e  edit - редактирование, показать все спланированые задачи
+	-r удалить все спланированые задачи
