@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="" />
+    <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Eighth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Seventh.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Seventh.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SummarySession/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,15 +34,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8eec62d1-5dfd-4595-819c-af4973dcc215" />
+        <option name="url" value="git@github.com:ikar-zindo/tel-ran.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2Q0E0nCwnsv8pOmhW5DEULmyInG" />
   <component name="ProjectLevelVcsManager">
@@ -44,7 +64,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/tel-ran/BE/HoWkBasic"
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/tel-ran/BE/HoWkBasic",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -52,7 +78,14 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Seventh">
+  <component name="RunManager" selected="Application.Eighth">
+    <configuration name="Eighth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Eighth" />
+      <module name="HoWkBasic" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Fifth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fifth" />
       <module name="HoWkBasic" />
@@ -93,20 +126,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Third" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Third" />
-      <module name="HoWkBasic" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Eighth" />
         <item itemvalue="Application.Seventh" />
         <item itemvalue="Application.Sixth" />
         <item itemvalue="Application.Fifth" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Third" />
       </list>
     </recent_temporary>
   </component>
@@ -118,8 +144,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684481879905</updated>
+      <workItem from="1685605684058" duration="859000" />
+      <workItem from="1685624106031" duration="276000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
