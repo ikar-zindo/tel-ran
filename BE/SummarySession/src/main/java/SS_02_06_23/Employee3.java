@@ -2,8 +2,8 @@ package SS_02_06_23;
 
 public class Employee3 {
     private int baseSalary;
-    public int extraHours;
-    public int hourlyRate;
+    private int extraHours;
+    private int hourlyRate;
 
     public int getBaseSalary(){
         return baseSalary;
@@ -38,6 +38,6 @@ public class Employee3 {
     }
 
     public int calculateTax(){
-        return baseSalary+extraHours*hourlyRate;
+        return baseSalary+ getExtraHours() * getHourlyRate();
     }
 }
