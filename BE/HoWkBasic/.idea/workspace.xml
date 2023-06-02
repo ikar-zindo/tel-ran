@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_02_06_23/PrimeNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_02_06_23/Employee3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_02_06_23/Employee3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_02_06_23/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_02_06_23/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SummarySession/target/classes/SS_02_06_23/Employee3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/target/classes/SS_02_06_23/Employee3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SummarySession/target/classes/SS_02_06_23/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/target/classes/SS_02_06_23/Main2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

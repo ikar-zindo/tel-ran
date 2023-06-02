@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23">
+    <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23 upload">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_02_06_23/PrimeNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SS_02_06_23/Employee3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SS_02_06_23/Employee3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SS_02_06_23/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SS_02_06_23/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SS_02_06_23/Employee3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SS_02_06_23/Employee3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SS_02_06_23/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SS_02_06_23/Main2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +53,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main2">
-    <configuration name="DayOfWeek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HoWk_before_02_06_23.DayOfWeek" />
-      <module name="SummarySession" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HoWk_before_02_06_23.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.PrimeNumberTest">
     <configuration name="DayOfWeekArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HoWk_before_02_06_23.DayOfWeekArray" />
       <module name="SummarySession" />
@@ -115,13 +106,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrimeNumberTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_02_06_23.PrimeNumberTest" />
+      <module name="SummarySession" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SS_02_06_23.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PrimeNumberTest" />
         <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Main1" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.DayOfWeekArray" />
-        <item itemvalue="Application.DayOfWeek" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +139,7 @@
       <updated>1684482820684</updated>
       <workItem from="1685606248418" duration="985000" />
       <workItem from="1685607354019" duration="710000" />
-      <workItem from="1685691143070" duration="7479000" />
+      <workItem from="1685691143070" duration="9655000" />
     </task>
     <task id="LOCAL-00001" summary="SS_02_06_23">
       <created>1685699135669</created>
@@ -144,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685699135669</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="SS_02_06_23 upload">
+      <created>1685699607763</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1685699607763</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +175,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="SS_02_06_23" />
-    <option name="LAST_COMMIT_MESSAGE" value="SS_02_06_23" />
+    <MESSAGE value="SS_02_06_23 upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="SS_02_06_23 upload" />
   </component>
 </project>
