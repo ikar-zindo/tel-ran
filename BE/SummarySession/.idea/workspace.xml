@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23 upload">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_02_06_23/PrimeNumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/TernaryExamples/Example1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Linux/testscript.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/target/classes/SwitchExamples/Example1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/target/classes/SwitchExamples/Example1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaBasic/target/classes/SwitchExamples/Example5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/target/classes/SwitchExamples/Example5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SS_02_06_23/Employee3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SS_02_06_23/Employee3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SS_02_06_23/Employee3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SS_02_06_23/Employee3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/SS_02_06_23/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SS_02_06_23/Main2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Linux/comands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Linux/comands.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/tel-ran/BE/HoWkBasic",
+    "last_opened_file_path": "C:/tel-ran/BE/SummarySession",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -140,6 +149,8 @@
       <workItem from="1685606248418" duration="985000" />
       <workItem from="1685607354019" duration="710000" />
       <workItem from="1685691143070" duration="9655000" />
+      <workItem from="1685813169170" duration="227000" />
+      <workItem from="1685951412083" duration="1323000" />
     </task>
     <task id="LOCAL-00001" summary="SS_02_06_23">
       <created>1685699135669</created>
