@@ -3,12 +3,12 @@ package SwitchExamples;
 import java.util.Scanner;
 
 public class Example1 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+   public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter pls number of day in week [1..7]: ");
-        int day = sc.nextInt();
-        sc.close();
+      System.out.print("Enter pls number of day in week [1..7]: ");
+      int day = sc.nextInt();
+      sc.close();
 
 //        if (day == 1) {
 //            System.out.println("MO");
@@ -29,38 +29,38 @@ public class Example1 {
 //        }
 
 
-        switch (day) {
+      switch (day) {
 
-            case 1:
-                System.out.println("MO");
-                break;
+         case 1:
+            System.out.println("MO");
+            break;
 
-            case 2:
-                System.out.println("TU");
-                break;
+         case 2:
+            System.out.println("TU");
+            break;
 
-            case 3:
-                System.out.println("WE");
-                break;
+         case 3:
+            System.out.println("WE");
+            break;
 
-            case 4:
-                System.out.println("TH");
-                break;
+         case 4:
+            System.out.println("TH");
+            break;
 
-            case 5:
-                System.out.println("FR");
-                break;
+         case 5:
+            System.out.println("FR");
+            break;
 
-            case 6:
-                System.out.println("SA");
-                break;
+         case 6:
+            System.out.println("SA");
+            break;
 
-            case 7:
-                System.out.println("SU");
-                break;
+         case 7:
+            System.out.println("SU");
+            break;
 
-            default:
-                System.out.println("Error in day");
-        }
-    }
+         default:
+            System.out.println("Error in day");
+      }
+   }
 }
