@@ -5,19 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23 upload">
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/TernaryExamples/Example1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Linux/testscript.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example4.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example5.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/SwitchExamples/Example5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/target/classes/SwitchExamples/Example1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/target/classes/SwitchExamples/Example1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/target/classes/SwitchExamples/Example5.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/target/classes/SwitchExamples/Example5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Linux/comands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Linux/comands.txt" afterDir="false" />
     </list>
