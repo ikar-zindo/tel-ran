@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_02_06_23/PrimeNumberTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Ninth.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_02_06_23/Employee3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_02_06_23/Employee3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/target/classes/SS_02_06_23/Employee3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/target/classes/SS_02_06_23/Employee3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/target/classes/SS_02_06_23/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/target/classes/SS_02_06_23/Main2.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +67,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Eighth">
+  <component name="RunManager" selected="Application.Ninth">
     <configuration name="Eighth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Eighth" />
       <module name="HoWkBasic" />
@@ -92,15 +88,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FourthHoWk.Main" />
+    <configuration name="Ninth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ninth" />
       <module name="HoWkBasic" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ninth" />
         <item itemvalue="Application.Eighth" />
         <item itemvalue="Application.Seventh" />
         <item itemvalue="Application.Sixth" />
         <item itemvalue="Application.Fifth" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +130,7 @@
       <workItem from="1685605684058" duration="859000" />
       <workItem from="1685624106031" duration="276000" />
       <workItem from="1685691327323" duration="3137000" />
+      <workItem from="1685965181268" duration="300000" />
     </task>
     <servers />
   </component>
