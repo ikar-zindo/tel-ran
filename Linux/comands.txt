@@ -1,6 +1,6 @@
 Джентльменские соглашения:
 1. "Текст пришется в двойных ковычках"
-2. Переменных пешется БОЛЬШИМИ БУВАМИ
+2. Переменных пешутся БОЛЬШИМИ БУВАМИ
 
 Ричард Мэтью Столлман
 
@@ -46,6 +46,7 @@ histoy
 2. стандартый поток вывода ошибок //Standert out errow
 
  date +'%H_%M:%S' '%U' //вывод даты
+	date=$(date +'%Y.%m.%d') # переменная, алтернаитва := date=`date +%Y.%m.%d`
 
  df # DiscFull - занятость разделов, память -h //human reed
 
@@ -60,8 +61,10 @@ sed -i 's/:/-/g' File.txt
 sed -i '4d' # удалит 4ю сроки
 
  vi
-Ctrl + Z
+Ctrl + Z := приостановка vi
+fg := вобнавление vi
 	1. попадаем в командный режим
+i - insert text, edit mode. ECS to exit
 ZZ (Note: capitals) - Save and exit
 :q! - discard all changes, since the last save, and exit
 :w - save file but don't exit
@@ -69,7 +72,6 @@ ZZ (Note: capitals) - Save and exit
 :x - again, save and exit
 G  (shift g) - move to the last line
 / - search (n - next) 
-i - insert text, edit mode. ECS to exit 
 u - undo last action
 dd - delete the current line ( i mode not needed) 
 Del - delete single character ( i mode not needed)
@@ -102,7 +104,7 @@ scp history.txt ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo
 scp ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo/his.txt c:/tel-ran/Linux
 
  # Запуск скрипта   & - запуск программы в фоновом режиме
-./demo_tail.sh &
+./script.sh &
 
 # посмотреть список запущенных процессов
 ps -ef | tail -n +2 | wc -l
@@ -115,6 +117,11 @@ d – каталоги;
 
  # изменение прав на исполнение файла
 chmod 744 script.sh
+		[a]all
+[u]user	[g]group	[0]other
+ r w x	  r w x 	  r w x
+ 1 1 1	  1 0 1	      1 0 1
+   7		5			5
 
  #!/bin/bash
 
@@ -134,7 +141,17 @@ mv /opt/280323_morning/ikar-zindo/script.sh /home/ec2-user/bin/ikar-zindo
 read name - ввод данных с клавиатуры и заносит в переменнею name
 
  # Утилита, позволяющая выполнять скрипты на сервере в назначенное время с заранее определенной периодичностью
+* * * * * /tmp/script.sh
 crontab := планировщик задач
 	-l := список задач текущего пользователя
 	-e := edit - редактирование
 	-r := удалить все спланированые задачи
+	
+ tar := архивация # tar -czvf archive.tar IVAN.txt IVAN_2.txt
+	-c := создать 
+	-z ZIP
+	-v := показать на экран, что делает архиватор
+	-f :=  определить имя архива
+	-x := извлечь
+	-tzf := прочитать файл без разпаковки
+	-xzf := расваковать файл # tar -xzf archive.tar.gz -C archive
