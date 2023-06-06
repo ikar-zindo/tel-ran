@@ -1,0 +1,10 @@
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <HOME=/home/ec2-user>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=ec2-user>
+X-Cron-Env: <USER=ec2-user>
+Message-Id: <20220810065002.1BCAB8C8DC1@ip-172-31-33-20.eu-central-1.compute.internal>
+Date: Wed, 10 Aug 2022 06:50:02 +0000 (UTC)
+
+/bin/sh: tmp/annikovaoutput/txt: No such file or directory
+
