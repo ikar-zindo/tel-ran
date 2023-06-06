@@ -1,31 +1,22 @@
 #!/bin/bash
- 
-        for i in {1..5}
-        do
-        DIR=Dir$i
-        mkdir -p /home/$DIR
- 
-                for j in {1..5}
-                do
-                FILE=File$j.txt
-                date +'%H-%M-%S' > /home/$DIR/$FILE
- #              sleep 5
-                done
- 
-        done
- 
-        for k in {1..5}
-        do
-        ls -l /home/$DIR
-        done
- 
- mkdir -p /tmp/Arh
- cd /home
- 
- DATE=$(date +'%d-%m-%Y')
- tar -czvf /tmp/Arh/Arh-$DATE.tar.gz Dir1 Dir2 Dir3 Dir4 Dir5
- 
-  tar -tzf /tmp/Arh/Arh-03-06-2023.tar.gz > ArhList.txt
- 
- mkdir -p /opt/newfolder
- tar -xzf /tmp/Arh/Arh-$DATE.tar.gz -C /opt/newfolder
+
+ ARHPATH=/tmp/Arh
+ EXTPATH=/opt/newfolder
+ DATE=`date '+%y-%m-%d'`
+
+	for i in {1..5}
+	do
+	mkdir -p Dir$i
+
+		for j in {1..5}
+		do
+		date +'%H-%M-%S' > Dir$i/File-$j.txt
+ #		sleep 1
+		done
+	ls Dir$i
+	done
+
+ tar -czvf $ARHPATH/Arh-$DATE.tar.gz Dir* >> ArhList.txt
+
+ mkdir -p $EXTPATH
+ tar -xzf $ARHPATH/Arh-$DATE.tar.gz -C $EXTPATH
