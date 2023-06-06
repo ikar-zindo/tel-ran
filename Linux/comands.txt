@@ -101,7 +101,7 @@ killall # убавает все процессы по имени
 
  # Копирование файла на сервере/c сервера
 scp history.txt ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo
-scp ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo/his.txt c:/tel-ran/Linux
+scp -r ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo/ c:/tel-ran/Linux/ikar-zindo
 
  # Запуск скрипта   & - запуск программы в фоновом режиме
 ./script.sh &
@@ -147,11 +147,32 @@ crontab := планировщик задач
 	-e := edit - редактирование
 	-r := удалить все спланированые задачи
 	
- tar := архивация # tar -czvf archive.tar IVAN.txt IVAN_2.txt
+ tar := архивация # tar -czvf archive.tar.gz File_1.txt File_2.txt
 	-c := создать 
-	-z ZIP
+	-z := ZIP
 	-v := показать на экран, что делает архиватор
-	-f :=  определить имя архива
+	-f := определить имя архива
 	-x := извлечь
 	-tzf := прочитать файл без разпаковки
 	-xzf := расваковать файл # tar -xzf archive.tar.gz -C archive
+	
+ man find
+ 
+ # поиск 
+ find . -name "*.txt" -size -6k
+ find /home -type f -name "*.old" -exec cp {} /root/DIR \;
+ find /usr/include/ -type f -size +300k -exec tar -czvf /root/arh.tar.gz '{}' +
+ find /usr/include/ -type f -size +300k -exec tar -czvf /root/arh.tar.gz '{}' \;
+
+ find :=  
+	-name := по имени файла или маска
+	-mtime := количество дней последнего изменения
+	-size +N -N := больше или меньше определенного размера (km)
+	-type
+		f := простые файлы;
+		d := каталоги;
+		І := символические ссылки;
+		b := блочные устройства (dev);
+		с := символьные устройства (dev);
+		р := именованные каналы;
+		s := сокеты;
