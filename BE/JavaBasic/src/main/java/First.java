@@ -8,6 +8,7 @@ public class First {
    // CMD (Ctrl) + p   - подсветка количества аргументов и их типов (сигнатура метода)
    // CMD (Ctrl) + /   - комментирование целой строки
    // fori             - создание шаблона для цикла for
+   // Alt + Shift + Click
 
    public static void main(String[] args) {
       // Вывод в консоль
