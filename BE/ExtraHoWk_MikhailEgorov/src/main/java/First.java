@@ -31,27 +31,31 @@ public class First {
 
 //      Exercise6();
 
-      Exercise7();
+//      Exercise7();
+
+//      Exercise8();
+
+      Exercise9();
    }
 
    // Exercise 0
    public static void Exercise0() {
-      int[] myArray1 = {78, 14, 13, 54, 35, 16, 75}; // массив целых чисел для манипуляций
+      int[] array1 = {78, 14, 13, 54, 35, 16, 75}; // массив целых чисел для манипуляций
 
-      for (int i = 0; i < myArray1.length; i++) { // цикл для нахождения чётных чисел
-         if (myArray1[i] % 2 == 1) {
-            System.out.println(myArray1[i]); // вывод в кончоль чёных числел
+      for (int i = 0; i < array1.length; i++) { // цикл для нахождения чётных чисел
+         if (array1[i] % 2 == 1) {
+            System.out.println(array1[i]); // вывод в кончоль чёных числел
          }
       }
    }
 
    // Exercise 1
    public static void Exercise1() {
-      int[] myArray1 = {78, 14, 13, 54, 35, 16, 75}; // массив целых чисел для манипуляций
+      int[] array1 = {78, 14, 13, 54, 35, 16, 75}; // массив целых чисел для манипуляций
 
       int sum = 0; // переменная для подсчёта суммы
-      for (int i = 0; i < myArray1.length; i++) { // цикл для подсчёта суммы эл массива
-         sum += myArray1[i];
+      for (int i = 0; i < array1.length; i++) { // цикл для подсчёта суммы эл массива
+         sum += array1[i];
       }
       System.out.println(sum); // вывод суммы в консоль
    }
@@ -79,15 +83,15 @@ public class First {
 
    // Exercise 3
    public static void Exercise3() {
-      double[] myArray2 = new double[]{1.2, 2.9, 7}; // Массив double
+      double[] array = new double[]{1.2, 2.9, 7}; // Массив double
 
       double average = 0; // переменная среднее арифметическое
       double sumMyArray2 = 0;  // переменная суммы эл массива
 
-      for (int i = 0; i < myArray2.length; i++) { // считаем сумму эл массива
-         sumMyArray2 += myArray2[i];
+      for (int i = 0; i < array.length; i++) { // считаем сумму эл массива
+         sumMyArray2 += array[i];
       }
-      average = sumMyArray2 / myArray2.length; // вычесляем среднее арифметическое
+      average = sumMyArray2 / array.length; // вычесляем среднее арифметическое
       System.out.println("Среднее арифметическое массива double: " + average); // Выыод значения в консоль
    }
 
@@ -124,35 +128,35 @@ public class First {
 
    // Exercise 5
    public static void Exercise5() {
-      int[] myArray = {78, 14, 13, 54, 35, 16, 75}; // массив целых чисел для сортировки пузырьком
+      int[] array = {78, 14, 13, 54, 35, 16, 75}; // массив целых чисел для сортировки пузырьком
 
-      System.out.println(Arrays.toString(myArray));
+      System.out.println(Arrays.toString(array));
 
-      for (int i = myArray.length - 1; i >= 1 ; i--) {
+      for (int i = array.length - 1; i >= 1 ; i--) {
          for (int j = 0; j < i; j++) {
-            if (myArray[j] > myArray[j + 1]) {
-               int tmp = myArray[j];
-               myArray[j] = myArray[j + 1];
-               myArray[j + 1] = tmp;
+            if (array[j] > array[j + 1]) {
+               int tmp = array[j];
+               array[j] = array[j + 1];
+               array[j + 1] = tmp;
             }
          }
       }
-      System.out.println(Arrays.toString(myArray));
+      System.out.println(Arrays.toString(array));
    }
 
    // Exercise 6
    public static void Exercise6() {
-      int[] myArray = {100, 78, 14, 13, 54, 35, 16}; // массив целых чисел для поиска числа
+      int[] array = {100, 78, 14, 13, 54, 35, 16}; // массив целых чисел для поиска числа
 
-      int max = myArray[0];
-      int min = myArray[0];
+      int max = array[0];
+      int min = array[0];
 
-      for (int i = 0; i < myArray.length - 1; i++) {
-         if (max < myArray[i + 1]) {
-            max = myArray[i + 1];
+      for (int i = 0; i < array.length - 1; i++) {
+         if (max < array[i + 1]) {
+            max = array[i + 1];
          }
-         if (min > myArray[i + 1]) {
-            min = myArray[i + 1];
+         if (min > array[i + 1]) {
+            min = array[i + 1];
          }
       }
 
@@ -162,11 +166,76 @@ public class First {
    }
 
    public static void Exercise7() {
-      int[] myArray = {100, 78, 14, 13, 54, 35, 16}; // массив целых чисел для реверса
+      int[] array = {100, 78, 14, 13, 54, 35, 16}; // массив целых чисел для реверса
 
-      /* СДЕСЬ МОГ БЫ БЫТЬ ВАШ КОД */
+      System.out.println(Arrays.toString(array));
 
+      int start = 0;
+      int end = array.length - 1;
+
+      while (start < end) {
+         int tmp = array[start];
+         array[start] = array[end];
+         array[end] = tmp;
+
+         start++;
+         end--;
+      }
+
+      System.out.println(Arrays.toString(array));
    }
 
+   public static void Exercise8() {
+      int[] array = {100, 78, 14, 100, 54, 14, 16, 14}; // массив целых чисел для реверса
+      
+      int famousNum = 0;
+      int maxCount = 0;
 
+      for (int i = 0; i < array.length; i++) {
+         int count = 0;
+         for (int j = 0; j < array.length; j++) {
+            if (array[j] == array[i]){
+               count++;
+            }
+
+            if (count > maxCount) {
+               famousNum = array[i];
+               maxCount = count;
+            }
+         }
+      }
+
+      System.out.println(famousNum);
+   }
+
+   public static void Exercise9() {
+      List<Student> students = new ArrayList<>();
+      students.add(new Student("Ivan", 91));
+      students.add(new Student("Maria", 20));
+      students.add(new Student("Marek", 45));
+      students.add(new Student("Monika", 74));
+      students.add(new Student("Michael", 86));
+      students.add(new Student("Bob", 74));
+
+      for (int i = 0; i < students.size(); i++) {
+         System.out.print("Name: " + students.get(i).getName());
+         System.out.println(". Score: " + students.get(i).getScore());
+      }
+
+      System.out.println();
+
+      for (int i = 0; i < students.size() - 1; i++) {
+         for (int j = 0; j < students.size() - 1 - i; j++) {
+            if (students.get(j).getScore() < students.get(j + 1).getScore()) {
+               students.set(j, students.get(j + 1));
+               students.set(j + 1,  students.get(j));
+            }
+         }
+      }
+
+      for (int i = 0; i < students.size(); i++) {
+         System.out.print("Name: " + students.get(i).getName());
+         System.out.println(". Score: " + students.get(i).getScore());
+      }
+   }
 }

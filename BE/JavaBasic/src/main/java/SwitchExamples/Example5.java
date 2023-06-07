@@ -19,12 +19,20 @@ public class Example5 {
 
       Scanner sc = new Scanner(System.in);
 
-      System.out.print("Choose a button (1-espresso, 2-americano, 3-cappuccino, 4-tea): ");
-      int button = sc.nextInt();
+      int button;
+
+       while (true) {
+         System.out.print("Choose a button (1-espresso, 2-americano, 3-cappuccino, 4-tea): ");
+         button = sc.nextInt();
+
+         if (button >= 1 && button <= 4) {
+            break;
+         }
+      }
 
       sc.close();
 
-      // todo дополнить код с циклом
+      // todo дополнить код с циклом (новый напиток после приготовления напитка)
       // todo заменить += в String объектах
 
       if (button == 1){
