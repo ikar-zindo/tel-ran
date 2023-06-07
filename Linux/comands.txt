@@ -164,7 +164,7 @@ crontab := планировщик задач
  # поиск 
  find . -name "*.txt" -size -6k
  find /home -type f -name "*.old" -exec cp {} /root/DIR \;
- find /usr/include/ -type f -size +300k -exec tar -czvf /root/arh.tar.gz '{}' +;
+ find /usr/include/ -type f -size +300k -exec tar -czvf /root/arh.tar.gz '{}' +
  find /usr/include/ -type f -size +200k -exec tar -czvf /root/arhive.tar.bz '{}' + >> /opt/foundfile.txt;
  find /usr/include/ -type f -size +300k -exec tar -czvf /root/arh.tar.gz '{}' \;
 
