@@ -28,6 +28,7 @@ wc := подсчёт количества строк  {слов}{строк}{с�
 | 'pipe' := переадресация *cat /etc/group | tail
 
  cat # посмотреть внутрь файла и вывести на экран
+	-n := нумерация строк
 cat /etc/group | head -2 | tail -1 := вытащить строки tail(снизу) head(сверху)
 
  ./demo_tail.sh &
@@ -50,15 +51,15 @@ histoy
 
  df # DiscFull - занятость разделов, память -h //human reed
 
-> # перезапись файла (все предыдущие данные будут удалены)
->> # дозапись в файл в конец
+ > # перезапись файла (все предыдущие данные будут удалены)
+ >> # дозапись в файл в конец
 
  localhost:~# df -h | grep -w / | awk '{print $5}'
 47%
-localhost:~# df -h | grep -w / | awk '{print $5}' | sed 's/%/&&/g'
+ localhost:~# df -h | grep -w / | awk '{print $5}' | sed 's/%/&&/g'
 
-sed -i 's/:/-/g' File.txt
-sed -i '4d' # удалит 4ю сроки
+ sed -i 's/:/-/g' File.txt
+ sed -i '4d' # удалит 4ю сроки
 
  vi
 Ctrl + Z := приостановка vi
@@ -77,8 +78,8 @@ dd - delete the current line ( i mode not needed)
 Del - delete single character ( i mode not needed)
 
  export MYVAR=hello # добавление переменных
-unset NAME MYVAR # умолсание переменных
-history | grep VAR # отобразить историю переменных
+ unset NAME MYVAR # умолсание переменных
+ history | grep VAR # отобразить историю переменных
 
  напомнить о GitHub
 
@@ -93,15 +94,15 @@ Tasks: 242 total,  // Кол-во запущенных процессов
 KiB Mem :  3967972 total,   745032 free,  1026160 used,  2196780 buff/cache
 KiB Swap:        0 total,        0 free,        0 used.  2650088 avail Mem
 
- PID // Номер процесса
- %CPU %MEM // Загруженость память и оперативной памяти
+PID // Номер процесса
+%CPU %MEM // Загруженость память и оперативной памяти
 
-ps -ef # запущенные процессы
-killall # убавает все процессы по имени
+ ps -ef # запущенные процессы
+ killall # убавает все процессы по имени
 
  # Копирование файла на сервере/c сервера
-scp history.txt ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo
-scp -r ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo/ c:/tel-ran/Linux/ikar-zindo
+ scp history.txt ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo
+ scp -r ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo/ c:/tel-ran/Linux/ikar-zindo
 
  # Запуск скрипта   & - запуск программы в фоновом режиме
 ./script.sh &
@@ -153,15 +154,18 @@ crontab := планировщик задач
 	-v := показать на экран, что делает архиватор
 	-f := определить имя архива
 	-x := извлечь
+	czvf := 
 	-tzf := прочитать файл без разпаковки
 	-xzf := расваковать файл # tar -xzf archive.tar.gz -C archive
+ tar -czvf /root/arhive.tar.gz /opt/foundfiles.txt # запихнуть в архив файлы их списка в файле foundfiles.txt
 	
  man find
  
  # поиск 
  find . -name "*.txt" -size -6k
  find /home -type f -name "*.old" -exec cp {} /root/DIR \;
- find /usr/include/ -type f -size +300k -exec tar -czvf /root/arh.tar.gz '{}' +
+ find /usr/include/ -type f -size +300k -exec tar -czvf /root/arh.tar.gz '{}' +;
+ find /usr/include/ -type f -size +200k -exec tar -czvf /root/arhive.tar.bz '{}' + >> /opt/foundfile.txt;
  find /usr/include/ -type f -size +300k -exec tar -czvf /root/arh.tar.gz '{}' \;
 
  find :=  
@@ -176,3 +180,6 @@ crontab := планировщик задач
 		с := символьные устройства (dev);
 		р := именованные каналы;
 		s := сокеты;
+		
+ # du -m $DIR | sort -rn | head -4 | cat -n
+ du sort := 
