@@ -1,8 +1,6 @@
 package Cycles;
 
-import com.auto.germany.Car;
-
-public class ForEachExample3 {
+public class ForEachExample1 {
    public static void main(String[] args) {
 
 //      int[] a = {5,4,3,1,9,6,8,2};
