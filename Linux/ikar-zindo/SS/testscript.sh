@@ -2,7 +2,7 @@
 
  DIR=/opt/280323_morning/ikar-zindo/SS/Dir
  SS=/opt/280323_morning/ikar-zindo/SS
- DATE=$(date +'%d-%m-%Y')
+ DATE=$(date +'%Y-%m-%d')
 
         for i in {1..5}
         do
@@ -14,12 +14,14 @@
                 date +'%H-%M-%S' > $DIR/Dir$i/$FILE
  #              sleep 5
                 done
-		ls $DIR/Dir$k
+	ls $DIR/Dir$i
         done
 
  cd $DIR
 
  tar -czvf $SS/Arh-$DATE.tar.gz Dir* > $SS/ArhList.txt
+
+ cat -n $SS/ArhList.txt
 
  mkdir -p $SS/Dir_from_Arh
  tar -xzf $SS/Arh-$DATE.tar.gz -C $SS/Dir_from_Arh
