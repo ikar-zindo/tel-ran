@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23 upload">
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/Cycles/ForExample1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaBasic/src/main/java/Cycles/ForExample2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaBasic/target/classes/TernaryExamples/Example1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaBasic/target/classes/TernaryExamples/Example1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/FindNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/MAin1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/SortingByStone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/src/main/java/First.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/src/main/java/First.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HoWkBasic/target/classes/Tenth.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/target/classes/Tenth.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SS_09_06_23/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SS_09_06_23/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Linux/comands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Linux/comands.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +50,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/tel-ran/BE/SummarySession",
+    "last_opened_file_path": "C:/tel-ran/BE/ExtraHoWk_MikhailEgorov",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,13 +58,13 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.PrimeNumberTest">
-    <configuration name="DayOfWeekArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HoWk_before_02_06_23.DayOfWeekArray" />
+  <component name="RunManager" selected="Application.MAin1">
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.BinarySearch" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HoWk_before_02_06_23.*" />
+          <option name="PATTERN" value="SS_09_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_02_06_23.Main" />
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.BinarySearch" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_02_06_23.*" />
+          <option name="PATTERN" value="SS_09_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_02_06_23.Main1" />
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.BubbleSort" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_02_06_23.*" />
+          <option name="PATTERN" value="SS_09_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_02_06_23.Main2" />
+    <configuration name="FindNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.FindNumber" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_02_06_23.*" />
+          <option name="PATTERN" value="SS_09_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +111,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimeNumberTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_02_06_23.PrimeNumberTest" />
+    <configuration name="MAin1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.MAin1" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_02_06_23.*" />
+          <option name="PATTERN" value="SS_09_06_23.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortingByStone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.SortingByStone" />
+      <module name="SummarySession" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SS_09_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PrimeNumberTest" />
-        <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main1" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.DayOfWeekArray" />
+        <item itemvalue="Application.MAin1" />
+        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.FindNumber" />
+        <item itemvalue="Application.SortingByStone" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +160,7 @@
       <workItem from="1685691143070" duration="9655000" />
       <workItem from="1685813169170" duration="227000" />
       <workItem from="1685951412083" duration="1323000" />
+      <workItem from="1686296444358" duration="9197000" />
     </task>
     <task id="LOCAL-00001" summary="SS_02_06_23">
       <created>1685699135669</created>
