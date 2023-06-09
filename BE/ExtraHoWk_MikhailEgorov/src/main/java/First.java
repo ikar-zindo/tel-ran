@@ -141,6 +141,7 @@ public class First {
             }
          }
       }
+
       System.out.println(Arrays.toString(array));
    }
 
