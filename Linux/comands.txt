@@ -19,12 +19,13 @@ tree
 rm rmdir -r
 cp mv
 	-r := для рекурсивного удаления/копирования (со всеми вложениями)
-ls -R
+ls -R := некое подобие делева
 	ls -l /etc | tail -5
 
  history > /root/history-2023-04
 export_file /root/history-2023-04
 wc := подсчёт количества строк  {слов}{строк}{сиволы}
+								  -w	-l		-c
 | 'pipe' := переадресация *cat /etc/group | tail
 
  cat # посмотреть внутрь файла и вывести на экран
@@ -154,9 +155,9 @@ crontab := планировщик задач
 	-v := показать на экран, что делает архиватор
 	-f := определить имя архива
 	-x := извлечь
-	czvf := 
+	-czvf := архивация
 	-tzf := прочитать файл без разпаковки
-	-xzf := расваковать файл # tar -xzf archive.tar.gz -C archive
+	-xzf := расваковать файл # tar -xzf archive.tar.gz -C archive := выбор места для разархивации
  tar -czvf /root/arhive.tar.gz /opt/foundfiles.txt # запихнуть в архив файлы их списка в файле foundfiles.txt
 	
  man find
