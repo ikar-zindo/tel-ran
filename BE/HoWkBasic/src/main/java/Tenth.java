@@ -13,24 +13,21 @@ import java.util.Scanner;
 
 public class Tenth {
    public static void main(String[] args) {
-      Scanner scanner = new Scanner(System.in);
+      Scanner sc = new Scanner(System.in);
 
       System.out.print("Введите общее количество этажей (h): ");
-      int h = scanner.nextInt();
+      int h = sc.nextInt();
 
       System.out.print("Введите количество этажей подъема (n): ");
-      int n = scanner.nextInt();
+      int n = sc.nextInt();
 
       System.out.print("Введите количество этажей спуска (m): ");
-      int m = scanner.nextInt();
+      int m = sc.nextInt();
 
-      int difference = h - n;
-      if (difference >= 0) {
-         System.out.println(1);
-      } else {
-         double fullJourneys = Math.ceil((double) h / (n - m));
-         int totalJourneys = (int) fullJourneys + 1;
-         System.out.println(totalJourneys);
-      }
+      sc.close();
+
+      int number = h / (n - m) + 1;
+
+      System.out.println("Количество циклов: "+ number);
    }
 }
