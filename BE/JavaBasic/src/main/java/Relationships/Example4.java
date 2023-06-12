@@ -3,7 +3,7 @@ package Relationships;
 // пример статического вложеного класса
 public class Example4 {
 
-   public static void tstMethod() {
+   public static void testMethod() {
       System.out.println("Test method is correct");
    }
 
@@ -14,8 +14,7 @@ public class Example4 {
    }
 
    public static void main(String[] args) {
-      tstMethod();
+      testMethod();
       Inner2.printMethodInner2();
-
    }
 }

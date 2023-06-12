@@ -2,9 +2,6 @@ package Relationships;
 
 // пример локального внутреннего класса метода
 public class Example3 {
-
-
-
    // круиз с шоу раз в Х дней
    public void startCruise() {
 
@@ -39,7 +36,6 @@ public class Example3 {
       System.out.println(s.getNameOfShow());
       System.out.println(s.getPeopleCounts());
    }
-
 
    public static void main(String[] args) {
 
