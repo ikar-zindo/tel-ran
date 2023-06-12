@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23 upload">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/FindNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/MAin1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/SortingByStone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/src/main/java/First.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ExtraHoWk_MikhailEgorov/src/main/java/First.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HoWkBasic/target/classes/Tenth.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/target/classes/Tenth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SS_09_06_23/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SS_09_06_23/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SS_09_06_23/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Linux/comands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Linux/comands.txt" afterDir="false" />
-    </list>
+    <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23 upload" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +43,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -160,7 +149,7 @@
       <workItem from="1685691143070" duration="9655000" />
       <workItem from="1685813169170" duration="227000" />
       <workItem from="1685951412083" duration="1323000" />
-      <workItem from="1686296444358" duration="9197000" />
+      <workItem from="1686296444358" duration="10514000" />
     </task>
     <task id="LOCAL-00001" summary="SS_02_06_23">
       <created>1685699135669</created>
