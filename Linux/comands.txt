@@ -162,8 +162,14 @@ crontab := планировщик задач
 	
  man find
  
- # поиск 
+ # поиск
+ find [directory to search] [options] [expression]
  find . -name "*.txt" -size -6k
+ find . -size +100M -size -2G
+	c := байты
+	k := килобайты
+	M := мегабайты
+	G := гигабайты
  find /home -type f -name "*.old" -exec cp {} /root/DIR \;
  find /usr/include/ -type f -size +300k -exec tar -czvf /root/arh.tar.gz '{}' +
  find /usr/include/ -type f -size +200k -exec tar -czvf /root/arhive.tar.bz '{}' + >> /opt/foundfile.txt;
@@ -171,6 +177,7 @@ crontab := планировщик задач
 
  find :=  
 	-name := по имени файла или маска
+	-iname := без учёта регистра
 	-mtime := количество дней последнего изменения
 	-size +N -N := больше или меньше определенного размера (km)
 	-type
@@ -181,6 +188,29 @@ crontab := планировщик задач
 		с := символьные устройства (dev);
 		р := именованные каналы;
 		s := сокеты;
+	-mtime := время последнего изменения файла 	-mmin
+	-ctime := время создания файла           	-cmin
+	-atime := время последнего доступа к файлу 	-amin
+	find . -type f -mmin +20 -mmin -30 -name "*.java" # ограничение временного промежутка
+	-perm := поиск файлов по разрешению и режиму доступа
+	-user := принадлежащие определённому пользователю # find . -type f -user John -name "*.cpp"
+	
+ # удалит все пустые файлы (d := папки)
+ find . -empty -type f | xargs rm -r
+	
+ find . -maxdepth 1 -type f -name "*.txt" # можно ограничить глубину поиска значением «1»
+ 
+ # подробный список (ls -l) файлов, найденных командой find
+ find . -type f -name "*.txt" -exec ls -l {} +
+ 
+ # айти все файлы .txt, в которых есть имя «Alice»
+ find . -type f -name "*.txt" -exec grep -i alice {} +
+ find . -type f -name "*.txt" | xargs grep -i alice
+ 
+ # xargs := перенаправление
+ find . -type f -name "*.txt" | xargs ls -l
 		
  # du -m $DIR | sort -rn | head -4 | cat -n
  du sort := 
+ 
+ whereis nano := путь, откуда запускается команда
