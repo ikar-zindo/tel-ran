@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Tenth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tenth.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_09_06_23/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_09_06_23/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_09_06_23/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_09_06_23/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Linux/comands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Linux/comands.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Twelfth.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,12 +53,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/tel-ran/BE/JavaBasic",
+    "last_opened_file_path": "C:/tel-ran/BE/HoWkBasic",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,7 +70,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Tenth">
+  <component name="RunManager" selected="Application.Twelfth">
     <configuration name="Eighth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Eighth" />
       <module name="HoWkBasic" />
@@ -94,13 +92,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Seventh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Seventh" />
-      <module name="HoWkBasic" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tenth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tenth" />
       <module name="HoWkBasic" />
@@ -108,13 +99,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Twelfth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Twelfth" />
+      <module name="HoWkBasic" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Twelfth" />
         <item itemvalue="Application.Tenth" />
         <item itemvalue="Application.Eleventh" />
         <item itemvalue="Application.Ninth" />
         <item itemvalue="Application.Eighth" />
-        <item itemvalue="Application.Seventh" />
       </list>
     </recent_temporary>
   </component>
@@ -134,6 +132,7 @@
       <workItem from="1686144478807" duration="1324000" />
       <workItem from="1686247949655" duration="5407000" />
       <workItem from="1686296776596" duration="1182000" />
+      <workItem from="1686569429202" duration="486000" />
     </task>
     <servers />
   </component>
