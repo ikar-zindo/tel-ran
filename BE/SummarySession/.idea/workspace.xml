@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23 upload" />
+    <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23 upload">
+      <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +41,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/tel-ran/BE/ExtraHoWk_MikhailEgorov",
+    "last_opened_file_path": "C:/tel-ran/BE/JavaBasic",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,7 +50,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MAin1">
+  <component name="RunManager" selected="Application.DayOfWeekArray">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SS_09_06_23.BinarySearch" />
       <module name="SummarySession" />
@@ -74,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.BubbleSort" />
+    <configuration name="DayOfWeekArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HoWk_before_02_06_23.DayOfWeekArray" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_09_06_23.*" />
+          <option name="PATTERN" value="HoWk_before_02_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -87,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.FindNumber" />
+    <configuration name="DayOfWeekArray1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HoWk_before_02_06_23.DayOfWeekArray1" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_09_06_23.*" />
+          <option name="PATTERN" value="HoWk_before_02_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DayOfWeekArray" />
+        <item itemvalue="Application.DayOfWeekArray1" />
         <item itemvalue="Application.MAin1" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.FindNumber" />
-        <item itemvalue="Application.SortingByStone" />
       </list>
     </recent_temporary>
   </component>
@@ -150,6 +153,8 @@
       <workItem from="1685813169170" duration="227000" />
       <workItem from="1685951412083" duration="1323000" />
       <workItem from="1686296444358" duration="10514000" />
+      <workItem from="1686572631729" duration="1517000" />
+      <workItem from="1686575136766" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="SS_02_06_23">
       <created>1685699135669</created>
