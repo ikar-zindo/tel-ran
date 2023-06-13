@@ -21,76 +21,122 @@ public class Example5 {
 
       int button;
 
-       while (true) {
+      boolean repeat = true;
+
+       while (repeat) {
          System.out.print("Choose a button (1-espresso, 2-americano, 3-cappuccino, 4-tea): ");
          button = sc.nextInt();
 
-         if (button >= 1 && button <= 4) {
-            break;
-         }
-      }
+//         if (button >= 1 && button <= 4) {
+//            break;
+//         }
 
-      sc.close();
+          if (button == 1){
+             System.out.println("Your selection espresso");
+             System.out.println(getEspresso() + "\n" + drinkIsReady());
+
+             System.out.print("Would you like another drink? (1-yes, 0-no): ");
+             repeat = sc.nextInt() == 1;
+
+          } else if (button == 2) {
+             System.out.println("Your selection americano");
+             System.out.println(getAmericano());
+
+             System.out.print("Would you like another drink? (1-yes, 0-no): ");
+             repeat = sc.nextInt() == 1;
+
+          } else if (button == 3) {
+             System.out.println("Your selection cappuccino");
+             System.out.println(getCappuccino());
+
+             System.out.print("Would you like another drink? (1-yes, 0-no): ");
+             repeat = sc.nextInt() == 1;
+
+          } else if (button == 4) {
+             System.out.println("Your selection tea");
+             System.out.println(getTea());
+
+             System.out.print("Would you like another drink? (1-yes, 0-no): ");
+             repeat = sc.nextInt() == 1;
+
+          } else {
+             System.out.println("Error");
+          }
+       }
+
+       sc.close();
 
       // todo дополнить код с циклом (новый напиток после приготовления напитка)
-      // todo заменить += в String объектах
-
-      if (button == 1){
-         System.out.println("Your selection espresso");
-         System.out.println(getEspresso() + "\n" + drinkIsReady());
-      } else if (button == 2) {
-         System.out.println("Your selection americano");
-         System.out.println(getAmericano());
-      } else if (button == 3) {
-         System.out.println("Your selection cappuccino");
-         System.out.println(getCappuccino());
-      } else if (button == 4) {
-         System.out.println("Your selection tea");
-         System.out.println(getTea());
-      } else {
-         System.out.println("Error");
-      }
    }
 
    public static String getEspresso() {
-      return "\tespresso in process";
+
+      StringBuilder sb = new StringBuilder();
+      sb.append("\tespresso in process");
+
+      return sb.toString();
    }
 
    public static String getAmericano() {
-      String result = getEspresso();
-      result += "\n";
-      result += getWater();
-      result += "\n";
-      result += drinkIsReady();
+      StringBuilder sb = new StringBuilder();
+      sb.append(getEspresso()).append("\n");
+      sb.append(getWater()).append("\n");
+      sb.append(drinkIsReady());
 
-      return result;
+//      String result = getEspresso();
+//      result += "\n";
+//      result += getWater();
+//      result += "\n";
+//      result += drinkIsReady();
+
+      return sb.toString();
    }
 
    public static String getCappuccino() {
-      String result = getEspresso();
-      result += "\n";
-      result += "\tadding some foam milk";
-      result += "\n";
-      result += drinkIsReady();
+      StringBuilder sb = new StringBuilder();
 
-      return result;
+      sb.append(getEspresso()).append("\n");
+      sb.append("\tadding some foam milk").append("\n");
+      sb.append(drinkIsReady());
+
+//      String result = getEspresso();
+//      result += "\n";
+//      result += "\tadding some foam milk";
+//      result += "\n";
+//      result += drinkIsReady();
+
+      return sb.toString();
    }
 
    public static String getTea() {
-      String result = "\tadding package";
-      result += "\n";
-      result += getWater();
-      result += "\n";
-      result += drinkIsReady();
+      StringBuilder sb = new StringBuilder();
 
-      return result;
+      sb.append("\tadding package").append("\n");
+      sb.append(getWater()).append("\n");
+      sb.append(drinkIsReady());
+
+//      String result = "\tadding package";
+//      result += "\n";
+//      result += getWater();
+//      result += "\n";
+//      result += drinkIsReady();
+
+      return sb.toString();
    }
 
    public static String getWater() {
-      return "\tadding some water";
+      StringBuilder sb = new StringBuilder();
+
+      sb.append("\tadding some water");
+
+      return sb.toString();
    }
 
    public static String drinkIsReady() {
-      return "Your drink is ready";
+      StringBuilder sb = new StringBuilder();
+
+      sb.append("Your drink is ready");
+
+      return sb.toString();
    }
 }
