@@ -1,0 +1,61 @@
+   0 echo "hello"
+   1 echo 'hello'
+   2 echo '#!/bin/bash\n date\n echo "it works!"'
+   3 echo -e '#!/bin/bash\n date\n echo "it works!"'
+   4 echo -e '#!/bin/bash\n date\n echo "it works!"' > script.sh
+   5 ls -l
+   6 ./script.sh 
+   7 bash script.sh 
+   8 chmod 7 script.sh 
+   9 ls -l
+  10 chmod 744 script.sh 
+  11 ls -l
+  12 ./script.sh 
+  13 /root/script.sh 
+  14 nano script.sh 
+  15 ./script.sh 
+  16 cat script.sh 
+  17 bash script.sh 
+  18 env
+  19 ls
+  20 tree
+  21 whereis tree
+  22 whereis nano
+  23 whereis touch
+  24 whereis cd
+  25 whereis cat
+  26 nano script2.sh
+  27 chmod 744 script2.sh
+  28 ./script2.sh 
+  29 nano script2.sh
+  30 ./script2.sh 
+  31 nano script2.sh
+  32 ./script2.sh 
+  33 nano newscript.sh
+  34 df -h
+  35 df -h | tail -2
+  36 df -h | tail -1
+  37 df -h | tail -1 | awk '{print $5}'
+  38 df -h | tail -1 | awk '{print $6}'
+  39 df -h | tail -1 | awk '{print $6}' | sed 's/shm/ivan/
+  40 df -h | tail -1 | awk '{print $6}' | sed 's/shm/ivan/'
+  41 nano newscript.sh
+  42 chmod 744 newscript.sh 
+  43 ./newscript.sh 
+  44 nano newscript.sh
+  45 ./newscript.sh 
+  46 nano newscript.sh
+  47 ./newscript.sh 
+  48 nano newscript.sh
+  49 ./newscript.sh 
+  50 nano newscript.sh
+  51 ./newscript.sh 
+  52 nano newscript.sh
+  53 ./newscript.sh 
+  54 ls
+  55 nano newscript.sh
+  56 ./newscript.sh 
+  57 nano newscript.sh
+  58 ./newscript.sh 
+  59 ls -l
+  60 history > history_25_scripts_vol2.txt

@@ -1,0 +1,50 @@
+   0 man ls
+   1 echo $SHELL
+   2 $SHELL
+   3 ls -l
+   4 tar --help
+   5 man tree
+   6 ls -R
+   7 ls -R /home/
+   8 clear
+   9 df -h
+  10 top
+  11 df -h > /tmp/123/1.txt
+  12 df -h > /tmp/1.txt
+  13 ps -ef > /tmp/2.txt
+  14 cd /tmp/
+  15 pwd
+  16 ps -ef
+  17 ls -l
+  18 history
+  19 ls -l
+  20 cat 1.txt | wc -c
+  21 tar --help
+  22 wc --help 
+  23 tar -czvf /opt/123/archive.tar.gz *.txt 
+  24 tar -czvf /opt/archive.tar.gz *.txt 
+  25 ls -l /opt/
+  26 tar -xjf /opt/archive.tar.gz -C /root/
+  27 tar -xzf /opt/archive.tar.gz -C /root/
+  28 ls -l /root/
+  29 history
+  30 ls -l
+  31 pwd
+  32 env
+  33 vi 1
+  34 fg
+  35 top
+  36 ls
+  37 man ls
+  38 cmd --help
+  39 cmd 
+  40 ls --help 
+  41 env
+  42 /bin/nana
+  43 /bin/nano
+  44 whereis ls
+  45 whereis nano
+  46 env
+  47 ping www.google.com
+  48 cd
+  49 history > history_tar.txt

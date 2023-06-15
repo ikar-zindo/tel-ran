@@ -1,0 +1,55 @@
+   0 hebhbjh
+   1 date
+   2 date +'%D'
+   3 date +'%M'
+   4 date +'%S'
+   5 date +'%H'
+   6 date +'%H_%M:%S'
+   7 date +'%u'
+   8 df 
+   9 df -h
+  10 df -h > /tmp/df.txt
+  11 ls -l
+  12 touch readme.txt 
+  13 ls -l
+  14 cat /tmp/df.txt 
+  15 cat /etc/group
+  16 cat /etc/group > /tmp/df.txt 
+  17 cat /tmp/df.txt 
+  18 > file.txt
+  19 > readme.txt 
+  20 ls -l
+  21 df -h >> /tmp/df.txt 
+  22 cat /tmp/df.txt 
+  23 ls
+  24 ls -l
+  25 >> hello.js 
+  26 ls -l
+  27 cat /etc/group
+  28 cat /etc/group | wc
+  29 wc --help
+  30 cat /etc/group | wc -l
+  31 cat /etc/group | wc -m
+  32 cat /etc/group | tail
+  33 cat /etc/group | tail -5
+  34 cat /etc/group | tail -2
+  35 cat /etc/group | head
+  36 cat /etc/group | head -5
+  37 cat /etc/group | head -2
+  38 cat /etc/group | head -2 | tail -1
+  39 df -h
+  40 df -h | head -2
+  41 df -h | head -2 | tail -1
+  42 df -h | grep 47
+  43 df -h | grep G
+  44 df -h | grep /
+  45 df -h | grep -w /
+  46 df -h | grep -w / | awk '{print $5
+  47 df -h | grep -w / | awk '{print $5}'
+  48 df -h | grep -w / | awk '{print $5}' | sed 's/%/&&/'
+  49 df -h | grep -w / | awk '{print $5}' | sed 's/%/**/'
+  50 df -h | grep -w / | awk '{print $5}' | sed 's/%/ /'
+  51 df -h | grep -w / | awk '{print $5}' | sed 's/%/ /' >> file.txt
+  52 df -h | grep -w / | awk '{print $5}' | sed 's/%//' >> file.txt
+  53 cat file.txt 
+  54 history > 20_04_Pipe.txt

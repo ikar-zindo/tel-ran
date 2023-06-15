@@ -1,0 +1,54 @@
+   0 ls -l
+   1 vi 
+   2 clear
+   3 pwd
+   4 vi test.txt
+   5 clear
+   6 vi test.txt
+   7 nano 
+   8 env
+   9 echo hello
+  10 echo "hello"
+  11 ls /tmp/
+  12 cd
+  13 cd /opt/
+  14 env
+  15 pwd
+  16 ls
+  17 cd
+  18 ls /bin
+  19 /bin/ls
+  20 ls -a
+  21 clear
+  22 env
+  23 iavn
+  24 ivan
+  25 export MYVAR=hello
+  26 export NAME=ivan
+  27 env
+  28 NAME
+  29 $NAME
+  30 echo $MYVAR $NAME
+  31 unset MYVAR NAME
+  32 env
+  33 history
+  34 history | grep $
+  35 history | grep VAR
+  36 unset PATH
+  37 ls
+  38 mkdir
+  39 toch
+  40 touch
+  41 ls
+  42 /bin/ls 
+  43 /bin/ls /opt
+  44 cd /bin/
+  45 ls
+  46 export PATH=/bin
+  47 cd
+  48 ls
+  49 nano
+  50 export 
+  51 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  52 nano
+  53 history > 24_04_path.txt
