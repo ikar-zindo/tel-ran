@@ -1,14 +1,18 @@
 Джентльменские соглашения:
 1. "Текст пришется в двойных ковычках"
 2. Переменных пешутся БОЛЬШИМИ БУВАМИ
+3. Все архивы стараемся делать с двойным разрением
+
+"Кодеры за работой"
 
 Ричард Мэтью Столлман
+Джейми Завински
 
 
 ls -la
 pwd := посмотреть путь
 cd
-mkdir -p # создать дерево папокwc
+mkdir -p # создать дерево папок
 touch # создать файл
 echo "Hello, World!" # Вывод текста
 	-e := интерпретирует \n \s и другие штуки в разные конечные символы
@@ -16,8 +20,10 @@ echo "Hello, World!" # Вывод текста
 echo -e '#!/bin/bash\n date\n echo "it works"' > /tmp/script.sh	
 
 tree
-rm rmdir -r
-cp mv
+rm -r
+rmdir
+cp
+mv
 	-r := для рекурсивного удаления/копирования (со всеми вложениями)
 ls -R := некое подобие делева
 	ls -l /etc | tail -5
@@ -175,6 +181,7 @@ crontab := планировщик задач
  find /usr/include/ -type f -size +200k -exec tar -czvf /root/arhive.tar.bz '{}' + >> /opt/foundfile.txt;
  find /usr/include/ -type f -size +300k -exec tar -czvf /root/arh.tar.gz '{}' \;
 
+ # https://linux-faq.ru/page/komanda-find
  find :=  
 	-name := по имени файла или маска
 	-iname := без учёта регистра
@@ -196,6 +203,7 @@ crontab := планировщик задач
 	-user := принадлежащие определённому пользователю # find . -type f -user John -name "*.cpp"
 	
  # удалит все пустые файлы (d := папки)
+ find . -empty -delete
  find . -empty -type f | xargs rm -r
 	
  find . -maxdepth 1 -type f -name "*.txt" # можно ограничить глубину поиска значением «1»
@@ -203,7 +211,7 @@ crontab := планировщик задач
  # подробный список (ls -l) файлов, найденных командой find
  find . -type f -name "*.txt" -exec ls -l {} +
  
- # айти все файлы .txt, в которых есть имя «Alice»
+ # найти все файлы .txt, в которых есть имя «Alice»
  find . -type f -name "*.txt" -exec grep -i alice {} +
  find . -type f -name "*.txt" | xargs grep -i alice
  
@@ -214,3 +222,5 @@ crontab := планировщик задач
  du sort := 
  
  whereis nano := путь, откуда запускается команда
+ 
+ echo $SHELL
