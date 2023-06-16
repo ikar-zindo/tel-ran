@@ -5,6 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23 upload">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Main4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/SearchFamousNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/TextBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/UIControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/findSumNumbers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -41,7 +52,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/tel-ran/BE/JavaBasic",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/tel-ran/BE/HoWkBasic",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,7 +62,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.DayOfWeekArray">
+  <component name="RunManager" selected="Application.findSumNumbers">
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SS_09_06_23.BinarySearch" />
       <module name="SummarySession" />
@@ -64,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.BinarySearch" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_16_06_23.Main" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_09_06_23.*" />
+          <option name="PATTERN" value="SS_16_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -77,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayOfWeekArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HoWk_before_02_06_23.DayOfWeekArray" />
+    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_16_06_23.Main3" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HoWk_before_02_06_23.*" />
+          <option name="PATTERN" value="SS_16_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DayOfWeekArray1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HoWk_before_02_06_23.DayOfWeekArray1" />
+    <configuration name="Main4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_16_06_23.Main4" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HoWk_before_02_06_23.*" />
+          <option name="PATTERN" value="SS_16_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MAin1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.MAin1" />
+    <configuration name="SearchFamousNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_16_06_23.SearchFamousNumber" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_09_06_23.*" />
+          <option name="PATTERN" value="SS_16_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingByStone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SS_09_06_23.SortingByStone" />
+    <configuration name="findSumNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SS_16_06_23.findSumNumbers" />
       <module name="SummarySession" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SS_09_06_23.*" />
+          <option name="PATTERN" value="SS_16_06_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DayOfWeekArray" />
-        <item itemvalue="Application.DayOfWeekArray1" />
-        <item itemvalue="Application.MAin1" />
-        <item itemvalue="Application.BinarySearch" />
-        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.findSumNumbers" />
+        <item itemvalue="Application.SearchFamousNumber" />
+        <item itemvalue="Application.Main4" />
+        <item itemvalue="Application.Main3" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -155,6 +167,7 @@
       <workItem from="1686296444358" duration="10514000" />
       <workItem from="1686572631729" duration="1517000" />
       <workItem from="1686575136766" duration="66000" />
+      <workItem from="1686901435910" duration="9878000" />
     </task>
     <task id="LOCAL-00001" summary="SS_02_06_23">
       <created>1685699135669</created>
