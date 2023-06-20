@@ -1,0 +1,31 @@
+
+ -- коментарий
+ SELECT
+ SELECT DISTINCT := уникальные значения
+ FROM := откуда
+ WHERE := фильтрация
+	- NOT
+	- AND
+	- OR
+	
+ IN := проверка принадлежности к списку значений
+ 
+ = (!= <> не равно) > < >= <=
+ 
+ ORDER BY
+	-- ASC по возрастанию (по умолчанию)
+	-- DESC по убыванию
+
+ AS := псевдонимы / оператор (переименования поля при чтении)
+	Price AS Price_eur
+	
+SQL CRUD: Update
+ SELECT *,
+    Price * 1.1 Price_usd,
+	
+	UPDATE Customers
+ SET
+	ContactName=''
+
+ WHERE
+	NOT Country='UK'
