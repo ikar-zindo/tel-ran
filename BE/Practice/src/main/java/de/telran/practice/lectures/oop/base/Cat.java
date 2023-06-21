@@ -1,4 +1,4 @@
-package de.telran.practice.lectures.oop.animal;
+package de.telran.practice.lectures.oop.base;
 
 import static java.time.temporal.ChronoUnit.YEARS;
 

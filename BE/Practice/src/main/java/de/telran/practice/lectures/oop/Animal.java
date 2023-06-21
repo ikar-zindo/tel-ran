@@ -1,24 +1,25 @@
-package de.telran.practice.lectures.oop.base;
+package de.telran.practice.lectures.oop;
 
-public class Animal {
+public abstract class Animal {
 
    protected String name;
    protected String color;
    protected String type;
 
    public Animal(String name, String color, String type) {
+      this();
       this.name = name;
       this.color = color;
       this.type = type;
    }
 
    private Animal() {
+      super();
       System.out.println("Animal born");
    }
 
    public void move() {
-
+      System.out.printf("%s %s %s walk on paws%n", name, color, type);
    }
-
-   public void voice() {}
+   public abstract void voice();
 }

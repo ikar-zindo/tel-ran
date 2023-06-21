@@ -1,10 +1,9 @@
-package de.telran.practice.lectures.oop.base;
+package de.telran.practice.lectures.oop;
 
 public class Dog extends Animal{
    public Dog(String name, String color) {
       super(name, color, "dog");
-      this.name = name;
-      this.color = color;
+      System.out.println("Dog born");
    }
 
    @Override
