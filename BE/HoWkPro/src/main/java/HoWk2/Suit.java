@@ -6,7 +6,7 @@ public enum Suit {
     DIAMONDS('♦'),
     SPADES('♠');
 
-    private char suit;
+    private final char suit;
 
     Suit(char type) {
         this.suit = type;
