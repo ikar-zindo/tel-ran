@@ -1,0 +1,24 @@
+ git status
+ git pull
+ git log := история коммитов
+	--oneline := сокращённая форма записи
+ git checkout := отменяет изменения в файле
+ git clean -xdf := удаление неотслеживаемых файлов
+	-x := игнорирут привали git
+	-d := для целой директории
+	-f := для отработки (forse)
+	-n := просмотр того, что гит будет удалять
+ git restore --staged <file> := возврашает файл из индекса в робочую директорию
+ git commit --amend -m "add 2 lines" := изменение последнего локального коммита (можно так же добавить в индекс к этому коммиту)
+ git reset HEAD~1 := сместится на 1 коммит назад
+ git revert HEAD := саздаст зеркальный коммит, отменяет действие последнего коммита
+ git push --force := принудительно переприсывает историю коммитов на git
+ 
+ git branch -v := инфо о ветках
+ git branch <branch_name> := создание ветки
+ git checkout <branch_name> := переход на ветку
+ git checkout -b <branch_name> := создание и переход на эту ветку
+ git branch -d <branch_name> := удаление ветки
+ 
+ git log --oneline --decorate --graph --all
+ git merge <branch_name> := слияние веток
