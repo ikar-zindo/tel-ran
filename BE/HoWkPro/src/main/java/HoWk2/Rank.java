@@ -15,7 +15,7 @@ public enum Rank {
     KING("K"),
     ACE("A");
 
-    private String rank;
+    private final String rank;
 
     Rank(String name) {
         this.rank = name;

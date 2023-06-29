@@ -63,7 +63,7 @@ public class Game {
     private void deckShuffling() {
 
         Random r = new Random();
-        Card tmpDeck = new Card(Rank.ACE, Suit.DIAMONDS);
+        Card tmpDeck;
 
         for (int i = 0; i < deck.length; i++) {
             int card = i + (r.nextInt(deck.length - i));
