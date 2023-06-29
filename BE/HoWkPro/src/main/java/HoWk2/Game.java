@@ -89,7 +89,7 @@ public class Game {
     }
 
     protected void playing() {
-        System.out.println("Игра: " + gameName + ", за столом инроков: " + quantityPlayers);
+        System.out.println("Игра: " + gameName + ", за столом игроков: " + quantityPlayers);
         cardDistribution();
     }
 }
