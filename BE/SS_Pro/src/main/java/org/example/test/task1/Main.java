@@ -1,4 +1,4 @@
-package org.example.test;
+package org.example.test.task1;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -15,7 +15,7 @@ public class Main {
       list.add(5);
       list.add(6);
       // sumEven = 9
-      // sumOdd = 
+      // sumOdd = 12
 
       System.out.println(meth(list));
 
@@ -27,25 +27,13 @@ public class Main {
 
       int sumEven = 0;
       int sumOdd = 0;
-//      for (int i = 0; i < list.size(); i += 2) {
-//
-//         sumEven += list.get(i);
-//      }
-//
-//      for (int i = 1; i < list.size(); i += 2) {
-//         sumOdd += list.get(i);
-//      }
 
       for (int i = 0; i < list.size(); i++) {
-
-         sumEven ;
-         if (i + 1 == list.size())
-            break;
-         sumOdd += list.get(i + 1);
+         if (i % 2 == 0)
+            sumEven += list.get(i);
+         else
+            sumOdd += list.get(i);
       }
-
-
-
-      return sumEven;
+      return sumOdd * sumEven;
    }
 }
