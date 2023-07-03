@@ -1,6 +1,5 @@
-package lesson3.task5;
+package lesson3.pocker;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
