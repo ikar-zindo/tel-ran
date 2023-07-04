@@ -74,11 +74,12 @@ public class Game {
     }
 
     // the shuffled deck is displayed
-    private void cardDistribution() {
+    private void cardDistribution() throws InterruptedException {
 
         for (int j = 1; j <= quantityPlayers; j++) {
             System.out.print("Player " + j +": ");
             for (int i = 0; i <  cardsForPlayer; i++) {
+                Thread.sleep(300);
                 System.out.print(deck[i + (j - 1)] + " ");
 
                 if (i % cardsForPlayer == cardsForPlayer - 1) {
@@ -88,8 +89,43 @@ public class Game {
         }
     }
 
-    protected void playing() {
+    // flop
+    private void flop() throws InterruptedException {
+        System.out.println("Показываем Flop (первые 3 карты):");
+
+        for (int i = quantityPlayers * cardsForPlayer; i < (quantityPlayers * cardsForPlayer) + 3; i++) {
+            Thread.sleep(500);
+            System.out.print(deck[i]);
+        }
+    }
+
+    //turn
+    private void turn() throws InterruptedException {
+        System.out.println("Показываем Flop (первые 3 карты):");
+        Thread.sleep(500);
+
+        for (int i = quantityPlayers * cardsForPlayer; i < (quantityPlayers * cardsForPlayer) + 3; i++) {
+            Thread.sleep(500);
+            System.out.print(deck[i]);
+        }
+    }
+
+    // river
+    private void river() throws InterruptedException {
+        System.out.println("Показываем Flop (первые 3 карты):");
+
+        for (int i = quantityPlayers * cardsForPlayer; i < (quantityPlayers * cardsForPlayer) + 3; i++) {
+            Thread.sleep(500);
+            System.out.print(deck[i] + " ");
+        }
+    }
+
+    protected void playing() throws InterruptedException {
         System.out.println("Игра: " + gameName + ", за столом игроков: " + quantityPlayers);
         cardDistribution();
+
+        Thread.sleep(500);
+
+        flop();
     }
 }
