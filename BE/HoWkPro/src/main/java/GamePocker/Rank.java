@@ -1,4 +1,4 @@
-package HoWk2;
+package GamePocker;
 
 public enum Rank {
     THO("2"),
