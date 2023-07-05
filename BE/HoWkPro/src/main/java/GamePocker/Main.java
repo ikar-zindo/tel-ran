@@ -1,4 +1,4 @@
-package HoWk2;
+package GamePocker;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {

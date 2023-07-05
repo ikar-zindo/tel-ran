@@ -1,4 +1,4 @@
-package HoWk2;
+package GamePocker;
 
 public class Card {
     private final Rank rank;
