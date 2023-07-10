@@ -49,7 +49,7 @@ public class Main {
    // 3. Перебрать лист с помощью for-each, в теле цикла каждое значение листа записать в переменную temp.
    public static void meth3(List<Integer> list) {
 
-      long temp = list.get(0);
+      int temp = list.get(0);
       for (Integer i : list) {
          temp = i;
       }
@@ -60,7 +60,7 @@ public class Main {
    // 4. Сделать то же самое с помощью классического for.
    public static void meth4(List<Integer> list) {
 
-      long temp = list.get(0);
+      int temp = list.get(0);
       for (int i = 0; i < list.size(); i++) {
          temp = list.get(i);
       }
@@ -71,7 +71,7 @@ public class Main {
    // 5. Сделать то же самое с помощью классического for, но сначала вынести размер листа в отдельную переменную, а потом эту переменную использовать внутри условия цикла.
    public static void meth5(List<Integer> list) {
 
-      long temp = list.get(0);
+      int temp = list.get(0);
       int listSize = list.size();
       for (int i = 0; i < listSize; i++) {
          temp = list.get(i);
@@ -83,7 +83,7 @@ public class Main {
    // 6. Сделать то же самое, что и в пункте 5, но перебрать лист с конца до начала.
    public static void meth6(List<Integer> list) {
 
-      long temp = list.get(0);
+      int temp = list.get(0);
       int listSize = list.size();
       for (int i = listSize - 1; i >= 0; i--) {
          temp = list.get(i);
@@ -95,7 +95,7 @@ public class Main {
    // 7. Сделать то же самое, но используя Iterator.
    public static void meth7(List<Integer> list) {
 
-      long temp= list.get(0);
+      int temp= list.get(0);
       Iterator<Integer> iterator = list.iterator();
 
       while (iterator.hasNext()) {
@@ -106,7 +106,7 @@ public class Main {
    }
 
    public static void meth8(List<Integer> list) {
-      long temp = list.get(0);
+      int temp = list.get(0);
       ListIterator<Integer> listIterator = list.listIterator();
 
       long start = System.currentTimeMillis();
