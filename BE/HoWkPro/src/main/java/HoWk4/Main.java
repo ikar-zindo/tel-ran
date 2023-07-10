@@ -25,6 +25,7 @@ import java.util.ListIterator;
 public class Main {
    public static void main(String[] args) {
 
+      // 1. Создать лист.
       List<Integer> list = new ArrayList<>(10_000_000);
 
       meth2(list);
