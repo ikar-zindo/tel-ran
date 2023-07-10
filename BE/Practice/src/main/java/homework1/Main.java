@@ -1,5 +1,7 @@
 package homework1;
 
+import java.util.Arrays;
+
 /**
  * Массивы:
  * 1. Заполните массив случайным числами и выведите максимальное, минимальное и среднее значение.
@@ -15,4 +17,36 @@ package homework1;
  * 4. Создайте класс реализующий бинарное дерево поиска. Методы добавления и поиска элемента.
  */
 public class Main {
+   public static void main(String[] args) {
+
+
+   }
+
+
+   public static int findMin(int... arr) {
+      int min = arr[0];
+      for (int i : arr) {
+         if (min > i)
+            min = i;
+      }
+      return min;
+   }
+
+
+
+   public static void doubleSort(int[] arr) {
+      for (int i = 0; i < arr.length; i++) {
+         for (int j = 0; j < arr.length - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+               int tmp = arr[j];
+               arr[j] = arr[j + 1];
+               arr[j + 1] = tmp;
+            }
+         }
+      }
+   }
+
+   public static double avgArray(int[] arr) {
+      return 0.0;
+   }
 }
