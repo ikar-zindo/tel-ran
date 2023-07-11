@@ -23,6 +23,10 @@
   git log --oneline --decorate --graph --all
   git merge <branch_name> := слияние веток
   
+	переподвязка репо по другой ссысле
+ git remote remove origin
+ git remote add origin <ssh_link>
+  
 		Получение и создание проектов
   git init Инициализация локального git репозитория
  git clone ssh://git@github.com/[username]/[repository-name].git Копирование удаленного git репозитория
