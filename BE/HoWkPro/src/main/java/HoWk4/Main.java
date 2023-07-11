@@ -39,12 +39,6 @@ public class Main {
 
       List<Integer> list2 = new ArrayList<>();
       meth2(list2);
-      meth3(list2);
-      meth4(list2);
-      meth5(list2);
-      meth6(list2);
-      meth7(list2);
-      meth8(list2);
    }
 
    // 2. В цикле наполнить лист 10 миллионами значений (от 1 до 10000000)
@@ -57,8 +51,6 @@ public class Main {
       long end = System.currentTimeMillis();
 
       System.out.println("Initial List runtime: " + (end - start) + "ms");
-
-
    }
 
    // 3. Перебрать лист с помощью for-each, в теле цикла каждое значение листа записать в переменную temp.
@@ -134,6 +126,7 @@ public class Main {
       System.out.println("Iterator runtime: " + (end - start) + "ms");
    }
 
+   // 8. Сделать то же самое, но используя ListIterator.
    public static void meth8(List<Integer> list) {
       int temp = list.get(0);
       ListIterator<Integer> listIterator = list.listIterator();
