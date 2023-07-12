@@ -7,8 +7,12 @@
   <groupId>de.telran</groupId>
   <artifactId>tel-ran-pro-june23</artifactId>
   <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>FileManager</module>
+    </modules>
 
-  <properties>
+    <properties>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

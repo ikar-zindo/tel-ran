@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?import java.fx.score.layout.* ?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:"http://javafx.com/javafx"
+        fx:contriller="de.telran.filemanager.panel">
+
+<children>
+
+</children>
+
+
+</VBox>
