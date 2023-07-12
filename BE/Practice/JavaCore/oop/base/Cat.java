@@ -33,7 +33,7 @@ public class Cat {
    }
 
    public int getAge() {
-      return (int) YEARS.between(birthDate, LocalDate.now());
+      return (int) ChronoUnit.YEARS.between(birthDate, LocalDate.now());
    }
 
 //  public void setAge(int age) {
