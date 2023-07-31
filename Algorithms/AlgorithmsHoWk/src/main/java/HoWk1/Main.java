@@ -17,7 +17,7 @@ public class Main {
    }
 
    private static int searchUnpairedElementMeth1 (int[] arr) {
-      // Использую инсрументы задоженныв Java - побитовые операции
+      // Использую инсрумент заложенный в сам язык Java - XOR (взаимоисключающее ИЛИ)
       int x = 0;
       for (int i : arr) {
          x = x ^ i;
