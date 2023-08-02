@@ -5,19 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ca96a51-8a59-4b90-a71c-36517c87e4b9" name="Changes" comment="SS_02_06_23 upload">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Main4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/SearchFamousNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/TextBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/UIControl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SS_16_06_23/findSumNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkBasic/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task2/AutoboxingCompare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task3/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task3/StudentComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task3/StudentsSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task1/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task1/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task1/ComparingObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task1/ComparingObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson10/task1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +48,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/tel-ran/BE/HoWkBasic",
+    "last_opened_file_path": "E:/tel-ran/BE/SummarySession",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -168,6 +163,7 @@
       <workItem from="1686572631729" duration="1517000" />
       <workItem from="1686575136766" duration="66000" />
       <workItem from="1686901435910" duration="9878000" />
+      <workItem from="1690975479865" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="SS_02_06_23">
       <created>1685699135669</created>
