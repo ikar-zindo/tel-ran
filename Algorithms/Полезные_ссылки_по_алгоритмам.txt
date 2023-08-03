@@ -1,0 +1,17 @@
+Полезные ссылки по алгоритмам:
+
+Тесты
+https://codegalaxy.io/courses?lang=en
+https://leetcode.com/
+https://skillbox.ru/media/code/kak-pravilno-reshat-zadachi-na-leetcode-podrobnyy-gayd-po-trenazhyeru-dlya-programmistov/
+
+Список ресурсов
+https://proglib.io/p/awesome-algorithms
+
+Ликбез к собеседованию
+https://habr.com/ru/articles/188010/
+https://tproger.ru/translations/14-templates-to-answer-interview-questions/
+
+Курс Robert Sedgewick
+https://www.coursera.org/learn/algorithms-part1
+https://www.coursera.org/learn/algorithms-part2
