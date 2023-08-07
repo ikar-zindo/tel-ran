@@ -1,10 +1,10 @@
-drop schema if exists streaming+;
+drop schema if exists streaming_;
 
 -- 1. Создание БД `streaming`.
 
 -- создание БД 'streaming'
-create database streaming+;
-use streaming+;
+create database streaming_;
+use streaming_;
 
 -- создание таблиц 'users'
 create table  users (
