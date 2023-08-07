@@ -1,7 +1,10 @@
+drop schema if exists streaming+;
+
 -- 1. Создание БД `streaming`.
 
 -- создание БД 'streaming'
-create database streaming;
+create database streaming+;
+use streaming+;
 
 -- создание таблиц 'users'
 create table  users (
@@ -121,7 +124,7 @@ from streams
 
 join users on streams.author_id = users.user_id
 
-### 4. Вывести `юзеров`, у которых отсутствуют `стримы`.
+-- 4. Вывести `юзеров`, у которых отсутствуют `стримы`.
 
 select *
 from users
