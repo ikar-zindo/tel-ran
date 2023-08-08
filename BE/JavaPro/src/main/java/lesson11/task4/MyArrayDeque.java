@@ -110,16 +110,3 @@ public class MyArrayDeque implements MyDeque {
       return builder.toString();
    }
 }
-
-   /**
-values   ('2021-04-02 12:00', 'Willy Wonka', 'USA', false),
-         ('2021-07-02 13:00', 'Siegfried', 'Germany', false),
-         ('2021-07-02 13:21', 'Dr. Robert Bruce Banner', 'USA', false),
-         ('2021-12-25 00:00', 'Yeshua Ha Notzri', 'Israel ', true),
-         ('2022-01-01 13:00', 'Dr John H. Watson', 'UK', false),
-         ('2022-01-02 07:21', 'Buddha', 'Nepal', false),
-         ('2022-01-02 13:15', 'Don Quixote', 'Spanian', false),
-         ('2022-01-02 13:21', 'Ole Lukoje', 'Denmark', true),
-         ('2022-06-02 12:18', 'Frederick Krueger', 'USA', false),
-         ('2022-07-02 13:17', 'Ganesha', 'India', false);
-   **/
