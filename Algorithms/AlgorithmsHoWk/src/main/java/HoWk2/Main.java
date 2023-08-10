@@ -23,8 +23,9 @@ package HoWk2;
 public class Main {
    public static void main(String[] args) {
 
-      System.out.println(sum(11, 3));
-      System.out.println(sumRecursive(11, 3));
+      System.out.println(sum(8, 3));
+      System.out.println(sumRecursive(8, 3));
+//      System.out.println(sumRecursive1(8, 3));
    }
 
    public static int sum(int n, int m) { // вычесляем сумму чисел 1..n % m == 0
@@ -46,4 +47,11 @@ public class Main {
          return result + sumRecursive(n - 1, m);
       }
    }
+
+//   public static int sumRecursive1(int n, int m) {
+//      if (n - m <= 0) return 0;
+//      return n + sumRecursive1(n - m, m);
+//   }
+
+
 }

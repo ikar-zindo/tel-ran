@@ -38,7 +38,7 @@ public class AlgAnalysis {
       // time: 1 + 1 + 3 * (n + 1) *( 3 * (n + 1) + 1 + 1) = 2 + (3n + 3) * (3n + 5) = 2 + 9n^2 + 15n + 9n + 15 = 9n^2 + 24n +17
       // O(9n^2 + 24n +17) = O(9n^2) = O(n^2)
    }
-   
+
    public void test2(int n) {
       int a = 0; // 1
       for (int i = 0; i < n; i++) { // 3 * (n + 1)
