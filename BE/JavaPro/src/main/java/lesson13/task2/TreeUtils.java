@@ -1,7 +1,6 @@
 package lesson13.task2;
 
 import java.util.LinkedList;
-import java.util.Map;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -54,5 +53,60 @@ public class TreeUtils {
          current = current.getRight();
       }
       System.out.println();
+   }
+
+   public static void depthPreorder(MyBinaryTree tree) {
+
+      if (tree == null || tree.isEmpty()) {
+         return;
+      }
+
+      Stack<Node> stack = new Stack<>();
+      stack.push(tree.getRoot());
+
+      while (!stack.empty()) {
+
+         Node curr = stack.pop();
+
+         System.out.print(curr.getValue() + " ");
+
+         if (curr.getRight() != null) {
+            stack.push(curr.getRight());
+         }
+
+         if (curr.getLeft() != null) {
+            stack.push(curr.getLeft());
+         }
+      }
+      System.out.println();
+   }
+
+   public static void depthPostorder(MyBinaryTree tree) {
+
+      if (tree == null || tree.isEmpty()) {
+         return;
+      }
+
+      Stack<Node> stack = new Stack<>();
+      stack.push(tree.getRoot());
+
+      Stack<String> out = new Stack<>();
+
+      while (!stack.empty()) {
+         Node curr = stack.pop();
+         out.push(curr.getValue());
+
+         if (curr.getLeft() != null) {
+            stack.push(curr.getLeft());
+         }
+
+         if (curr.getRight() != null) {
+            stack.push(curr.getRight());
+         }
+      }
+
+      while (!out.empty()) {
+         System.out.print(out.pop() + " ");
+      }
    }
 }
