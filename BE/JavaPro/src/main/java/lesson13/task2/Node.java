@@ -42,6 +42,7 @@ public class Node {
 
    @Override
    public String toString() {
+      // Key - 5, value - Node 5, left - 3, right - 7.
       return String.format("Key - %d, value - %s, left - %d, right - %d.",
               key, value,
               left == null ? null : left.key,
