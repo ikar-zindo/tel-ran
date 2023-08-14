@@ -13,9 +13,9 @@ import java.util.Random;
 public class Main {
    public static void main(String[] args) {
 
-      Random random = new Random();
-
-
+      System.out.println(ballPossibleWays(3));
+      System.out.println(ballPossibleWaysMemo(3));
+      System.out.println(ballPossibleWaysTabulation(3));
    }
 
    public static int  ballPossibleWays(int n){
