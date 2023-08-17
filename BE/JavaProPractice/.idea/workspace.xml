@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c217891-44a8-44ee-be42-5e3afca69485" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson12/task1/MapTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson12/task2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson12/task3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_09/task1/ArraysComparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_09/task2/EqualCharsetFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_09/task3/TreeMapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/binaryTree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/binaryTree/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/binaryTree/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/binaryTree/TreeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/task1/AnotherBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "E:/tel-ran/BE/JavaProPractice/src/main/java/_2023_08_14",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,7 +53,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TreeMapExample">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\tel-ran\BE\JavaProPractice\src\main\java\_2023_08_14" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ArraysComparator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_2023_08_09.task1.ArraysComparator" />
       <module name="JavaProPractice" />
@@ -86,6 +85,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2023_08_14.binaryTree.Main" />
+      <module name="JavaProPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_2023_08_14.binaryTree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TreeMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_2023_08_09.task3.TreeMapExample" />
       <module name="JavaProPractice" />
@@ -101,6 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.TreeMapExample" />
         <item itemvalue="Application.EqualCharsetFinder" />
         <item itemvalue="Application.ArraysComparator" />
@@ -116,6 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1691579362986</updated>
       <workItem from="1691579364180" duration="5271000" />
+      <workItem from="1692011149481" duration="3562000" />
     </task>
     <servers />
   </component>
