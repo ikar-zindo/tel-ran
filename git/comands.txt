@@ -52,6 +52,7 @@
  git branch -m [old branch name] [new branch name] Переименование локальной ветки
  git checkout [branch name] Переключение на ветку
  git branch -d [branch name] Удаление ветки
+ git branch -D [branch name] Удаление локальной ветки
  git push origin --delete [branch name] Удаление ветки на уделенном ресурсе
  git merge [branch name] Объединение ветки в активную ветку
  git merge [source branch] [target branch] Объединение ветки в целевую ветку
