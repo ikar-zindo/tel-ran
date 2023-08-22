@@ -1,6 +1,8 @@
 package myLinkedList;
 
-public class MyLinkedList {
+import java.util.Iterator;
+
+public class MyLinkedList implements Iterable<String> {
 
    private int size = 0;
    private Node first;
@@ -11,8 +13,17 @@ public class MyLinkedList {
     * @param value добавляеимое значение
     */
    public void addFirst(String value) {
-      Node current = new Node(value, first, last);
-      first = current;
+
+      Node node = new Node(value);
+
+      if (size == 0) {
+         first = node;
+         last = node;
+      } else {
+         node.setNext(first);
+         first.setPrevious(node);
+         first = node;
+      }
       size++;
    }
 
@@ -21,17 +32,18 @@ public class MyLinkedList {
     * @param value добавляемое значение
     */
    public void addLast(String value) {
+
+      Node node = new Node(value);
+
       if (size == 0) {
-         addFirst(value);
-         return;
+         first = node;
+         last = node;
+      } else {
+         node.setPrevious(last);
+         last.setNext(node);
+         last = node;
       }
-
-      Node current = last;
-      while (true) {
-
-      }
-
-//      size++;
+      size++;
    }
 
    @Override
@@ -48,5 +60,10 @@ public class MyLinkedList {
       builder.setLength(builder.length() - 2);
       builder.append("]");
       return builder.toString();
+   }
+
+   @Override
+   public Iterator<String> iterator() {
+      return new MyIterator(first);
    }
 }
