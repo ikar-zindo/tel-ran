@@ -2,11 +2,11 @@ package myLinkedList;
 
 import java.util.Iterator;
 
-public class MyIterator implements Iterator<String> {
+public class MyListIterator implements Iterator<String> {
 
    private Node current;
 
-   public MyIterator(Node current) {
+   public MyListIterator(Node current) {
       this.current = current;
    }
    @Override
@@ -20,4 +20,6 @@ public class MyIterator implements Iterator<String> {
       current = current.getNext();
       return value;
    }
+
+
 }
