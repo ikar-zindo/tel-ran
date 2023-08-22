@@ -64,6 +64,6 @@ public class MyLinkedList implements Iterable<String> {
 
    @Override
    public Iterator<String> iterator() {
-      return new MyIterator(first);
+      return new MyListIterator(first);
    }
 }
