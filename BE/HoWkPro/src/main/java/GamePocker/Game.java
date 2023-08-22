@@ -74,12 +74,12 @@ public class Game {
     }
 
     // the shuffled deck is displayed
-    private void cardDistribution() {
+    private void cardDistribution() throws InterruptedException {
 
-        for (int i = 0; i <= quantityPlayers; i++) {
+        for (int i = 0; i < quantityPlayers; i++) {
             System.out.print("Player " + (i + 1) + ": ");
             for (int j = 0; j <  cardsForPlayer; j++) {
-//                Thread.sleep(300);
+                Thread.sleep(300);
                 System.out.print(deck[cardsForPlayer * i + j] + " ");
 
                 if (j % cardsForPlayer == cardsForPlayer - 1) {
@@ -88,7 +88,7 @@ public class Game {
             }
         }
     }
-    protected void playing() {
+    protected void playing() throws InterruptedException {
         System.out.println("Игра: " + gameName + ", за столом игроков: " + quantityPlayers);
         cardDistribution();
     }

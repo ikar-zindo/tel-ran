@@ -27,9 +27,11 @@ public class MyLinkedList {
       }
 
       Node current = last;
-      while ()
+      while (true) {
 
-      size++;
+      }
+
+//      size++;
    }
 
    @Override
