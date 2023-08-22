@@ -1,42 +1,39 @@
 package test;
 
 import java.util.Iterator;
+import java.util.List;
 
-public class ArrayIterator<T> implements Iterator<T> {
-   private T[] array;
-   private int currentIndex;
+public class MyIterator implements Iterator<Integer> {
 
-   public ArrayIterator(T[] array) {
-      this.array = array;
-      this.currentIndex = 0;
+   private Iterator<Integer> iterator;
+   private Integer next;
+
+   public MyIterator(List<Integer> list) {
+      iterator = list.iterator();
+      moveToNext();
    }
 
    @Override
    public boolean hasNext() {
-      return currentIndex < array.length;
+      return next != null;
    }
 
    @Override
-   public T next() {
-      if (!hasNext()) {
-         throw new java.util.NoSuchElementException();
-      }
-      T item = array[currentIndex];
-      currentIndex++;
-      return item;
+   public Integer next() {
+      moveToNext();
+      return next;
    }
 
-   @Override
-   public void remove() {
-      throw new UnsupportedOperationException();
-   }
-
-   public static void main(String[] args) {
-      Integer[] intArray = {1, 2, 3, 4, 5};
-      ArrayIterator<Integer> iterator = new ArrayIterator<>(intArray);
+   private void moveToNext() {
 
       while (iterator.hasNext()) {
-         System.out.println(iterator.next());
+         Integer current = iterator.next();
+
+         if (current % 2 == 0) {
+            next = current;
+            return;
+         }
       }
+      next = null;
    }
 }
