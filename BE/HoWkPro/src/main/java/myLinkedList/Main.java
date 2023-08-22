@@ -9,6 +9,8 @@ public class Main {
       list.addFirst("BBB");
       list.addFirst("CCC");
 
+      list.addLast("FFF");
+
       System.out.println(list);
    }
 }
