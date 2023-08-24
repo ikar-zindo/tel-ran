@@ -7,10 +7,10 @@ public class HoWkDawid {
       int[] arr2 = {72, 86, 113, 119, 265, 445, 892};
       int k = 7;
 
-      System.out.println(marge(arr1, arr2, k));
+      System.out.println(merge(arr1, arr2, k));
    }
 
-   public static int marge(int[] arr1, int[] arr2, int k) {
+   public static int merge(int[] arr1, int[] arr2, int k) {
       int i = 0;
       int j = 0;
       int m = 0;
