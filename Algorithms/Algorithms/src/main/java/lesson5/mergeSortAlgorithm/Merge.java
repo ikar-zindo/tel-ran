@@ -5,11 +5,9 @@ import java.util.Arrays;
 public class Merge {
    public static void main(String[] args) {
 
-      int[] arr1 = {100, 112, 256, 349, 770};
-      int[] arr2 = {72, 86, 113, 119, 265, 445, 892};
+      int[] arr = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 
-      System.out.println(Arrays.toString(mergeSort(arr1)));
-
+      System.out.println(Arrays.toString(mergeSort(arr)));
    }
 
    public static int[] merge(int[] arr1, int[] arr2) {
@@ -37,7 +35,5 @@ public class Merge {
       int[] right = Arrays.copyOfRange(arr, arr.length / 2, arr.length);
 
       return merge(mergeSort(left), mergeSort(right));
-
-
    }
 }
