@@ -1,8 +1,17 @@
 package org.example._2023_08_25;
 
-public class MR {
-   public static void main(String[] args) {
+import java.util.List;
 
+public class MR1 {
+   public static void main(String[] args) {
+      m1(() -> {
+
+         System.out.println("/////");
+         System.out.println("-----");
+      });
+
+      new Thread(() -> System.out.println("URA")).start();
+      new MR1();
    }
 
    public static void m1(R r) {
