@@ -5,7 +5,6 @@ public class AnotherBinaryTree {
    private Node root;
 
    public void add(int key, int value) {
-      root = addRecursive(root, key, value);
    }
 
    private Node addRecursive(Node current, int value) {
@@ -40,7 +39,4 @@ public class AnotherBinaryTree {
          this.value = value;
       }
    }
-
-
-
 }

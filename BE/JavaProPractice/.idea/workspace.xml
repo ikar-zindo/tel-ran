@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c217891-44a8-44ee-be42-5e3afca69485" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/binaryTree/BinaryTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/binaryTree/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/binaryTree/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/binaryTree/TreeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/task1/AnotherBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson17/task6/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/_2023_08_14/task1/AnotherBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/_2023_08_14/task1/AnotherBinaryTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/tel-ran/BE/JavaProPractice/src/main/java/_2023_08_14",
+    "last_opened_file_path": "E:/tel-ran/BE/SS_Pro",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -130,6 +126,7 @@
       <updated>1691579362986</updated>
       <workItem from="1691579364180" duration="5271000" />
       <workItem from="1692011149481" duration="3562000" />
+      <workItem from="1693220285002" duration="60000" />
     </task>
     <servers />
   </component>
