@@ -1,4 +1,4 @@
-package lesson17.task6;
+package lesson17_lambdas_practice.task6;
 
 import java.util.HashSet;
 import java.util.Set;
