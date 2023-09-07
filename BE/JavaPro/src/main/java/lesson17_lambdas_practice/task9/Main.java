@@ -1,8 +1,6 @@
 package lesson17_lambdas_practice.task9;
 
-import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.function.Supplier;
 
 public class Main {
 
