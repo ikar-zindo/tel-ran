@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c217891-44a8-44ee-be42-5e3afca69485" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_09_18/fruits/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_09_18/fruits/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_09_18/fruits/FruitBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_09_18/fruits/GenericsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/_2023_09_18/fruits/Orange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4c217891-44a8-44ee-be42-5e3afca69485" name="Changes" comment="JavaProPractice/generics">
+      <change beforePath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson18_stream/task2/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson18_stream/task2/StreamTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +39,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/projects/tel-ran-pro-june23-practice",
+    "last_opened_file_path": "E:/tel-ran/BE/JavaProPractice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -146,11 +141,24 @@
       <workItem from="1692011149481" duration="3562000" />
       <workItem from="1693220285002" duration="60000" />
       <workItem from="1695035114873" duration="5551000" />
+      <workItem from="1695045085350" duration="52000" />
     </task>
+    <task id="LOCAL-00001" summary="JavaProPractice/generics">
+      <created>1695045132491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695045132491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="JavaProPractice/generics" />
+    <option name="LAST_COMMIT_MESSAGE" value="JavaProPractice/generics" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
