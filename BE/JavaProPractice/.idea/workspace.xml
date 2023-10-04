@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c217891-44a8-44ee-be42-5e3afca69485" name="Changes" comment="JavaProPractice/generics">
-      <change beforePath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson18_stream/task2/StreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson18_stream/task2/StreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task1/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task1/ServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task2/ThreadSleepTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task3/Clock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task4/Timer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task5/BankAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task5/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaPro/src/main/java/lesson28_runnable_vs_thread_deamon/task5/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/tel-ran/BE/JavaProPractice",
+    "last_opened_file_path": "E:/tel-ran/BE/JavaPro",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -142,6 +152,7 @@
       <workItem from="1693220285002" duration="60000" />
       <workItem from="1695035114873" duration="5551000" />
       <workItem from="1695045085350" duration="52000" />
+      <workItem from="1696417065646" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="JavaProPractice/generics">
       <created>1695045132491</created>
