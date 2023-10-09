@@ -1,4 +1,4 @@
-package trial_trip.try_catch_test;
+package trial_trip.try_catch_test.Crows;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -10,8 +10,8 @@ public class CrowWrite {
 
       File file = new File("crow.txt");
 
-      Crow crow1 = new Crow(25, 2.3);
-      Crow crow2 = new Crow(12, 3.1);
+      Crow crow1 = new Crow("Crow 1", 25, 2.38);
+      Crow crow2 = new Crow("Crow 2", 12, 3.15);
 
       System.out.println(crow1);
       System.out.println(crow2);
