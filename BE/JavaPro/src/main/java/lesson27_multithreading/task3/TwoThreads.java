@@ -25,11 +25,11 @@ public class TwoThreads {
          }
       }
 
-//      for (int i = 0; i < Integer.MAX_VALUE; i++) {
-//         if (i % number == 0) {
-//            count++;
-//         }
-//      }
+      try {
+         myThread.join();
+      } catch (InterruptedException e) {
+         throw new RuntimeException(e);
+      }
 
       System.out.println("Значение счётчика := " + count);
    }
