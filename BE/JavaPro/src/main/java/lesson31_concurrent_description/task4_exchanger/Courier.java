@@ -30,7 +30,7 @@ public class Courier extends Thread {
    public void run() {
       try {
          Random random = new Random();
-         int millis = random.nextInt(8_000) + 2_000;
+         int millis = random.nextInt(6_000) + 2_000;
 
          Thread.sleep(millis);
          System.out.printf("%s выехал из точки %s.%n", this, start);
@@ -51,51 +51,43 @@ public class Courier extends Thread {
 //         if (anotherCourier.inExchangePoint) {
 //            packages.add(anotherCourier.getIrrelevantPackage());
 //         }
+//
+//         inExchangePoint = false;
 
-         inExchangePoint = false;
-
-         System.out.printf("%s ухал из пункта обмена.%n", this);
-
-         Thread.sleep(millis);
-         System.out.printf("%s доехал до места выгрузки %s.%n", this, destination);
+         System.out.printf("%s уехал из пункта обмена.%n", this);
 
          Thread.sleep(millis);
-         // Разгрузка
+         System.out.printf("%s доехал до точки выгрузки %s.%n", this, destination);
+
+         Thread.sleep(millis);
          unload();
-
       } catch (Exception e) {
-         System.err.println("Error!");
+         System.err.println("Ошибка!");
       }
    }
 
    private Package getIrrelevantPackage() {
       Iterator<Package> iterator = packages.iterator();
-
       while (iterator.hasNext()) {
          Package pack = iterator.next();
-
-         if (destination.equals(pack.getTo())) {
+         if (!destination.equals(pack.getTo())) {
             System.out.printf("%s отдал %s другому курьеру.%n", this, pack);
             iterator.remove();
             return pack;
          }
       }
-
       return null;
    }
 
    private void unload() {
       Iterator<Package> iterator = packages.iterator();
-
       while (iterator.hasNext()) {
          Package pack = iterator.next();
-
          if (destination.equals(pack.getTo())) {
             System.out.printf("%s успешно доставил посылку %s.%n", this, pack);
             iterator.remove();
          }
       }
-
       if (packages.isEmpty()) {
          System.out.printf("%s успешно доставил все посылки.%n", this);
       } else {
