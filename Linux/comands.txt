@@ -1,7 +1,7 @@
-Джентльменские соглашения:
-1. "Текст пришется в двойных ковычках"
-2. Переменных пешутся БОЛЬШИМИ БУВАМИ
-3. Все архивы стараемся делать с двойным разрением
+	Джентльменские соглашения:
+ 1. "Текст пришется в двойных ковычках"
+ 2. Переменных пешутся БОЛЬШИМИ БУВАМИ
+ 3. Все архивы стараемся делать с двойным разрением
 
 "Кодеры за работой"
 
@@ -9,49 +9,49 @@
 Джейми Завински
 
 
-ls -la
-pwd := посмотреть путь
-cd
-mkdir -p # создать дерево папок
-touch # создать файл
-echo "Hello, World!" # Вывод текста
+ ls -la
+ pwd := посмотреть путь
+ cd
+ mkdir -p # создать дерево папок
+ touch # создать файл
+ echo "Hello, World!" # Вывод текста
 	-e := интерпретирует \n \s и другие штуки в разные конечные символы
 	-n := не переводить строку
-echo -e '#!/bin/bash\n date\n echo "it works"' > /tmp/script.sh	
+ echo -e '#!/bin/bash\n date\n echo "it works"' > /tmp/script.sh	
 
-tree
-rm -r
-rmdir
-cp
-mv
+ tree
+ rm -r
+ rmdir
+ cp
+ mv
 	-r := для рекурсивного удаления/копирования (со всеми вложениями)
-ls -R := некое подобие делева
+ ls -R := некое подобие делева
 	ls -l /etc | tail -5
 
  history > /root/history-2023-04
-export_file /root/history-2023-04
-wc := подсчёт количества строк  {слов}{строк}{сиволы}
+ export_file /root/history-2023-04
+ wc := подсчёт количества строк  {слов}{строк}{сиволы}
 								  -w	-l		-c
-| 'pipe' := переадресация *cat /etc/group | tail
+ | 'pipe' := переадресация *cat /etc/group | tail
 
  cat # посмотреть внутрь файла и вывести на экран
 	-n := нумерация строк
-cat /etc/group | head -2 | tail -1 := вытащить строки tail(снизу) head(сверху)
+ cat /etc/group | head -2 | tail -1 := вытащить строки tail(снизу) head(сверху)
 
  ./demo_tail.sh &
-tail -f File.txt := динамически отображает изменение в файле
+ tail -f File.txt := динамически отображает изменение в файле
 
  grep := поиск по символу 
 	-w := слово целиком
-awk /утилита для извлечения текста
-df -h | grep -w / | awk '{print $5}' выведет на экран 5й столбец
-env стандартые переменные по умолсанию
+ awk /утилита для извлечения текста
+ df -h | grep -w / | awk '{print $5}' выведет на экран 5й столбец
+ env стандартые переменные по умолсанию
 
- !Стандартный поток данных
-histoy
-0. стандартый поток ввод данных//Standert out put
-1. стандартый поток вывод данных //Standert in put
-2. стандартый поток вывода ошибок //Standert out errow
+  !Стандартный поток данных
+ histoy
+ 0. стандартый поток ввод данных//Standert out put
+ 1. стандартый поток вывод данных //Standert in put
+ 2. стандартый поток вывода ошибок //Standert out errow
 
  date +'%H_%M:%S' '%U' //вывод даты
 	date=$(date +'%Y.%m.%d') # переменная, алтернаитва := date=`date +%Y.%m.%d`
@@ -69,20 +69,20 @@ histoy
  sed -i '4d' # удалит 4ю сроки
 
  vi
-Ctrl + Z := приостановка vi
-fg := вобнавление vi
+ Ctrl + Z := приостановка vi
+ fg := вобнавление vi
 	1. попадаем в командный режим
-i - insert text, edit mode. ECS to exit
-ZZ (Note: capitals) - Save and exit
-:q! - discard all changes, since the last save, and exit
-:w - save file but don't exit
-:wq - again, save and exit
-:x - again, save and exit
-G  (shift g) - move to the last line
-/ - search (n - next) 
-u - undo last action
-dd - delete the current line ( i mode not needed) 
-Del - delete single character ( i mode not needed)
+ i - insert text, edit mode. ECS to exit
+ ZZ (Note: capitals) - Save and exit
+ :q! - discard all changes, since the last save, and exit
+ :w - save file but don't exit
+ :wq - again, save and exit
+ :x - again, save and exit
+ G  (shift g) - move to the last line
+ / - search (n - next) 
+ u - undo last action
+ dd - delete the current line ( i mode not needed) 
+ Del - delete single character ( i mode not needed)
 
  export MYVAR=hello # добавление переменных
  unset NAME MYVAR # умолсание переменных
@@ -91,18 +91,18 @@ Del - delete single character ( i mode not needed)
  напомнить о GitHub
 
  top // процессы запущенные на сервере в реальном времени
-load average: // перегруженость системы (0.5)
-Tasks: 242 total,  // Кол-во запущенных процессов
-1 running, // запущенные процессы на устройстве
-194 sleeping, // спящие процессы
-0 stopped // процессы завершены принудительно
-0 zombie // зомби процессы
-%Cpu(s):  1.2 us,  1.7 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.2 si,  2.3 st // Информация для сисадминов
-KiB Mem :  3967972 total,   745032 free,  1026160 used,  2196780 buff/cache
-KiB Swap:        0 total,        0 free,        0 used.  2650088 avail Mem
+ load average: // перегруженость системы (0.5)
+ Tasks: 242 total,  // Кол-во запущенных процессов
+ 1 running, // запущенные процессы на устройстве
+ 194 sleeping, // спящие процессы
+ 0 stopped // процессы завершены принудительно
+ 0 zombie // зомби процессы
+ %Cpu(s):  1.2 us,  1.7 sy,  0.0 ni, 94.7 id,  0.0 wa,  0.0 hi,  0.2 si,  2.3 st // Информация для сисадминов
+ KiB Mem :  3967972 total,   745032 free,  1026160 used,  2196780 buff/cache
+ KiB Swap:        0 total,        0 free,        0 used.  2650088 avail Mem
 
-PID // Номер процесса
-%CPU %MEM // Загруженость память и оперативной памяти
+ PID // Номер процесса
+ %CPU %MEM // Загруженость память и оперативной памяти
 
  ps -ef # запущенные процессы
  killall # убавает все процессы по имени
@@ -112,19 +112,19 @@ PID // Номер процесса
  scp -r ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo/ c:/tel-ran/Linux/ikar-zindo
 
  # Запуск скрипта   & - запуск программы в фоновом режиме
-./script.sh &
+ ./script.sh &
 
-# посмотреть список запущенных процессов
-ps -ef | tail -n +2 | wc -l
-ps -ef | grep demo_tail
+ # посмотреть список запущенных процессов
+ ps -ef | tail -n +2 | wc -l
+ ps -ef | grep demo_tail
 
 
  -type 
-f – простые файлы;
-d – каталоги;
+ f – простые файлы;
+ d – каталоги;
 
  # изменение прав на исполнение файла
-chmod 744 script.sh
+ chmod 744 script.sh
 		[a]all
 [u]user	[g]group	[0]other
  r w x	  r w x 	  r w x
@@ -134,23 +134,23 @@ chmod 744 script.sh
  #!/bin/bash
 
  # информация о терминале
-cat /etc/os-release
+ cat /etc/os-release
 
  # принудительно запускает программу в оболочке (если ошибка в 1й строчке)
-bash script.sh
+ bash script.sh
 
-env # вернет нам все объявленные переменные
+ env # вернет нам все объявленные переменные
 
  # делаем скрипт командой по-умлочанию
-mv /opt/280323_morning/ikar-zindo/script.sh /home/ec2-user/bin/ikar-zindo
+ mv /opt/280323_morning/ikar-zindo/script.sh /home/ec2-user/bin/ikar-zindo
 
  # спросить Славу о НаТаскс и группы?
 
-read name - ввод данных с клавиатуры и заносит в переменнею name
+ read name - ввод данных с клавиатуры и заносит в переменнею name
 
  # Утилита, позволяющая выполнять скрипты на сервере в назначенное время с заранее определенной периодичностью
-* * * * * /tmp/script.sh
-crontab := планировщик задач
+ * * * * * /tmp/script.sh
+ crontab := планировщик задач
 	-l := список задач текущего пользователя
 	-e := edit - редактирование
 	-r := удалить все спланированые задачи
