@@ -1,4 +1,4 @@
-package org.example._2023_09_22_turnir.participants;
+package org.example._2023_09_22_tournament.tournament;
 
 import java.util.Objects;
 

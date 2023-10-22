@@ -1,4 +1,4 @@
-package org.example._2023_09_22_turnir.participants;
+package org.example._2023_09_22_tournament.tournament;
 
 import java.util.*;
 
@@ -9,6 +9,10 @@ public class Team<T extends Participant> {
 
    public Team(String name) {
       this.name = name;
+   }
+
+   public String getName() {
+      return name;
    }
 
    public void addNewParticipant(T participant) {
@@ -29,9 +33,8 @@ public class Team<T extends Participant> {
          winnerName = team.name;
       }
 
-      System.out.println(winnerName);
+//      System.out.println(winnerName);
 
       return winnerName;
    }
-
 }
