@@ -9,6 +9,7 @@ public class TeamGenerator {
       private static final Random random = new Random();
       private static int age = 0;
 
+   // Генератор команд Adult
    public Team<Adult> listTeamAdultGenerate() {
       age = random.nextInt(21) + 30;
 
@@ -21,6 +22,7 @@ public class TeamGenerator {
       return listTeam;
    }
 
+   // Генератор команд Student
    public Team<Student> listTeamStudentGenerate() {
       age = random.nextInt(21) + 10;
 
@@ -33,6 +35,7 @@ public class TeamGenerator {
       return listTeam;
    }
 
+   // Генератор команд Pupil
    public Team<Pupil> listTeamPupilGenerate() {
       age = random.nextInt(15) + 6;
 
