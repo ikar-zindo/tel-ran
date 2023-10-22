@@ -53,6 +53,8 @@ public class Tournament {
    }
 
    public void listWinners() {
+      // todo: сделать метод, чтоб все сыграли со всеми,
+      //  а не только Adult c Adult итд.
       // Выводом победителя игры на экран и добавляем его на доску результатов
       addToResultsBoard(adultTeam1.playWith(adultTeam2));
       addToResultsBoard(adultTeam1.playWith(adultTeam3));
@@ -68,7 +70,6 @@ public class Tournament {
    }
 
    private void addToResultsBoard(String winnerName) {
-
       int countWins = resultsBoard.getOrDefault(winnerName, 0);
 
       resultsBoard.put(winnerName, countWins + 1);
