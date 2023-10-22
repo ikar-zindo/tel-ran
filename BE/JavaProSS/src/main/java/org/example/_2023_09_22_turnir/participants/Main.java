@@ -3,6 +3,7 @@ package org.example._2023_09_22_turnir.participants;
 public class Main {
    public static void main(String[] args) {
 
+      // Начинаем турнир
       Tournament tournament = new Tournament();
       System.out.println("*****************************");
       tournament.listWinners();
