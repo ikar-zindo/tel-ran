@@ -7,9 +7,8 @@ import java.io.InputStream;
 public class CheckExceptionTest {
    public static void main(String[] args) {
 
-      InputStream in = null;
-      try {
-         in = new FileInputStream("test.txt");
+      try (InputStream in = new FileInputStream("test.txt");) {
+
 
          char symbol = (char) in.read();
 
