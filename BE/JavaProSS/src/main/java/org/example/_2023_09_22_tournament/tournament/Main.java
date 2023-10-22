@@ -8,10 +8,13 @@ public class Main {
        */
       Tournament tournament = new Tournament();
       System.out.println("*****************************");
+
       tournament.games();
       System.out.println("*****************************");
+
       tournament.showResultsBoard();
       System.out.println("*****************************");
+
       tournament.showTop3();
    }
 }
