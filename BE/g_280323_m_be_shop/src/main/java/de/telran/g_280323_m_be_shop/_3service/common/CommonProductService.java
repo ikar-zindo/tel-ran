@@ -45,8 +45,9 @@ public class CommonProductService implements ProductService {
    @Override
    public double getAveragePrice() {
       int count = getCount();
-      if (count == 0) return 0;
-
+      if (count == 0) {
+         return 0;
+      }
       return getTotalPrice() / count;
    }
 
@@ -56,7 +57,6 @@ public class CommonProductService implements ProductService {
               .filter(x -> x.getName().equals(name))
               .findFirst()
               .orElse(null);
-
       repository.delete(product.getId());
    }
 }

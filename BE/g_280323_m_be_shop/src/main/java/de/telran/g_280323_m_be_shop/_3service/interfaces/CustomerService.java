@@ -18,7 +18,7 @@ public interface CustomerService {
 
    double getTotalPriceById(int id);
 
-   double getAveragePriceId(int id);
+   double getAveragePriceById(int id);
 
    void deleteByName(String name);
 
@@ -26,5 +26,5 @@ public interface CustomerService {
 
    void deleteFromCartById(int customerId, int productId);
 
-   void clearCartDyId(int id);
+   void clearCartById(int id);
 }
