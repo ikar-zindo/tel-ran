@@ -1,5 +1,6 @@
 package de.telran.g_280323_m_be_shop._2repository.common;
 
+import de.telran.g_280323_m_be_shop._1domain.database.common.CommonDatabase;
 import de.telran.g_280323_m_be_shop._1domain.database.interfaces.Database;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Customer;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Product;
@@ -12,11 +13,11 @@ import java.util.List;
 
 public class CommonCustomerRepository implements CustomerRepository {
 
-   @Autowired
-   private Database database;
+//   @Autowired
+   private Database database = new CommonDatabase();
 
-   @Autowired
-   private ProductRepository productRepository;
+//   @Autowired
+   private ProductRepository productRepository = new CommonProductRepository();
 
 
    @Override
