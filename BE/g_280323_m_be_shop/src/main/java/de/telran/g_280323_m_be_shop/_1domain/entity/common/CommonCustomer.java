@@ -32,11 +32,6 @@ public class CommonCustomer implements Customer {
       return name;
    }
 
-   @Override
-   public Cart getCart() {
-      return null;
-   }
-
    public void setName(String name) {
       this.name = name;
    }
