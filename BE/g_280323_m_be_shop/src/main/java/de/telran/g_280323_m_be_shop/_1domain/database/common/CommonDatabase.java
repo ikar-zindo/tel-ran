@@ -29,8 +29,8 @@ public class CommonDatabase implements Database {
       products.add(new CommonProduct(4, "Cherry", 250));
       products.add(new CommonProduct(5, "Peach", 220));
 
-      currentCustomerId = customers.size();
-      currentProductId = products.size();
+      currentCustomerId = 3;
+      currentProductId = 5;
    }
 
    @Override

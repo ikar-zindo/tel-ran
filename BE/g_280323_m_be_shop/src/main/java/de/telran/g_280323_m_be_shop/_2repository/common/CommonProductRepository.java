@@ -1,6 +1,5 @@
 package de.telran.g_280323_m_be_shop._2repository.common;
 
-import de.telran.g_280323_m_be_shop._1domain.database.common.CommonDatabase;
 import de.telran.g_280323_m_be_shop._1domain.database.interfaces.Database;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Product;
 import de.telran.g_280323_m_be_shop._2repository.interfaces.ProductRepository;
@@ -12,8 +11,7 @@ import java.util.List;
 public class CommonProductRepository implements ProductRepository {
 
    @Autowired
-   private Database database = new CommonDatabase();
-
+   private Database database;
 
    @Override
    public List<Product> getAll() {
@@ -46,7 +44,7 @@ public class CommonProductRepository implements ProductRepository {
    @Override
    public void delete(int id) {
       try {
-         database.execute("Delete customer where id = " + id);
+         database.execute("Delete product where id = " + id);
       } catch (SQLException e) {
          throw new RuntimeException(e);
       }

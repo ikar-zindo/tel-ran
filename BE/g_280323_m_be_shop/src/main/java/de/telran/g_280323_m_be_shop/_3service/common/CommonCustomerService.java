@@ -1,7 +1,6 @@
 package de.telran.g_280323_m_be_shop._3service.common;
 
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Customer;
-import de.telran.g_280323_m_be_shop._2repository.common.CommonCustomerRepository;
 import de.telran.g_280323_m_be_shop._2repository.interfaces.CustomerRepository;
 import de.telran.g_280323_m_be_shop._3service.interfaces.CustomerService;
 import de.telran.g_280323_m_be_shop._3service.interfaces.ProductService;
@@ -11,11 +10,11 @@ import java.util.List;
 
 public class CommonCustomerService implements CustomerService {
 
-//   @Autowired
-   private CustomerRepository repository = new CommonCustomerRepository();
+   @Autowired
+   private CustomerRepository repository;
 
-//   @Autowired
-   private ProductService product = new CommonProductService();
+   @Autowired
+   private ProductService productService;
 
    @Override
    public List<Customer> getAll() {
@@ -48,7 +47,7 @@ public class CommonCustomerService implements CustomerService {
    }
 
    @Override
-   public double getAveragePriceId(int id) {
+   public double getAveragePriceById(int id) {
       return getById(id).getCart().getAveragePrice();
    }
 
@@ -58,7 +57,6 @@ public class CommonCustomerService implements CustomerService {
               .filter(x -> x.getName().equals(name))
               .findFirst()
               .orElse(null);
-
       repository.delete(customer.getId());
    }
 
@@ -73,7 +71,7 @@ public class CommonCustomerService implements CustomerService {
    }
 
    @Override
-   public void clearCartDyId(int id) {
+   public void clearCartById(int id) {
       repository.clearCart(id);
    }
 }

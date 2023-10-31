@@ -1,6 +1,5 @@
 package de.telran.g_280323_m_be_shop._2repository.common;
 
-import de.telran.g_280323_m_be_shop._1domain.database.common.CommonDatabase;
 import de.telran.g_280323_m_be_shop._1domain.database.interfaces.Database;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Customer;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Product;
@@ -13,28 +12,26 @@ import java.util.List;
 
 public class CommonCustomerRepository implements CustomerRepository {
 
-//   @Autowired
-   private Database database = new CommonDatabase();
+   @Autowired
+   private Database database;
 
-//   @Autowired
-   private ProductRepository productRepository = new CommonProductRepository();
-
+   @Autowired
+   private ProductRepository productRepository;
 
    @Override
    public List<Customer> getAll() {
       try {
-         List<Object> objects = database.select("Select all products");
+         List<Object> objects = database.select("Select all customers");
          return objects.stream().map(x -> (Customer) x).toList();
       } catch (SQLException e) {
          throw new RuntimeException(e);
       }
    }
 
-
    @Override
    public Customer getById(int id) {
       try {
-         return (Customer) database.select("Select product where id = " + id).get(0);
+         return (Customer) database.select("Select customer where id = " + id).get(0);
       } catch (SQLException e) {
          throw new RuntimeException(e);
       }
