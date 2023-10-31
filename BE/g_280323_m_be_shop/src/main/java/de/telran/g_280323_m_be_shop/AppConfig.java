@@ -1,10 +1,9 @@
 package de.telran.g_280323_m_be_shop;
 
-import de.telran.g_280323_m_be_shop.domain.database.common.CommonDatabase;
-import de.telran.g_280323_m_be_shop.domain.database.interfaces.Database;
-import de.telran.g_280323_m_be_shop.repository.common.CommonCustomerRepository;
-import de.telran.g_280323_m_be_shop.repository.common.CommonProductRepository;
-import de.telran.g_280323_m_be_shop.repository.interfaces.ProductRepository;
+import de.telran.g_280323_m_be_shop._1domain.database.common.CommonDatabase;
+import de.telran.g_280323_m_be_shop._1domain.database.interfaces.Database;
+import de.telran.g_280323_m_be_shop._2repository.common.CommonProductRepository;
+import de.telran.g_280323_m_be_shop._2repository.interfaces.ProductRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
