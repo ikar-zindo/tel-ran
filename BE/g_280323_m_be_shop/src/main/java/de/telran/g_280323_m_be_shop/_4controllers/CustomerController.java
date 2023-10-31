@@ -1,8 +1,9 @@
 package de.telran.g_280323_m_be_shop._4controllers;
 
+import de.telran.g_280323_m_be_shop._1domain.entity.common.CommonCustomer;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Customer;
-import de.telran.g_280323_m_be_shop._3service.common.CommonCustomerService;
 import de.telran.g_280323_m_be_shop._3service.interfaces.CustomerService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -11,7 +12,8 @@ import java.util.List;
 @RequestMapping("/customer")
 public class CustomerController {
 
-   private final CustomerService customerService = new CommonCustomerService();
+   @Autowired
+   private CustomerService customerService;
 
    @GetMapping("/all")
    public List<Customer> getCustomer() {
@@ -24,8 +26,9 @@ public class CustomerController {
    }
 
    @PostMapping("/add")
-   public void add(Customer customer) {
+   public Customer add(@RequestBody CommonCustomer customer) {
       customerService.add(customer);
+      return customer;
    }
 
    @DeleteMapping("/delete-{id}")

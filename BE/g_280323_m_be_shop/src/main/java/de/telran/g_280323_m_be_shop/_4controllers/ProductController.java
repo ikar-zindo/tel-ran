@@ -1,16 +1,14 @@
 package de.telran.g_280323_m_be_shop._4controllers;
 
+import de.telran.g_280323_m_be_shop._1domain.entity.common.CommonProduct;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Product;
-import de.telran.g_280323_m_be_shop._3service.common.CommonProductService;
 import de.telran.g_280323_m_be_shop._3service.interfaces.ProductService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 /**
- * Андрей, вроде, всё сделал правильно, аналогично примеру из прошлого занятия,
- * но, почему-то, всё равно не работают запросы, не выполняются.
- * Выдаёт такую вот ошибку
  * GET: http://localhost:8080/product/all
  * {
  *     "timestamp": "2023-10-31T18:39:59.416+00:00",
@@ -18,14 +16,13 @@ import java.util.List;
  *     "error": "Internal Server Error",
  *     "path": "/product/all"
  * }
- * Прошлое ДЗ я выполнил и там всё отработало корректно,
- * но здесь не хочет и я не пойму почему
  */
 @RestController
 @RequestMapping("/product")
 public class ProductController {
 
-   private final ProductService productService = new CommonProductService();
+   @Autowired
+   private ProductService productService;
 
    @GetMapping("/all")
    public List<Product> getAll() {
@@ -38,8 +35,9 @@ public class ProductController {
    }
 
    @PostMapping("/add")
-   public void add(Product product) {
+   public Product add(@RequestBody CommonProduct product) {
       productService.add(product);
+      return product;
    }
 
    @DeleteMapping("/delete-{id}")
