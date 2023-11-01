@@ -9,59 +9,101 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * GET: http://localhost:8080/product/all
- * {
- *     "timestamp": "2023-10-31T18:39:59.416+00:00",
- *     "status": 500,
- *     "error": "Internal Server Error",
- *     "path": "/product/all"
- * }
+ * Контроллер продуктов.
+ * Принимает входящие http-запросы
+ * для получения, добавления и удаления продуктов.
  */
 @RestController
 @RequestMapping("/product")
 public class ProductController {
 
+   /**
+    * Сервис продуктов.
+    * Содержит бизнес-логику, относящуюся к продуктам.
+    */
    @Autowired
-   private ProductService productService;
+   private ProductService service;
 
-   @GetMapping("/all")
+   /**
+    * Получение всех продуктов.
+    *
+    * @return список всех продуктов, хранящихся в БД.
+    */
+   @GetMapping
    public List<Product> getAll() {
-      return productService.getAll();
+      return service.getAll();
    }
 
+   /**
+    * Получение продукта по идентификатору.
+    *
+    * @param id    идентификатор продукта.
+    * @return      продукт, имеющий переданный идентификатор.
+    */
    @GetMapping("/{id}")
    public Product getById(@PathVariable int id) {
-      return productService.getById(id);
+      return service.getById(id);
    }
 
-   @PostMapping("/add")
+   /**
+    * Добавление продукта.
+    *
+    * @param product   объект продукта, содержащийся в теле POST-запроса.
+    * @return          объект сохраняемого продукта в случае успешного сохранения.
+    */
+   @PostMapping
    public Product add(@RequestBody CommonProduct product) {
-      productService.add(product);
+      service.add(product);
       return product;
    }
 
-   @DeleteMapping("/delete-{id}")
-   public void deleteById(@PathVariable int id) {
-      productService.deleteById(id);
+   /**
+    * Удаление продукта.
+    *
+    * @param id идентификатор удаляемого из БД продукта.
+    */
+   @DeleteMapping("/{id}")
+   public void delete(@PathVariable int id) {
+      service.deleteById(id);
    }
 
+   /**
+    * Удаление продукта.
+    *
+    * @param name наименование удаляемого из БД продукта.
+    */
+   @DeleteMapping("/name/{name}")
+   public void delete(@PathVariable String name) {
+      service.deleteByName(name);
+   }
+
+   /**
+    * Получение количества продуктов.
+    *
+    * @return количество продуктов, содержащихся в БД.
+    */
    @GetMapping("/count")
    public int getCount() {
-      return productService.getCount();
+      return service.getCount();
    }
 
-   @GetMapping("/total-price")
+   /**
+    * Получение стоимости всех продуктов.
+    *
+    * @return суммарная стоимость всех продуктов, содержащихся в БД.
+    */
+   @GetMapping("/total")
    public double getTotalPrice() {
-      return productService.getTotalPrice();
+      return service.getTotalPrice();
    }
 
-   @GetMapping("/avg")
-   public double getAveragePrice() {
-      return productService.getAveragePrice();
-   }
-
-   @DeleteMapping("/delete-{name}")
-   public void deleteByName(@PathVariable String name) {
-      productService.deleteByName(name);
+   /**
+    * Получение средней стоимости.
+    *
+    * @return средняя стоимость продукта из всех продуктов, содержащихся в БД.
+    */
+   @GetMapping("/average")
+   public double getAverage() {
+      return service.getAveragePrice();
    }
 }

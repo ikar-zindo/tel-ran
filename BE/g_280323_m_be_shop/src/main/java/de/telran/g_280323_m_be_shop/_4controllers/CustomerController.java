@@ -8,66 +8,136 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * Контроллер покупателей.
+ * Принимает входящие http-запросы
+ * для получения, добавления и удаления покупателей.
+ */
 @RestController
 @RequestMapping("/customer")
 public class CustomerController {
 
+   /**
+    * Сервис покупателей.
+    * Содержит бизнес-логику, относящуюся к покупателям.
+    */
    @Autowired
-   private CustomerService customerService;
+   private CustomerService service;
 
-   @GetMapping("/all")
-   public List<Customer> getCustomer() {
-      return customerService.getAll();
+   /**
+    * Получение всех покупателей.
+    *
+    * @return список всех покупателей, хранящихся в БД.
+    */
+   @GetMapping
+   public List<Customer> getAll() {
+      return service.getAll();
    }
 
+   /**
+    * Получение покупателя по идентификатору.
+    *
+    * @param id    идентификатор покупателя.
+    * @return      покупатель, имеющий переданный идентификатор.
+    */
    @GetMapping("/{id}")
    public Customer getById(@PathVariable int id) {
-      return customerService.getById(id);
+      return service.getById(id);
    }
 
-   @PostMapping("/add")
+   /**
+    * Добавление покупателя.
+    *
+    * @param customer  объект покупателя, содержащийся в теле POST-запроса.
+    * @return          объект сохраняемого покупателя в случае успешного сохранения.
+    */
+   @PostMapping
    public Customer add(@RequestBody CommonCustomer customer) {
-      customerService.add(customer);
+      service.add(customer);
       return customer;
    }
 
-   @DeleteMapping("/delete-{id}")
-   public void deleteById(@PathVariable int id) {
-      customerService.deleteById(id);
+   /**
+    * Удаление покупателя.
+    *
+    * @param id идентификатор удаляемого из БД покупателя.
+    */
+   @DeleteMapping("/{id}")
+   public void delete(@PathVariable int id) {
+      service.deleteById(id);
    }
 
+   /**
+    * Удаление покупателя.
+    *
+    * @param name имя удаляемого из БД покупателя.
+    */
+   @DeleteMapping("/name/{name}")
+   public void delete(@PathVariable String name) {
+      service.deleteByName(name);
+   }
+
+   /**
+    * Получение количества покупателей.
+    *
+    * @return количество покупателей, содержащихся в БД.
+    */
    @GetMapping("/count")
    public int getCount() {
-      return customerService.getCount();
+      return service.getCount();
    }
 
-   @GetMapping("/total-price-{id}")
-   public double getTotalPriceById(@PathVariable int id) {
-      return customerService.getTotalPriceById(id);
+   /**
+    * Получение стоимости продуктов конкретного покупателя.
+    *
+    * @param id    идентификатор покупателя.
+    * @return      стоимость всех продуктов в корзине покупателя с переданным идентификатором.
+    */
+   @GetMapping("/total/{id}")
+   public double getTotalPrice(@PathVariable int id) {
+      return service.getTotalPriceById(id);
    }
 
-   @GetMapping("/avg-price-{id}")
-   public double getAveragePriceById(@PathVariable int id) {
-      return customerService.getAveragePriceById(id);
+   /**
+    * Получение средней стоимости продукта конкретного покупателя.
+    *
+    * @param id    идентификатор покупателя.
+    * @return      средняя стоимость продукта в корзине покупателя с переданным идентификатором.
+    */
+   @GetMapping("/average/{id}")
+   public double getAverage(@PathVariable int id) {
+      return service.getAveragePriceById(id);
    }
 
-   @DeleteMapping("/delete-{name}")
-   public void deleteByName(@PathVariable String name) {
-      customerService.deleteByName(name);
+   /**
+    * Добавление продукта в корзину.
+    *
+    * @param customerId    идентификатор покупателя, которому добавляется продукт.
+    * @param productId     идентификатор добавляемого продукта.
+    */
+   @GetMapping("/{customerId}/{productId}")
+   public void addToCart(@PathVariable int customerId, @PathVariable int productId) {
+      service.addToCartById(customerId, productId);
    }
 
-   @PostMapping("/add-to-{customerId}-by-{productId}")
-   public void addToCartById(@PathVariable int customerId,@PathVariable int productId) {
-      customerService.addToCartById(customerId, productId);
+   /**
+    * Удаление продукта из корзины.
+    *
+    * @param customerId    идентификатор покупателя, из корзины которого удаляется продукт.
+    * @param productId     идентификатор удаляемого продукта.
+    */
+   @DeleteMapping("/{customerId}/{productId}")
+   public void deleteFromCart(@PathVariable int customerId, @PathVariable int productId) {
+      service.deleteFromCartById(customerId, productId);
    }
 
-   @DeleteMapping("/delete-from-{customerId}-by-{productId}")
-   public void deleteFromCartById(@PathVariable int customerId,@PathVariable int productId) {
-      customerService.deleteFromCartById(customerId, productId);
-   }
-
-   @DeleteMapping("/clear-{id}")
-   public void clearCartById(@PathVariable int id) {
-      customerService.clearCartById(id);
+   /**
+    * Очистка корзины.
+    *
+    * @param customerId идентификатор покупателя, у которого очищается корзина.
+    */
+   @DeleteMapping("/clear/{customerId}")
+   public void clearCart(@PathVariable int customerId) {
+      service.clearCartById(customerId);
    }
 }
