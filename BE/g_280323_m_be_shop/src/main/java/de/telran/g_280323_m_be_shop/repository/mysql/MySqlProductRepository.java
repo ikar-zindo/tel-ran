@@ -41,16 +41,16 @@ public class MySqlProductRepository implements ProductRepository {
    @Override
    public Product getById(int id) {
       try (Connection connection = getConnection()) {
-//         String query = String.format("select * from product where product_id = %d;", id);
-//         ResultSet resultSet = connection.createStatement().executeQuery(query);
+         String query = String.format("select * from product where product_id = %d;", id);
+         ResultSet resultSet = connection.createStatement().executeQuery(query);
 
          Product product = null;
 
-//         while (resultSet.next()) {
-//            String name = resultSet.getString(NAME);
-//            double price = resultSet.getDouble(PRICE);
-//            product = new CommonProduct(id, name, price);
-//         }
+         while (resultSet.next()) {
+            String name = resultSet.getString(NAME);
+            double price = resultSet.getDouble(PRICE);
+            product = new CommonProduct(id, name, price);
+         }
 
          return product;
       } catch (Exception e) {
