@@ -30,7 +30,7 @@ public class MySqlCustomerRepository implements CustomerRepository {
          String query = "select * from customer as c " +
                  "left join customer_product as cp on c.customer_id=cp.customer_id " +
                  "left join product as p on cp.product_id=p.product_id";
-//         String query = "select * from customer;";
+
          ResultSet resultSet = connection.createStatement().executeQuery(query);
 
          List<Customer> result = new ArrayList<>();
@@ -65,6 +65,7 @@ public class MySqlCustomerRepository implements CustomerRepository {
       }
    }
 
+   // todo
    @Override
    public Customer getById(int id) {
       try (Connection connection = getConnection()) {
