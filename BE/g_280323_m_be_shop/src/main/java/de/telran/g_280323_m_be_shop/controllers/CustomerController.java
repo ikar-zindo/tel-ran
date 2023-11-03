@@ -115,7 +115,7 @@ public class CustomerController {
     * @param customerId    идентификатор покупателя, которому добавляется продукт.
     * @param productId     идентификатор добавляемого продукта.
     */
-   @GetMapping("/{customerId}/{productId}")
+   @PostMapping("/{customerId}/{productId}")
    public void addToCart(@PathVariable int customerId, @PathVariable int productId) {
       service.addToCartById(customerId, productId);
    }
