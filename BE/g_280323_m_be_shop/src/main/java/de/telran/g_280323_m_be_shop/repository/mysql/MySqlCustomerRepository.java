@@ -7,15 +7,14 @@ import de.telran.g_280323_m_be_shop.domain.entity.interfaces.Cart;
 import de.telran.g_280323_m_be_shop.domain.entity.interfaces.Customer;
 import de.telran.g_280323_m_be_shop.domain.entity.interfaces.Product;
 import de.telran.g_280323_m_be_shop.repository.interfaces.CustomerRepository;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-import static de.telran.g_280323_m_be_shop.domain.database.MySqlConnector.*;
+import static de.telran.g_280323_m_be_shop.domain.database.MySqlConnector.getConnection;
 
 public class MySqlCustomerRepository implements CustomerRepository {
 
