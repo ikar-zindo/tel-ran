@@ -65,7 +65,6 @@ public class MySqlCustomerRepository implements CustomerRepository {
       }
    }
 
-   // todo: доделать метод
    @Override
    public Customer getById(int customerId) {
       try (Connection connection = getConnection()) {
