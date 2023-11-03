@@ -20,7 +20,9 @@ public class CommonCart implements Cart {
 
    @Override
    public void addProduct(Product product) {
-      products.add(product);
+      if (product.getName() != null) {
+         products.add(product);
+      }
    }
 
    @Override

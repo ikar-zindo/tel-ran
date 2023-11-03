@@ -20,6 +20,9 @@ public class MySqlCustomerRepository implements CustomerRepository {
    private final String ID = "customer_id";
    private final String NAME = "name";
    private final String CART = "cart";
+   private final String PRODUCT_ID = "product_id";
+   private final String PRODUCT_NAME = "product.name";
+   private final String PRODUCT_PRICE = "product.price";
 
 
    // todo: переделать метод без вложенного массива
@@ -31,9 +34,9 @@ public class MySqlCustomerRepository implements CustomerRepository {
    @Override
    public List<Customer> getAll() {
       try (Connection connection = getConnection()) {
-         String query = "select * from customer as c " +
-                 "left join customer_product as cp on c.customer_id=cp.customer_id " +
-                 "left join product as p on cp.product_id=p.product_id";
+         String query = "SELECT * FROM `customer` " +
+                 "LEFT JOIN `customer_product` USING(`customer_id`) " +
+                 "LEFT JOIN `product` USING(`product_id`)";
 
          ResultSet resultSet = connection.createStatement().executeQuery(query);
 
@@ -42,9 +45,9 @@ public class MySqlCustomerRepository implements CustomerRepository {
          while (resultSet.next()) {
             int id = resultSet.getInt(ID);
             String name = resultSet.getString(NAME);
-            int productId = resultSet.getInt("product_id");
-            String productName = resultSet.getString("p.name");
-            double productPrice = resultSet.getDouble("p.price");
+            int productId = resultSet.getInt(PRODUCT_ID);
+            String productName = resultSet.getString(PRODUCT_NAME);
+            double productPrice = resultSet.getDouble(PRODUCT_PRICE);
 
             Customer customer = null;
             for (Customer countCustomer : result) {
@@ -61,6 +64,7 @@ public class MySqlCustomerRepository implements CustomerRepository {
 
             Product product = new CommonProduct(productId, productName, productPrice);
             customer.getCart().addProduct(product);
+
          }
 
          return result;
@@ -73,21 +77,17 @@ public class MySqlCustomerRepository implements CustomerRepository {
    @Override
    public Customer getById(int id) {
       try (Connection connection = getConnection()) {
-         String query = String.format("select * from customer as c " +
-                 "left join customer_product as cp on c.customer_id=cp.customer_id " +
-                 "left join product as p on cp.product_id=p.product_id " +
-                 "where cp.customer_id = %d;", id);
-//         String query = "select * from customer;";
+         String query = String.format("SELECT * FROM `customer` " +
+                 "LEFT JOIN `customer_product` USING(`customer_id`) " +
+                 "LEFT JOIN product USING(`product_id`) " +
+                 "WHERE `customer_product`.`customer_id` = %d;", id);
+
          ResultSet resultSet = connection.createStatement().executeQuery(query);
 
          Customer customer = null;
 
          while (resultSet.next()) {
             String name = resultSet.getString(NAME);
-
-            Cart cart = new CommonCart();
-//            cart.addProduct();
-
          }
 
          return customer;

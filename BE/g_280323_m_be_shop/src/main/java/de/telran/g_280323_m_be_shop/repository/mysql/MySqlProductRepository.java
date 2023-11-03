@@ -19,7 +19,7 @@ public class MySqlProductRepository implements ProductRepository {
    @Override
    public List<Product> getAll() {
       try (Connection connection = getConnection()) {
-         String query = "select * from product;";
+         String query = "SELECT * FROM `product`;";
          ResultSet resultSet = connection.createStatement().executeQuery(query);
 
          List<Product> result = new ArrayList<>();
@@ -41,7 +41,7 @@ public class MySqlProductRepository implements ProductRepository {
    @Override
    public Product getById(int id) {
       try (Connection connection = getConnection()) {
-         String query = String.format("select * from product where product_id = %d;", id);
+         String query = String.format("SELECT * FROM `product` WHERE `product_id`=%d;", id);
          ResultSet resultSet = connection.createStatement().executeQuery(query);
 
          Product product = null;
