@@ -16,6 +16,11 @@ import java.util.Map;
 
 import static de.telran.g_280323_m_be_shop.domain.database.MySqlConnector.getConnection;
 
+   /**
+    * Репозиторий клиентов.
+    * Содержит сформированные SQL запросы в методах для поиска клиента,
+    * добавления, удаления клиентов, а так же управление корзиной клиентов
+    */
 public class MySqlCustomerRepository implements CustomerRepository {
 
    private final String ID = "customer_id";
@@ -25,12 +30,10 @@ public class MySqlCustomerRepository implements CustomerRepository {
    private final String PRODUCT_PRICE = "product.price";
 
 
-   // todo:
-   //  ============================================
-   //  При формировании объектов покупателей их корзины должны правильно заполняться теми товарами,
-   //  которые принадлежат данному покупателю.
-   //  Учесть момент, что у покупателя может и не быть товаров. В таком случае должна выводиться просто пустая корзина,
-   //  без лишних объектов null внутри.
+   /**
+    * Получение всех покупателей.
+    * @return список всех покупателей, хранящихся в БД.
+    */
    @Override
    public List<Customer> getAll() {
       try (Connection connection = getConnection()) {
@@ -65,6 +68,12 @@ public class MySqlCustomerRepository implements CustomerRepository {
       }
    }
 
+   /**
+    * Получение покупателя по идентификатору.
+    * @param customerId    идентификатор покупателя.
+    * @return              покупатель, имеющий переданный идентификатор.
+    */
+
    @Override
    public Customer getById(int customerId) {
       try (Connection connection = getConnection()) {
@@ -96,6 +105,10 @@ public class MySqlCustomerRepository implements CustomerRepository {
       }
    }
 
+   /**
+    * Добавление покупателя.
+    * @param name имя добавляемого покупателя в БД.
+    */
    @Override
    public void add(String name) {
       try (Connection connection = getConnection()) {
@@ -107,6 +120,10 @@ public class MySqlCustomerRepository implements CustomerRepository {
       }
    }
 
+   /**
+    * Удаление покупателя.
+    * @param id идентификатор удаляемого из БД покупателя.
+    */
    @Override
    public void delete(int id) {
       try (Connection connection = getConnection()) {
@@ -118,7 +135,12 @@ public class MySqlCustomerRepository implements CustomerRepository {
       }
    }
 
-   @Override
+   /**
+    * Добавление продукта в корзину.
+    * @param customerId    покупателя, которому добавляется продукт.
+    * @param productId     идентификатор добавляемого продукта.
+    */
+    @Override
    public void addToCartById(int customerId, int productId) {
       try (Connection connection = getConnection()) {
          String query = String.format("INSERT INTO `customer_product` (`customer_id`, `product_id`) " +
@@ -130,6 +152,11 @@ public class MySqlCustomerRepository implements CustomerRepository {
       }
    }
 
+   /**
+    * Удаление продукта из корзины.
+    * @param customerId    идентификатор покупателя, из корзины которого удаляется продукт.
+    * @param productId     идентификатор удаляемого продукта.
+    */
    @Override
    public void deleteFromCartById(int customerId, int productId) {
       try (Connection connection = getConnection()) {
@@ -142,6 +169,10 @@ public class MySqlCustomerRepository implements CustomerRepository {
       }
    }
 
+   /**
+    * Очистка корзины.
+    * @param customerId идентификатор покупателя, у которого очищается корзина.
+    */
    @Override
    public void clearCart(int customerId) {
       try (Connection connection = getConnection()) {
