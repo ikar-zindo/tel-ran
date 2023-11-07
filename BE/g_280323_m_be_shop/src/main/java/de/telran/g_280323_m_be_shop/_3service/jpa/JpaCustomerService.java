@@ -9,6 +9,11 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Андрей, пробую запускать код, но таблицу `customer` не видит, хотя для `product` всё отрабатывает.
+ * Не могу найти ошибку, возможно я забыл что-то указать...
+ * Из-за этого не могу проверить работоспособность кода
+ */
 @Service
 public class JpaCustomerService implements CustomerService {
 
@@ -17,7 +22,6 @@ public class JpaCustomerService implements CustomerService {
    public JpaCustomerService(JpaCustomerRepository repository) {
       this.repository = repository;
    }
-
 
    @Override
    public List<Customer> getAll() {
