@@ -1,0 +1,11 @@
+package de.telran.g_280323_m_be_shop._1domain.database_imitation.interfaces;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public interface Database {
+
+   void execute(String query) throws SQLException;
+
+   List<Object> select(String query) throws SQLException;
+}
