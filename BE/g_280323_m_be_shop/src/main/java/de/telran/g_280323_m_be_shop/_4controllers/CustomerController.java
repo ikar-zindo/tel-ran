@@ -12,6 +12,9 @@ import java.util.List;
  * Контроллер покупателей.
  * Принимает входящие http-запросы
  * для получения, добавления и удаления покупателей.
+ *
+ * ссылка на ошибку
+ * https://github.com/ikar-zindo/tel-ran/blob/master/img/Postman_err_shop_DB.png
  */
 @RestController
 @RequestMapping("/customer")
