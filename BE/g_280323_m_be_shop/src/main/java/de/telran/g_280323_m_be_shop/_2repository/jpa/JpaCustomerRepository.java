@@ -8,13 +8,13 @@ import org.springframework.data.repository.query.Param;
 
 public interface JpaCustomerRepository extends JpaRepository<JpaCustomer, Integer> {
 
-   @Query(value = "SELECT sum(`price`) FROM `cart_product` " +
+   @Query(value = "SELECT SUM(`price`) FROM `cart_product` " +
            "LEFT JOIN `cart` USING(`cart_id`) " +
            "LEFT JOIN `product` USING(`product_id`) " +
            "WHERE `customer_id`=:customerId;", nativeQuery = true)
    double getTotalPriceById(@Param("customerId") int customerId);
 
-   @Query(value = "SELECT avg(`price`) FROM `cart_product` " +
+   @Query(value = "SELECT AVG(`price`) FROM `cart_product` " +
            "LEFT JOIN `cart` USING(`cart_id`) " +
            "LEFT JOIN `product` USING(`product_id`) " +
            "WHERE `customer_id`=:customerId;", nativeQuery = true)
@@ -31,9 +31,9 @@ public interface JpaCustomerRepository extends JpaRepository<JpaCustomer, Intege
            "LEFT JOIN `product` USING(`product_id`) " +
            "WHERE `customer_id`=:customerId AND `product_id`=:productId " +
            "LIMIT 1;", nativeQuery = true)
-   void deleteFromCartById(@Param("customerId") int customerId,@Param("productId") int productId);
+   void deleteFromCartById(@Param("customerId") int customerId, @Param("productId") int productId);
 
-   @Query(value = "delete `cart_product` FROM `cart_product` " +
+   @Query(value = "DELETE `cart_product` FROM `cart_product` " +
            "LEFT JOIN `cart` USING(`cart_id`) " +
            "LEFT JOIN `product` USING(`product_id`) " +
            "WHERE `customer_id`=:customerId;", nativeQuery = true)
