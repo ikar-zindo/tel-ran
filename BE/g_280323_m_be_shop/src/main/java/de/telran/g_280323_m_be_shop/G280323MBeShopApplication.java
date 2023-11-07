@@ -9,5 +9,4 @@ public class G280323MBeShopApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(G280323MBeShopApplication.class, args);
 	}
-
 }
