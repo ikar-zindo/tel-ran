@@ -333,3 +333,7 @@
   333  ls
   334  cd git
   335  history >> history.txt
+  
+  
+  
+  
