@@ -7,4 +7,9 @@ public interface Customer {
    String getName();
 
    Cart getCart();
+
+   String getEmail();
+
+   int getAge();
+
 }
