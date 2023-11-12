@@ -3,6 +3,8 @@ package de.telran.g_280323_m_be_shop._4controllers;
 import de.telran.g_280323_m_be_shop._1domain.entity.common.CommonCustomer;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Customer;
 import de.telran.g_280323_m_be_shop._3service.interfaces.CustomerService;
+import de.telran.g_280323_m_be_shop.exception_handling.exceptions.EntityValidationException;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -55,8 +57,12 @@ public class CustomerController {
     * @return          объект сохраняемого покупателя в случае успешного сохранения.
     */
    @PostMapping
-   public Customer add(@RequestBody CommonCustomer customer) {
-      service.add(customer);
+   public Customer add(@RequestBody @Valid CommonCustomer customer) {
+      try {
+         service.add(customer);
+      } catch (Exception e) {
+         throw new EntityValidationException(e.getMessage());
+      }
       return customer;
    }
 

@@ -8,34 +8,37 @@ import org.springframework.data.repository.query.Param;
 
 public interface JpaCustomerRepository extends JpaRepository<JpaCustomer, Integer> {
 
-   @Query(value = "SELECT SUM(`price`) FROM `cart_product` " +
-           "LEFT JOIN `cart` USING(`cart_id`) " +
-           "LEFT JOIN `product` USING(`product_id`) " +
-           "WHERE `customer_id`=:customerId;", nativeQuery = true)
-   double getTotalPriceById(@Param("customerId") int customerId);
-
-   @Query(value = "SELECT AVG(`price`) FROM `cart_product` " +
-           "LEFT JOIN `cart` USING(`cart_id`) " +
-           "LEFT JOIN `product` USING(`product_id`) " +
-           "WHERE `customer_id`=:customerId;", nativeQuery = true)
-   double getAveragePriceById(@Param("customerId") int customerId);
-
    @Transactional
    void deleteByName(String name);
 
-   @Query(value = "INSERT INTO `cart_product` (`cart_id`, `product_id`) VALUES ('1', '2');", nativeQuery = true)
-   void addToCartById(int customerId, int productId);
-
-   @Query(value = "DELETE `cart_product` FROM `cart_product` " +
-           "LEFT JOIN `cart` USING(`cart_id`) " +
-           "LEFT JOIN `product` USING(`product_id`) " +
-           "WHERE `customer_id`=:customerId AND `product_id`=:productId " +
-           "LIMIT 1;", nativeQuery = true)
-   void deleteFromCartById(@Param("customerId") int customerId, @Param("productId") int productId);
-
-   @Query(value = "DELETE `cart_product` FROM `cart_product` " +
-           "LEFT JOIN `cart` USING(`cart_id`) " +
-           "LEFT JOIN `product` USING(`product_id`) " +
-           "WHERE `customer_id`=:customerId;", nativeQuery = true)
-   void clearCartById(@Param("customerId") int customerId);
+//   @Query(value = "SELECT SUM(`price`) FROM `cart_product` " +
+//           "LEFT JOIN `cart` USING(`cart_id`) " +
+//           "LEFT JOIN `product` USING(`product_id`) " +
+//           "WHERE `customer_id`=:customerId;", nativeQuery = true)
+//   double getTotalPriceById(@Param("customerId") int customerId);
+//
+//   @Query(value = "SELECT AVG(`price`) FROM `cart_product` " +
+//           "LEFT JOIN `cart` USING(`cart_id`) " +
+//           "LEFT JOIN `product` USING(`product_id`) " +
+//           "WHERE `customer_id`=:customerId;", nativeQuery = true)
+//   double getAveragePriceById(@Param("customerId") int customerId);
+//
+//   @Transactional
+//   void deleteByName(String name);
+//
+//   @Query(value = "INSERT INTO `cart_product` (`cart_id`, `product_id`) VALUES ('1', '2');", nativeQuery = true)
+//   void addToCartById(int customerId, int productId);
+//
+//   @Query(value = "DELETE `cart_product` FROM `cart_product` " +
+//           "LEFT JOIN `cart` USING(`cart_id`) " +
+//           "LEFT JOIN `product` USING(`product_id`) " +
+//           "WHERE `customer_id`=:customerId AND `product_id`=:productId " +
+//           "LIMIT 1;", nativeQuery = true)
+//   void deleteFromCartById(@Param("customerId") int customerId, @Param("productId") int productId);
+//
+//   @Query(value = "DELETE `cart_product` FROM `cart_product` " +
+//           "LEFT JOIN `cart` USING(`cart_id`) " +
+//           "LEFT JOIN `product` USING(`product_id`) " +
+//           "WHERE `customer_id`=:customerId;", nativeQuery = true)
+//   void clearCartById(@Param("customerId") int customerId);
 }
