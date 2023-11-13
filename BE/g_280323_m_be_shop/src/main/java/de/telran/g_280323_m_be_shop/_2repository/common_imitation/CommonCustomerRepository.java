@@ -47,6 +47,15 @@ public class CommonCustomerRepository implements CustomerRepository {
    }
 
    @Override
+   public void add(String name, String email, int age) {
+      try {
+         database.execute("Add new customer name = " + name);
+      } catch (SQLException e) {
+         throw new RuntimeException(e);
+      }
+   }
+
+   @Override
    public void delete(int id) {
       try {
          database.execute("Delete customer where id = " + id);

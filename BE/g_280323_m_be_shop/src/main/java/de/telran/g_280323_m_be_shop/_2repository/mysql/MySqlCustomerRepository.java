@@ -124,7 +124,19 @@ public class MySqlCustomerRepository implements CustomerRepository {
       }
    }
 
-   /**
+      @Override
+      public void add(String name, String email, int age) {
+         try (Connection connection = getConnection()) {
+            String query = String.format("INSERT INTO `customer` (`name`, `email`, `age`) " +
+                    "VALUES ('%s', '%s', '%d');", name, email, age);
+            connection.createStatement().execute(query);
+
+         } catch (Exception e) {
+            throw new RuntimeException(e);
+         }
+      }
+
+      /**
     * Удаление покупателя.
     * @param id идентификатор удаляемого из БД покупателя.
     */

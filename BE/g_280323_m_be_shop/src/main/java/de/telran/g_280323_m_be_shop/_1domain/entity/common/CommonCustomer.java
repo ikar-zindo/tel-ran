@@ -8,8 +8,8 @@ public class CommonCustomer implements Customer {
    private int id;
    private String name;
    private Cart cart;
-
    private String email;
+   private int age;
 
    public CommonCustomer() {
    }
@@ -18,6 +18,14 @@ public class CommonCustomer implements Customer {
       this.id = id;
       this.name = name;
       this.cart = cart;
+   }
+
+   public CommonCustomer(int id, String name, Cart cart, String email, int age) {
+      this.id = id;
+      this.name = name;
+      this.cart = cart;
+      this.email = email;
+      this.age = age;
    }
 
    @Override
@@ -44,12 +52,12 @@ public class CommonCustomer implements Customer {
 
    @Override
    public String getEmail() {
-      return null;
+      return email;
    }
 
    @Override
    public int getAge() {
-      return 0;
+      return age;
    }
 
    public void setCart(Cart cart) {
