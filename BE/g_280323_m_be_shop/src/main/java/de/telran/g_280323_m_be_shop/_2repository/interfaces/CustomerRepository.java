@@ -11,6 +11,7 @@ public interface CustomerRepository {
    Customer getById(int id);
 
    void add(String name);
+   void add(String name, String email, int age);
 
    void delete(int id);
 

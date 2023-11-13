@@ -1,12 +1,26 @@
 package de.telran.g_280323_m_be_shop._1domain.entity.jpa;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Customer;
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.*;
 
+/**
+ * Запускал, вроде отрабатывает корректно
+ *
+ * такого парня добавило
+ * {
+ *     "name": "Michael",
+ *     "age": 100,
+ *     "email": "michael@gmail.com"
+ * }
+ *
+ * такого парня - НЕТ
+ * {
+ *     "name": "Michael",
+ *     "age": 14,
+ *     "email": "michael@@gmail.com"
+ * }
+ */
 @Entity
 @Table(name = "customer")
 public class JpaCustomer implements Customer {
@@ -39,12 +53,11 @@ public class JpaCustomer implements Customer {
       this.name = name;
    }
 
-   public JpaCustomer(int id, String name, String email, int age, JpaCart cart) {
+   public JpaCustomer(int id, String name, String email, int age) {
       this.id = id;
       this.name = name;
       this.email = email;
       this.age = age;
-      this.cart = cart;
    }
 
    public String getEmail() {

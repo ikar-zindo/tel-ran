@@ -28,7 +28,7 @@ public class CommonCustomerService implements CustomerService {
 
    @Override
    public void add(Customer customer) {
-      repository.add(customer.getName());
+      repository.add(customer.getName(), customer.getEmail(), customer.getAge());
    }
 
    @Override
