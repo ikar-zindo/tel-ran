@@ -17,7 +17,7 @@ import jakarta.validation.constraints.*;
  * такого парня - НЕТ
  * {
  *     "name": "Michael",
- *     "age": 14,
+ *     "age": 12,
  *     "email": "michael@@gmail.com"
  * }
  */
