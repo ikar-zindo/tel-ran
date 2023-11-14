@@ -21,7 +21,7 @@ public class JpaProduct implements Product {
    @Column(name = "name")
 //   @NotNull
 //   @NotBlank
-   @Pattern(regexp = "[A-Z][a-z]{2,}")
+   @Pattern(regexp = "^[a-zA-Z0-9\\s\\-_]+$")
    private String name;
 
    @Column(name = "price")
@@ -63,5 +63,14 @@ public class JpaProduct implements Product {
 
    public void setPrice(double price) {
       this.price = price;
+   }
+
+   @Override
+   public String toString() {
+      return getClass().getSimpleName() +
+              "{ id=" + id +
+              ", name='" + name + '\'' +
+              ", price=" + price +
+              '}';
    }
 }

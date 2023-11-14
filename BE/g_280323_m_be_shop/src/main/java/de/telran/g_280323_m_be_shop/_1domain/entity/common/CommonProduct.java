@@ -43,4 +43,13 @@ public class CommonProduct implements Product {
 
    public CommonProduct() {
    }
+
+   @Override
+   public String toString() {
+      return "CommonProduct{" +
+              "id=" + id +
+              ", name='" + name + '\'' +
+              ", price=" + price +
+              '}';
+   }
 }
