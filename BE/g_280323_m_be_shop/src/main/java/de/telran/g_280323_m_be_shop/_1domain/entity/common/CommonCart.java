@@ -2,6 +2,8 @@ package de.telran.g_280323_m_be_shop._1domain.entity.common;
 
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Cart;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Product;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,7 +12,12 @@ public class CommonCart implements Cart {
 
    private List<Product> products = new ArrayList<>();
 
+   // LOGGER
+   public final Logger LOGGER = LogManager.getLogger(CommonCart.class);
+
    public CommonCart() {
+      // LOGGER
+      LOGGER.info("Вызван конструктор для класса " + getClass().getSimpleName());
    }
 
    @Override

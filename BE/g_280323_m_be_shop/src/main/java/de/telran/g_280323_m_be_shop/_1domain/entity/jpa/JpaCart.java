@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Cart;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Product;
 import jakarta.persistence.*;
-import org.springframework.data.jpa.repository.query.Jpa21Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +31,13 @@ public class JpaCart implements Cart {
    )
    private List<JpaProduct> products;
 
+   /**
+    * В этом месте не позволяет создать Logger
+    */
+//   private final Logger LOGGER = LogManager.getLogger(JpaCart.class);
+
    public JpaCart() {
+//      LOGGER.info("Вызван конструктор для класса " + getClass().getSimpleName());
    }
 
    public JpaCart(JpaCustomer customer) {

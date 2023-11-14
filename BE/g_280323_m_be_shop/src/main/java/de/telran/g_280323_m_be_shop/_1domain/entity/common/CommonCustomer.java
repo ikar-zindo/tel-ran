@@ -2,6 +2,8 @@ package de.telran.g_280323_m_be_shop._1domain.entity.common;
 
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Cart;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Customer;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class CommonCustomer implements Customer {
 
@@ -11,7 +13,13 @@ public class CommonCustomer implements Customer {
    private String email;
    private int age;
 
+   // LOGGER
+   public final Logger LOGGER = LogManager.getLogger(CommonCustomer.class);
+
+
    public CommonCustomer() {
+      // LOGGER
+      LOGGER.info("Вызван конструктор для класса " + getClass().getSimpleName());
    }
 
    public CommonCustomer(int id, String name, Cart cart) {
