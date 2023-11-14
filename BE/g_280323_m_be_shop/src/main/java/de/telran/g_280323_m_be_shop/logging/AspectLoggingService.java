@@ -27,8 +27,7 @@ public class AspectLoggingService {
    public void packageServiceMethods() {}
 
    /**
-    * A
-    * before calling methods of class service.*(..)
+    * before calling methods of package service.*(..)
     */
    @Before("packageServiceMethods()")
    public void beforePackageServiceMethods(JoinPoint joinPoint) {
@@ -36,8 +35,7 @@ public class AspectLoggingService {
    }
 
    /**
-    * B
-    * after calling methods of class service.*(..)
+    * after calling methods of package service.*(..)
     */
    @After("packageServiceMethods()")
    public void afterPackageServiceMethods(JoinPoint joinPoint) {
@@ -45,8 +43,7 @@ public class AspectLoggingService {
    }
 
    /**
-    * C
-    * method returned value of class service.*(..)
+    * method returned value of package service.*(..)
     */
    @AfterReturning("packageServiceMethods()")
    public void afterReturningPackageServiceMethods(JoinPoint joinPoint) {
@@ -54,8 +51,7 @@ public class AspectLoggingService {
    }
 
    /**
-    * D
-    * the method threw an exception of class service.*(..)
+    * the method threw an exception of package service.*(..)
     */
    @AfterThrowing("packageServiceMethods()")
    public void afterThrowingReturningPackageServiceMethods(JoinPoint joinPoint) {

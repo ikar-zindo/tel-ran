@@ -17,11 +17,9 @@ public class AspectLoggingProduct {
     */
    @Pointcut("execution(* de.telran.g_280323_m_be_shop._3service.jpa.JpaProductService.*(..)) && " +
            "!execution(* de.telran.g_280323_m_be_shop._3service.*.*(..))")
-   public void productServiceMethods() {
-   }
+   public void productServiceMethods() {}
 
    /**
-    * A
     * before calling methods of class JpaProductService.*(..)
     */
    @Before("productServiceMethods()")
@@ -30,7 +28,6 @@ public class AspectLoggingProduct {
    }
 
    /**
-    * B
     * after calling methods of class JpaProductService.*(..)
     */
    @After("productServiceMethods()")
