@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Cart;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Product;
 import jakarta.persistence.*;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -5,7 +5,6 @@ import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Product;
 import de.telran.g_280323_m_be_shop._1domain.entity.jpa.JpaProduct;
 import de.telran.g_280323_m_be_shop._2repository.jpa.JpaProductRepository;
 import de.telran.g_280323_m_be_shop._3service.interfaces.ProductService;
-import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Service;

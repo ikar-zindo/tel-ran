@@ -3,6 +3,8 @@ package de.telran.g_280323_m_be_shop._1domain.entity.jpa;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Customer;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Запускал, вроде отрабатывает корректно
@@ -45,6 +47,11 @@ public class JpaCustomer implements Customer {
    @OneToOne(mappedBy = "customer")
    private JpaCart cart;
 
+
+   /**
+    * В этом месте не позволяет создать Logger
+    */
+//   private final Logger LOGGER = LoggerFactory.getLogger(JpaCustomer.class);
    public JpaCustomer() {
    }
 
