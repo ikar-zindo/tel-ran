@@ -24,7 +24,7 @@ public class JpaCart implements Cart {
    @JsonIgnore
    private JpaCustomer customer;
 
-   @ManyToMany
+   @ManyToMany(fetch = FetchType.LAZY)
    @JoinTable(
            name = "cart_product",
            joinColumns = @JoinColumn(name = "cart_id"),
