@@ -5491,3 +5491,39 @@ Caused by: java.lang.IllegalStateException: Encountered invalid @Scheduled metho
 2023-11-15T16:21:01.182+01:00  INFO 13660 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-11-15T16:21:01.186+01:00  INFO 13660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-11-15T16:21:01.217+01:00  INFO 13660 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-15T16:21:05.288+01:00  INFO 9988 --- [main] d.t.g.G280323MBeShopApplication          : Starting G280323MBeShopApplication using Java 21.0.1 with PID 9988 (E:\tel-ran\BE\g_280323_m_be_shop\target\classes started by plagi in E:\tel-ran\BE\g_280323_m_be_shop)
+2023-11-15T16:21:05.291+01:00  INFO 9988 --- [main] d.t.g.G280323MBeShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-15T16:21:06.087+01:00  INFO 9988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-15T16:21:06.158+01:00  INFO 9988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
+2023-11-15T16:21:07.029+01:00  INFO 9988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-15T16:21:07.041+01:00  INFO 9988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-15T16:21:07.042+01:00  INFO 9988 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-15T16:21:07.133+01:00  INFO 9988 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-15T16:21:07.134+01:00  INFO 9988 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1787 ms
+2023-11-15T16:21:07.403+01:00  INFO 9988 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-15T16:21:07.479+01:00  INFO 9988 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-15T16:21:07.482+01:00  INFO 9988 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-15T16:21:07.822+01:00  INFO 9988 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-15T16:21:07.855+01:00  INFO 9988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-15T16:21:08.173+01:00  INFO 9988 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3f6f9cef
+2023-11-15T16:21:08.175+01:00  INFO 9988 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-15T16:21:09.231+01:00  INFO 9988 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-15T16:21:09.234+01:00  INFO 9988 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-15T16:21:10.018+01:00  INFO 9988 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-11-15T16:21:10.258+01:00  WARN 9988 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-15T16:21:11.093+01:00  INFO 9988 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-15T16:21:11.103+01:00  INFO 9988 --- [main] d.t.g.G280323MBeShopApplication          : Started G280323MBeShopApplication in 6.287 seconds (process running for 6.992)
+2023-11-15T16:21:18.803+01:00  INFO 9988 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-15T16:21:18.804+01:00  INFO 9988 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-15T16:21:18.804+01:00  INFO 9988 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-11-15T16:21:18.840+01:00  INFO 9988 --- [http-nio-8080-exec-3] d.t.g.logging.AspectLoggingProduct       : MyLogger for JpaProductService.*(..): getById метод начал с параметром := 1.
+2023-11-15T16:21:18.841+01:00  INFO 9988 --- [http-nio-8080-exec-3] d.t.g.logging.AspectLoggingService       : MyLogger for service.*(..): метод getById класса de.telran.g_280323_m_be_shop._3service.jpa.JpaProductService с параметром [1] начал работу
+2023-11-15T16:21:18.843+01:00  INFO 9988 --- [http-nio-8080-exec-3] d.t.g._3service.jpa.JpaProductService    : Запрошен продукт с id=1.
+2023-11-15T16:21:18.844+01:00  WARN 9988 --- [http-nio-8080-exec-3] d.t.g._3service.jpa.JpaProductService    : Запрошен продукт с id=1.
+2023-11-15T16:21:18.844+01:00 ERROR 9988 --- [http-nio-8080-exec-3] d.t.g._3service.jpa.JpaProductService    : Запрошен продукт с id=1.
+2023-11-15T16:21:18.911+01:00  INFO 9988 --- [http-nio-8080-exec-3] d.t.g.logging.AspectLoggingService       : MyLogger for service.*(..): метод getById класса de.telran.g_280323_m_be_shop._3service.jpa.JpaProductService с параметром [1] вернул значение
+2023-11-15T16:21:18.911+01:00  INFO 9988 --- [http-nio-8080-exec-3] d.t.g.logging.AspectLoggingService       : MyLogger for service.*(..): метод getById класса de.telran.g_280323_m_be_shop._3service.jpa.JpaProductService с параметром [1] завершил работу
+2023-11-15T16:21:18.911+01:00  INFO 9988 --- [http-nio-8080-exec-3] d.t.g.logging.AspectLoggingProduct       : MyLogger for JpaProductService.*(..): getById метод завершил с параметром := 1.
+2023-11-15T16:28:45.113+01:00  INFO 9988 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-15T16:28:45.119+01:00  INFO 9988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-15T16:28:45.131+01:00  INFO 9988 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

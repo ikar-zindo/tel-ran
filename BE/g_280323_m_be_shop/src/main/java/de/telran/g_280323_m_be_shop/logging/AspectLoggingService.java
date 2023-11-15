@@ -26,7 +26,7 @@ public class AspectLoggingService {
    public void packageServiceMethods() {}
 
    /**
-    * before calling methods of package service.*(..)
+    * before calling methods of package service..*(..)
     */
    @Before("packageServiceMethods()")
    public void beforePackageServiceMethods(JoinPoint joinPoint) {
@@ -34,7 +34,7 @@ public class AspectLoggingService {
    }
 
    /**
-    * after calling methods of package service.*(..)
+    * after calling methods of package service..*(..)
     */
    @After("packageServiceMethods()")
    public void afterPackageServiceMethods(JoinPoint joinPoint) {
@@ -42,7 +42,7 @@ public class AspectLoggingService {
    }
 
    /**
-    * method returned value of package service.*(..)
+    * method returned value of package service..*(..)
     */
    @AfterReturning("packageServiceMethods()")
    public void afterReturningPackageServiceMethods(JoinPoint joinPoint) {
@@ -50,7 +50,7 @@ public class AspectLoggingService {
    }
 
    /**
-    * the method threw an exception of package service.*(..)
+    * the method threw an exception of package service..*(..)
     */
    @AfterThrowing("packageServiceMethods()")
    public void afterThrowingReturningPackageServiceMethods(JoinPoint joinPoint) {
@@ -78,7 +78,7 @@ public class AspectLoggingService {
          argsString.setLength(argsString.length() - 2);
       }
 
-      String LOGGER_PREFIX = "MyLogger for service.*(..):";
+      String LOGGER_PREFIX = "MyLogger for service..*(..):";
 
       if (args.length != 0) {
          LOGGER.info("{} метод {} класса {} с параметром {} {}", LOGGER_PREFIX, methodMan, className, args, action);
