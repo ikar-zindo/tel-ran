@@ -67,6 +67,10 @@ public class AspectLoggingService {
       String methodMan = joinPoint.getSignature().getName();
       Object[] args = joinPoint.getArgs();
 
+      /**
+       * Output array arguments args[],
+       * arguments are array elements
+       */
       StringBuilder argsString = new StringBuilder();
       if (args != null && args.length > 0) {
          for (Object arg : args) {

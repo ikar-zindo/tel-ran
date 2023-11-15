@@ -36,7 +36,8 @@ public class JpaCustomer implements Customer {
    private String name;
 
    @Column(name = "email")
-   @Pattern(regexp = "^[\\w\\.-]+@[a-zA-Z\\d\\.-]+\\.[a-zA-Z]{2,}$")
+   @Email
+//   @Pattern(regexp = "^[\\w\\.-]+@[a-zA-Z\\d\\.-]+\\.[a-zA-Z]{2,}$")
    private String email;
 
    @Column(name = "age")
