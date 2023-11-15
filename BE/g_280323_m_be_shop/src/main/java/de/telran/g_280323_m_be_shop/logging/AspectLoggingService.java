@@ -22,8 +22,7 @@ public class AspectLoggingService {
    /**
     * Logger for package Service
     */
-   @Pointcut("execution(* de.telran.g_280323_m_be_shop._3service.*.*(..)) && " +
-           "!execution(* de.telran.g_280323_m_be_shop._3service.jpa.JpaProductService.*(..))")
+   @Pointcut("execution(* de.telran.g_280323_m_be_shop._3service..*.*(..))")
    public void packageServiceMethods() {}
 
    /**
