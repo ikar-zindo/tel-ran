@@ -15,8 +15,7 @@ public class AspectLoggingProduct {
    /**
     * Logger for JpaProductService.*(..) class
     */
-   @Pointcut("execution(* de.telran.g_280323_m_be_shop._3service.jpa.JpaProductService.*(..)) && " +
-           "!execution(* de.telran.g_280323_m_be_shop._3service.*.*(..))")
+   @Pointcut("execution(* de.telran.g_280323_m_be_shop._3service.jpa.JpaProductService.*(..))")
    public void productServiceMethods() {}
 
    /**
@@ -58,7 +57,7 @@ public class AspectLoggingProduct {
       String LOGGER_PREFIX = "MyLogger for JpaProductService.*(..):";
 
       if (args.length != 0) {
-         LOGGER.info("{} {} {} с параметром := {}.", LOGGER_PREFIX, methodMan, action, argsString);
+         LOGGER.info("{} {} метод {} с параметром := {}.", LOGGER_PREFIX, methodMan, action, argsString);
       } else {
          LOGGER.info("{} {} метод {} работу.", LOGGER_PREFIX, methodMan, action);
       }
