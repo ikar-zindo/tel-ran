@@ -2996,3 +2996,43 @@ java.util.MissingFormatArgumentException: Format specifier '%s'
 2023-11-17T23:31:12.220+01:00  INFO 20352 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-11-17T23:31:12.223+01:00  INFO 20352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-11-17T23:31:12.235+01:00  INFO 20352 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-17T23:31:16.159+01:00  INFO 9788 --- [main] d.t.g.G280323MBeShopApplication          : Starting G280323MBeShopApplication using Java 21.0.1 with PID 9788 (E:\tel-ran\BE\g_280323_m_be_shop\target\classes started by plagi in E:\tel-ran\BE\g_280323_m_be_shop)
+2023-11-17T23:31:16.161+01:00  INFO 9788 --- [main] d.t.g.G280323MBeShopApplication          : No active profile set, falling back to 1 default profile: "default"
+2023-11-17T23:31:16.769+01:00  INFO 9788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-17T23:31:16.846+01:00  INFO 9788 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2023-11-17T23:31:17.566+01:00  INFO 9788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-17T23:31:17.575+01:00  INFO 9788 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-17T23:31:17.576+01:00  INFO 9788 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-17T23:31:17.660+01:00  INFO 9788 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-17T23:31:17.660+01:00  INFO 9788 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1451 ms
+2023-11-17T23:31:17.867+01:00  INFO 9788 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-17T23:31:17.913+01:00  INFO 9788 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-17T23:31:17.916+01:00  INFO 9788 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-17T23:31:18.163+01:00  INFO 9788 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-17T23:31:18.196+01:00  INFO 9788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-17T23:31:18.497+01:00  INFO 9788 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@466fedfa
+2023-11-17T23:31:18.499+01:00  INFO 9788 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-17T23:31:19.511+01:00  INFO 9788 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-17T23:31:19.513+01:00  INFO 9788 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-17T23:31:20.315+01:00  INFO 9788 --- [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2023-11-17T23:31:20.544+01:00  WARN 9788 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-17T23:31:21.368+01:00  INFO 9788 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-17T23:31:21.375+01:00  INFO 9788 --- [main] d.t.g.G280323MBeShopApplication          : Started G280323MBeShopApplication in 5.632 seconds (process running for 6.233)
+2023-11-17T23:31:22.513+01:00  INFO 9788 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-17T23:31:22.513+01:00  INFO 9788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-17T23:31:22.514+01:00  INFO 9788 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-17T23:31:22.546+01:00  INFO 9788 --- [http-nio-8080-exec-2] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=1.
+2023-11-17T23:31:22.547+01:00  WARN 9788 --- [http-nio-8080-exec-2] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=1.
+2023-11-17T23:31:22.547+01:00 ERROR 9788 --- [http-nio-8080-exec-2] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=1.
+2023-11-17T23:31:23.697+01:00  INFO 9788 --- [http-nio-8080-exec-4] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=12.
+2023-11-17T23:31:23.698+01:00  WARN 9788 --- [http-nio-8080-exec-4] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=12.
+2023-11-17T23:31:23.698+01:00 ERROR 9788 --- [http-nio-8080-exec-4] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=12.
+2023-11-17T23:31:26.427+01:00  INFO 9788 --- [http-nio-8080-exec-6] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=3.
+2023-11-17T23:31:26.427+01:00  WARN 9788 --- [http-nio-8080-exec-6] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=3.
+2023-11-17T23:31:26.428+01:00 ERROR 9788 --- [http-nio-8080-exec-6] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=3.
+2023-11-17T23:31:28.325+01:00  INFO 9788 --- [http-nio-8080-exec-5] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=34.
+2023-11-17T23:31:28.325+01:00  WARN 9788 --- [http-nio-8080-exec-5] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=34.
+2023-11-17T23:31:28.325+01:00 ERROR 9788 --- [http-nio-8080-exec-5] d.t.g._3service.jpa.JpaCustomerService   : Запрошен покупатель с id=34.
+2023-11-17T23:46:08.044+01:00  INFO 9788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-17T23:46:08.049+01:00  INFO 9788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-17T23:46:08.064+01:00  INFO 9788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
