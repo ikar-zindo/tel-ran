@@ -60,6 +60,11 @@ public class JpaProductService implements ProductService {
       // Ни на что не влияет
       ((CommonProduct) product).setId(777);
 
+      // ==================================================
+      Task task = taskService.createTask("Последний добавленный в БД продукт - " + product.getName());
+      ScheduleExecutor.commitAddProduct(task);
+      // ===============================
+
       // Здесь отрабатывает внедрённый код @After
    }
 

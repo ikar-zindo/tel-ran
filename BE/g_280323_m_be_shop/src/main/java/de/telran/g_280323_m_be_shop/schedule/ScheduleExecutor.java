@@ -2,7 +2,10 @@ package de.telran.g_280323_m_be_shop.schedule;
 
 import de.telran.g_280323_m_be_shop._1domain.entity.jpa.Task;
 import de.telran.g_280323_m_be_shop._3service.jpa.TaskService;
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.TaskScheduler;
@@ -15,13 +18,21 @@ import org.springframework.scheduling.support.CronTrigger;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
+import java.util.ArrayDeque;
+import java.util.Deque;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 
 @Component
 @EnableScheduling
 @EnableAsync
+@Aspect
 public class ScheduleExecutor {
 
+   // LOGGER
    private static final Logger LOGGER = LoggerFactory.getLogger(ScheduleExecutor.class);
+
+
 
    private TaskService service;
 
@@ -29,11 +40,96 @@ public class ScheduleExecutor {
       this.service = service;
    }
 
+   /**
+    * =================================
+    *          Start homework
+    * =================================
+    */
+
+   // task 1
+   /**
+    * За основу я взял метод из предыдущего ДЗ, для того чтоб отследить выполняемые задачи.
+    * АОП здесь очень даже кстати.
+    * Таким образом будет отловлен каждый метод всего проекта.
+    */
+
+   //Deque
+   private static final Deque<String> completedTasks = new ArrayDeque<>();
+
+
+   @Pointcut("execution(* de.telran.g_280323_m_be_shop..*.*(..))")
+   public void packageServiceMethods() {}
+
+   @Before("packageServiceMethods()")
+   public void beforePackageServiceMethods(JoinPoint joinPoint) {
+      String className = joinPoint.getSignature().getDeclaringType().getName();
+      String methodMan = joinPoint.getSignature().getName();
+      Object[] args = joinPoint.getArgs();
+
+      /**
+       * Output array arguments args[],
+       * arguments are array elements
+       */
+      StringBuilder argsString = new StringBuilder();
+      if (args != null && args.length > 0) {
+         for (Object arg : args) {
+            argsString.append(arg).append(", ");
+         }
+         argsString.setLength(argsString.length() - 2);
+      }
+
+      completedTasks.offer("Call method := [" + methodMan + "] class := [" + className + "] args := [" + argsString + "]");
+      if (completedTasks.size() > 5) {
+         completedTasks.poll();
+      }
+   }
+
+   /**
+    * Asynchronous method to print the last five completed tasks
+    */
+
+   @Async
+   public void printLastCompletedTasks() {
+      System.out.println("============Last completed tasks:============");
+      for (String task : completedTasks) {
+         System.out.println(task);
+      }
+      System.out.println("=============================================");
+   }
+
+   /**
+    * Displays the last five completed tasks every 30 seconds
+    */
+
+   @Scheduled(fixedRate = 30000) // Запуск каждые 30 секунд
+   public void schedulePrintLastCompletedTasks() {
+      printLastCompletedTasks();
+   }
+
+   // task 2
+
+   /**
+    * Committing adding a product to the database
+    * @param task transmitted message
+    */
+   public static void commitAddProduct(Task task) {
+      TaskScheduler scheduler = new DefaultManagedTaskScheduler();
+      scheduler.schedule(() -> LOGGER.info(task.getDescription()),
+              new CronTrigger("15,45 * * * * *"));
+   }
+
+   /**
+    * ==================================
+    *            End homework
+    * ==================================
+    */
+
 //   @Scheduled(fixedDelay = 3_000)
 //   public void fixedDelayTask() {
 //      Task task = service.createTask("Fixed delay task");
 //      LOGGER.info(task.getDescription());
 //   }
+
 //   @Scheduled(fixedDelay = 5_000)
 //   public void fixedDelayLingTimeTask() {
 //

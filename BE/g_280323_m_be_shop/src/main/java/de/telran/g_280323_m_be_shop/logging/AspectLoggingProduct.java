@@ -56,10 +56,10 @@ public class AspectLoggingProduct {
 
       String LOGGER_PREFIX = "MyLogger for JpaProductService.*(..):";
 
-      if (args.length != 0) {
-         LOGGER.info("{} {} метод {} с параметром := {}.", LOGGER_PREFIX, methodMan, action, argsString);
-      } else {
-         LOGGER.info("{} {} метод {} работу.", LOGGER_PREFIX, methodMan, action);
-      }
+//      if (args.length != 0) {
+//         LOGGER.info("{} {} метод {} с параметром := {}.", LOGGER_PREFIX, methodMan, action, argsString);
+//      } else {
+//         LOGGER.info("{} {} метод {} работу.", LOGGER_PREFIX, methodMan, action);
+//      }
    }
 }
