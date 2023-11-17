@@ -80,12 +80,12 @@ public class AspectLoggingService {
 
       String LOGGER_PREFIX = "MyLogger for service..*(..):";
 
-      if (args.length != 0) {
-         LOGGER.info("{} метод {} класса {} с параметром {} {}", LOGGER_PREFIX, methodMan, className, args, action);
-      } else if ("выбросил исключение".equals(action)) {
-         LOGGER.info("{} метод {} класса {} с параметром {} {}", LOGGER_PREFIX, methodMan, className, args, action);
-      } else {
-         LOGGER.info("{} метод {} класса {} {}.", LOGGER_PREFIX, className, methodMan, action);
-      }
+//      if (args.length != 0) {
+//         LOGGER.info("{} метод {} класса {} с параметром {} {}", LOGGER_PREFIX, methodMan, className, args, action);
+//      } else if ("выбросил исключение".equals(action)) {
+//         LOGGER.info("{} метод {} класса {} с параметром {} {}", LOGGER_PREFIX, methodMan, className, args, action);
+//      } else {
+//         LOGGER.info("{} метод {} класса {} {}.", LOGGER_PREFIX, className, methodMan, action);
+//      }
    }
 }
