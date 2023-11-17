@@ -32,8 +32,6 @@ public class ScheduleExecutor {
    // LOGGER
    private static final Logger LOGGER = LoggerFactory.getLogger(ScheduleExecutor.class);
 
-
-
    private TaskService service;
 
    public ScheduleExecutor(TaskService service) {
@@ -56,9 +54,9 @@ public class ScheduleExecutor {
    //Deque
    private static final Deque<String> completedTasks = new ArrayDeque<>();
 
-
    @Pointcut("execution(* de.telran.g_280323_m_be_shop..*.*(..))")
-   public void packageServiceMethods() {}
+   public void packageServiceMethods() {
+   }
 
    @Before("packageServiceMethods()")
    public void beforePackageServiceMethods(JoinPoint joinPoint) {
@@ -87,7 +85,6 @@ public class ScheduleExecutor {
    /**
     * Asynchronous method to print the last five completed tasks
     */
-
    @Async
    public void printLastCompletedTasks() {
       System.out.println("============Last completed tasks:============");
@@ -100,7 +97,6 @@ public class ScheduleExecutor {
    /**
     * Displays the last five completed tasks every 30 seconds
     */
-
    @Scheduled(fixedRate = 30000) // Запуск каждые 30 секунд
    public void schedulePrintLastCompletedTasks() {
       printLastCompletedTasks();
@@ -110,6 +106,7 @@ public class ScheduleExecutor {
 
    /**
     * Committing adding a product to the database
+    *
     * @param task transmitted message
     */
    public static void commitAddProduct(Task task) {
@@ -120,7 +117,7 @@ public class ScheduleExecutor {
 
    /**
     * ==================================
-    *            End homework
+    * End homework
     * ==================================
     */
 
@@ -266,7 +263,6 @@ public class ScheduleExecutor {
 //      Task task = service.createTask("Cron expression task");
 //      LOGGER.info(task.getDescription());
 //   }
-
    public static void executeScheduledTask(Task task) {
       TaskScheduler scheduler = new DefaultManagedTaskScheduler();
 
