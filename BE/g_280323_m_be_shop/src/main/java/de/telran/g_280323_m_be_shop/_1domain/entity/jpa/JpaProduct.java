@@ -3,8 +3,6 @@ package de.telran.g_280323_m_be_shop._1domain.entity.jpa;
 import de.telran.g_280323_m_be_shop._1domain.entity.interfaces.Product;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @Entity
 @Table(name = "product")
@@ -35,7 +33,6 @@ public class JpaProduct implements Product {
     * В этом месте не позволяет создать Logger
     */
 //   private final Logger LOGGER = LogManager.getLogger(JpaCart.class);
-
    public JpaProduct() {
    }
 
