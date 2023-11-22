@@ -45,7 +45,7 @@ public class JpaCustomer implements Customer {
    @Max(value = 120)
    private int age;
 
-   @OneToOne(mappedBy = "customer")
+   @OneToOne(mappedBy = "customer", cascade = {CascadeType.PERSIST, CascadeType.REMOVE, CascadeType.ALL})
    private JpaCart cart;
 
 
