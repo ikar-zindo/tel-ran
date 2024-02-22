@@ -1,0 +1,18 @@
+ 		# Dockerfile
+ 
+ docker build . 
+		-t my-application-image . := собрать проект
+		
+ ocker run ikarzindo/zindo-shop-app := запуск контейнера
+ 
+
+		# docker-compose.yml
+ docker-compose up
+		db -d := запуск с базой
+ docker-compose -f mediawiki_docker-compose.yml up -d
+ docker run -d -p 8888:8888 --link k-curry-jib-db:db --name k-curry-jib-employee --restart always ikarzindo/k-curry-jib-employee-app
+
+
+ docker run -it <идентификатор (ID) или хэш образа> bash := узнать имя проекта java
+ 
+ docker exec -it 78a8aae90c30 mysql -u root -p12345 zindo-shop := логи контейнера MySQL
