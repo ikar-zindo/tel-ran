@@ -236,6 +236,4 @@
 
  ping <lin>
  
- # release:
- git tag -a v0.1.0 -m "release 0.1.0" := новый релиз
- git tag := показать все теги
+ curl -O k-curry-jib.sql https://raw.githubusercontent.com/ikar-zindo/k-curry-jib/main/k-curry-jib.sql

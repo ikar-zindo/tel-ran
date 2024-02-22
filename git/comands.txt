@@ -15,20 +15,31 @@
 	-a := индексация изменений в отслеживаемых файлах
  git reset HEAD~1 := сместится на 1 коммит назад
  git revert HEAD := саздаст зеркальный коммит, отменяет действие последнего коммита
- git push --force := принудительно переприсывает историю коммитов на git
+ git push --force := принудительно переп
+ исывает историю коммитов на git
+ 
+ git reset --hard HEAD := отменить все незафиксированные изменения
+ git stash := отменить все незафиксированные изменения и сохранить их:
+ 
+ git log  # Показать список коммитов и их идентификаторы
+ git reset --hard <идентификатор_коммита> := отменить все изменения, включая зафиксированные, и вернуться к определенному коммиту
+ 
+ git checkout -f := откат к последнему коммиту (!)
  
  git branch -v := инфо о ветках
  git branch <branch_name> := создание ветки
  git checkout <branch_name> := переход на ветку
  git checkout -b <branch_name> := создание и переход на эту ветку
+ git checkout -b <my_branch> main := ответвление от ветки main
  git branch -d <branch_name> := удаление ветки
  
   git log --oneline --decorate --graph --all
   git merge <branch_name> := слияние веток
   
 	переподвязка репо по другой ссысле
- git remote remove origin
- git remote add origin <ssh_link>
+ git romote -v := просмотр текущей привязки
+ git remote remove origin := удалить привязку
+ git remote add origin <ssh_link> := добавить привязку
   
 		Получение и создание проектов
   git init Инициализация локального git репозитория
@@ -77,3 +88,10 @@
  git log --oneline --decorate --graph --all Отображение веток
  git diff [source branch] [target branch] Просмотр изменений перед обьединением
  git help Помощь по командам git
+ 
+		
+ git rebase # только для локальных коммитов
+  
+		Release:
+ git tag -a v0.1.0 -m "release 0.1.0" := новый релиз
+ git tag := показать все теги
