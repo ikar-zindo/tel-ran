@@ -14,6 +14,7 @@ cd /opt/280323_morning/ikar-zindo/
 ---
 
 - Копирования с сервера на компьютер
+
 *Выполнить на своём компьютере**
 
 ```
@@ -32,7 +33,6 @@ git add .
 
 # фиксация
 git commit -m "initial commit"
-
 
 git log
 
