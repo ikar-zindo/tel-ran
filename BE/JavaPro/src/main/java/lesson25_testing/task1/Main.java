@@ -1,4 +1,4 @@
-package lesson25_unit_testing.task1;
+package lesson25_testing.task1;
 
 import java.util.Arrays;
 
