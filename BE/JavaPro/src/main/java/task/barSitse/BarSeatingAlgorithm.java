@@ -2,7 +2,7 @@ package task.barSitse;
 
 public class BarSeatingAlgorithm {
    public static void main(String[] args) {
-      int totalSeats = 25;
+      int totalSeats = 27;
 
       // Создаем массив для хранения количества свободных мест для каждой позиции
       int[] maxFreeSeats = new int[totalSeats];

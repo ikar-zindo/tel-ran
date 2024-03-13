@@ -1,2 +1,4 @@
-package experiens;public interface F {
+package experiens;
+
+public interface F extends B,D {
 }

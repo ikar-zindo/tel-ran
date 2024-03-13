@@ -17,11 +17,11 @@ public interface JpaCustomerRepository extends JpaRepository<JpaCustomer, Intege
 //           "WHERE `customer_id`=:customerId;", nativeQuery = true)
 //   double getTotalPriceById(@Param("customerId") int customerId);
 //
-//   @Query(value = "SELECT AVG(`price`) FROM `cart_product` " +
-//           "LEFT JOIN `cart` USING(`cart_id`) " +
-//           "LEFT JOIN `product` USING(`product_id`) " +
-//           "WHERE `customer_id`=:customerId;", nativeQuery = true)
-//   double getAveragePriceById(@Param("customerId") int customerId);
+   @Query(value = "SELECT AVG(`price`) FROM `cart_product` " +
+           "LEFT JOIN `cart` USING(`cart_id`) " +
+           "LEFT JOIN `product` USING(`product_id`) " +
+           "WHERE `customer_id`=:customerId;", nativeQuery = true)
+   double getAveragePriceById(@Param("customerId") int customerId);
 //
 //   @Transactional
 //   void deleteByName(String name);

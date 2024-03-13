@@ -1,2 +1,4 @@
-package experiens;public class A {
+package experiens;
+
+public class A {
 }
