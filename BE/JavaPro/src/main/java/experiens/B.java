@@ -1,2 +1,4 @@
-package experiens;public interface B {
+package experiens;
+
+public interface B {
 }
