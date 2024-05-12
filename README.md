@@ -1,5 +1,7 @@
 ![tel-ran logo](https://static.tildacdn.net/tild3066-6539-4639-b262-336135376364/Group_2650.svg)
 
+![tel-ran logo](https://github.com/ikar-zindo/tel-ran/blob/master/img/tel-ranlogo.svg?raw=true)
+
 # Tel-Ran projects
 
 - Подключение к учебному серверу Tel-Ran
