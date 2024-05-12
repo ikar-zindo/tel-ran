@@ -49,14 +49,12 @@ public class ArrayUtilsTest {
 
    @Test
    public void checkExpectedExceptionSecondWay() {
-
       try {
          int[] arr = ArrayUtils.getArrayBySize(-3);
 
       } catch (RuntimeException e) {
          return;
       }
-
       fail();
    }
 }
