@@ -1,4 +1,4 @@
-package lesson25_testing.task2;
+package lesson25_tests.task2;
 
 import org.junit.Assert;
 import org.junit.Before;
