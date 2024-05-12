@@ -44,7 +44,11 @@ sudo dnf install java-17-amazon-corretto
 
 ### 7. Open the **WinSCP**
 
-- `SSH` -> `Authentication` -> `Private key file` -> Here you need to specify the path to the **key file** that was generated in step **2** -> `OK`
+- `Host name` - enter your **Public IPv4 DNS** -> `ec2-3-79-117-7.eu-central-1.compute.amazonaws.com`
+
+- `Username` - `ec2-user`
+
+- `More` -> `SSH` -> `Authentication` -> `Private key file` -> Here you need to specify the path to the **key file** that was generated in step **2** -> `OK`
 
 - Drag a file with the extension `*.jar` into the window that appears
 
