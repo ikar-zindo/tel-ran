@@ -1,4 +1,4 @@
-package lesson26_time.task6_testing;
+package lesson26_time.task6_tests;
 
 public class Main {
    // 1. Создать класс Студент
