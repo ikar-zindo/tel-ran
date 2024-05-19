@@ -4,7 +4,7 @@
 
 - Подключение к учебному серверу Tel-Ran
 
-```
+```bash
 ssh -i ~/.ssh/id_rsa ec2-user@linux.telran-edu.de
 
 # Переход в вою рабочую дерикторию
@@ -17,13 +17,13 @@ cd /opt/280323_morning/ikar-zindo/
 
 *Выполнить на своём компьютере**
 
-```
+```bash
 scp history.txt ec2-user@linux.telran-edu.de:/opt/280323_morning/ikar-zindo
 ```
 
 ---
 
-```
+```bash
 git init
 
 git status
