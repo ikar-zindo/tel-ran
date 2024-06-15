@@ -103,6 +103,24 @@ exit
 - `docker search [query]` Search Docker Hub for images.
 - `docker image prune` Remove unused images.
 
+### Running a Container
+
+- `docker run [image] [command]` Run a command in a container based on an image.
+- `docker run --name[container-name] [image]` Create, start, and name a container.
+- `docker run -p [host]:[container-port] [image]` Map a host port to a container port.
+- `docker run --rm [image]` Run a container and remove it after it stops.
+- `docker run -d [image]` Run a detached(background) container.
+- `docker run -it [image]` Run an interactive process, e.g., a shell, in a container.
+- `docker start [container]` Start a container.
+- `docker stop [container]` Stop a container.
+- `docker restart[container]` Stop a container and start it again.
+- `docker pause [container]` Pause processes in a running container.
+- `docker unpause[container]` Unpause processes in a running container.
+- `docker wait [container]` Block input until the container stops.
+- `docker kill [container]` Send a SIGKILL signal to stop a container.
+- `docker attach [container]` Attach local standard input, output and error.
+- `docker exec -it [container] [shell]` Run a shell inside a running container.
+
 ### Container Management
 
 - `docker ps` List the running containers.List the running containers.
@@ -121,24 +139,6 @@ exit
 - `docker stats [container]` Show live resource usage statistics for a container.Show live resource usage statistics for a container.
 - `docker diff [container]` Show changes to files or directories on the filesystem.Show changes to files or directories on the filesystem.
 - `docker cp [file-path] CONTAINER:[path]` Copy a local file to a directory in a container.Copy a local file to a directory in a container.
-
-### Running a Container
-
-- `docker run [image] [command]` Run a command in a container based on an image.
-- `docker run --name[container-name] [image]` Create, start, and name a container.
-- `docker run -p [host]:[container-port] [image]` Map a host port to a container port.
-- `docker run --rm [image]` Run a container and remove it after it stops.
-- `docker run -d [image]` Run a detached(background) container.
-- `docker run -it [image]` Run an interactive process, e.g., a shell, in a container.
-- `docker start [container]` Start a container.
-- `docker stop [container]` Stop a container.
-- `docker restart[container]` Stop a container and start it again.
-- `docker pause [container]` Pause processes in a running container.
-- `docker unpause[container]` Unpause processes in a running container.
-- `docker wait [container]` Block input until the container stops.
-- `docker kill [container]` Send a SIGKILL signal to stop a container.
-- `docker attach [container]` Attach local standard input, output and error.
-- `docker exec -it [container] [shell]` Run a shell inside a running container.
 
 ### General Management
 
