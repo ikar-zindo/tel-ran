@@ -95,3 +95,15 @@
 		Release:
  git tag -a v0.1.0 -m "release 0.1.0" := новый релиз
  git tag := показать все теги
+ 
+		Rebase
+ git rebase -i HEAD~4 := переместится на 4 коммита назад
+	1th changes
+		> pick
+		> squash
+		> squash
+		> squash
+	2nd changes description
+ git add .
+ git rebase --continue
+ git push --force
