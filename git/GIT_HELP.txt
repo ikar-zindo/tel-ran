@@ -107,3 +107,9 @@
  git add .
  git rebase --continue
  git push --force
+ 
+		Пеерименование ветки
+ git branch -m new-branch-name
+ git push origin --delete old-branch-name
+ git push origin new-branch-name
+ git push --set-upstream origin new-branch-name
