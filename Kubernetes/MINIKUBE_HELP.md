@@ -1,18 +1,20 @@
 # Minikube
 
-### Start a cluster using the virtualbox driver:
+## 1
+
+### 1.1 Start a cluster using the virtualbox driver:
 
 ```powershell
 minikube start --driver=virtualbox
 ```
 
-### To make virtualbox the default driver:
+### 1.2 To make virtualbox the default driver:
 
 ```powershell
 minikube config set driver virtualbox
 ```
 
-### Standard properties:
+### 1.3 Standard properties:
 
 ```powershell
 minikube profile list
@@ -20,9 +22,9 @@ minikube profile list
 
 ---
 
-## Hyper-V settings
+## 2. Hyper-V settings
 
-### **Maybe!** You will need to change the settings Hyper-V
+### 2.1 **Maybe!** You will need to change the settings Hyper-V
 
 ```powershell
 # Hyper-V will be turned off
@@ -45,7 +47,7 @@ bcdedit /set hypervisorlaunchtype on
 
 ---
 
-## Kubernetes Dashboard
+## 3. Kubernetes Dashboard
 
 ```bash
 $ minikube addons list
@@ -61,7 +63,7 @@ $ minikube dashboard
 
 ---
 
-## API with 'kubectl proxy'
+## 4. API with 'kubectl proxy'
 
 ```bash
 $ kubectl proxy
@@ -71,7 +73,7 @@ Starting to serve on [127.0.0.1:8001](http://localhost:8001/)
 
 ---
 
-## API with authentication
+## 5. API with authentication
 
 ```bash
 $ export TOKEN=$(kubectl create token default)
@@ -87,7 +89,7 @@ $ export APISERVER=$(kubectl config view | grep https | \
   cut -f 2- -d ":" | tr -d " ")
 ```
 
-### To ensure that the IP address stored by APISERVER
+### 5.1 To ensure that the IP address stored by APISERVER
 
 ```
 $ echo $APISERVER
@@ -99,7 +101,7 @@ https://192.168.99.100:8443
 $ kubectl cluster-info
 ```
 
-### Access the API server using the curl command as follows:
+### 5.2 Access the API server using the curl command as follows:
 
 ```bash
 $ curl $APISERVER --header "Authorization: Bearer $TOKEN" --insecure

@@ -1,16 +1,22 @@
-## 1. Dockerfile
+## 1. `Dockerfile`
 
-### Build project
+### 1.1 Build `project`
 
 ```bash
+# default build 
 docker build .
-# custom name
-docker build -t my-application-image .
-# 
-docker run ikarzindo/zindo-shop-app
+
+# build with custom name
+docker build -t my-app-image .
+
+# default run image
+docker run my-app-image
+
+# customer run with container name and port
+docker run --name my-app-container -app 8080:8080 my-app-image
 ```
 
-### Запуск с БД
+### 1.2 Run with `Database`
 
 ```bash
 # Build the Docker image for the database
@@ -22,52 +28,46 @@ docker pull ikarzindo/k-curry-jib-employee-app
 docker run -d -p 8888:8888 --link k-curry-jib-db:db --name k-curry-jib-employee --restart always ikarzindo/k-curry-jib-employee-app
 ```
 
-## 2. docker-compose.yml
+## 2. `docker-compose.yml`
+
+### 2.1 Operation on `Service`
 
 ```bash
 # Collect images for all services
-docker-compose -p ems build
+docker-compose -p my-service build
 
 # Start all services
-docker-compose -p ems up -d
+docker-compose -p my-service up -d
 
 # Check the status of running containers
-docker-compose -p ems ps
+docker-compose -p my-service ps
 
 # View logs (optional)
-docker-compose -p ems logs -f
+docker-compose -p my-service logs -f
 
 # Stop all services
-docker-compose -p ems stop
+docker-compose -p my-service stop
 
 # Start all services
-docker-compose -p ems start
+docker-compose -p my-service start
 
 # Deactivate all services (if necessary)
-docker-compose -p ems down
+docker-compose -p my-service down
 ```
+
+### 2.2 Run with `Database`
 
 ```bash
-
 docker-compose up
-    db -d := запуск с базой
-docker-compose -f mediawiki_docker-compose.yml up -d
+    db -d := run with DB
+docker-compose -f docker-compose.yml up -d
 
-docker run -it <идентификатор (ID) или хэш образа> bash := узнать имя проекта java
-# логи контейнера MySQL
-docker exec -it 78a8aae90c30 mysql -u root -p12345 zindo-shop
+docker run -it <ID or HASH -image> bash
+# logs of container MySQL
+docker exec -it 78a8aae90c30 mysql -u root -p12345 my-database
 ```
  
-### Запуска сервиса с помощью `docker-compose`
-
- ```bash
- # сборка проекта в один контейнер
- docker-compose -p ems-fullstack build
- # запуск мастера
- docker-compose -p ems-fullstack up -d
- ```
- 
-### Проверка БД внутри контейнера
+### 2.3 Check `Database` in Container `service`
  
 ```bash
 docker ps
@@ -76,15 +76,17 @@ docker exec -it <CONTAINER_ID> bash
 mysql -u root -p<PASSWORD>
 
 SHOW DATABASES;
+USE <DATABASES>;
 SHOW TABLES;
+USE <TABLES>;
 
 exit
 exit
 ```
 
-## Docker commands
+## 3. `Docker` Commands Cheat Sheet
 
-### Image Management
+### 3.1 `Image` Management
 
 - `docker build [dockerfile-path]` Create an image from a Dockerfile.
 - `docker build .` Build an image using the files from the current path.
@@ -103,7 +105,7 @@ exit
 - `docker search [query]` Search Docker Hub for images.
 - `docker image prune` Remove unused images.
 
-### Running a Container
+### 3.2 Running a `Container`
 
 - `docker run [image] [command]` Run a command in a container based on an image.
 - `docker run --name[container-name] [image]` Create, start, and name a container.
@@ -121,7 +123,7 @@ exit
 - `docker attach [container]` Attach local standard input, output and error.
 - `docker exec -it [container] [shell]` Run a shell inside a running container.
 
-### Container Management
+### 3.3 `Container` Management
 
 - `docker ps` List the running containers.List the running containers.
 - `docker ps -a` List all the containers, both running and stopped.List all the containers, both running and stopped.
@@ -140,7 +142,7 @@ exit
 - `docker diff [container]` Show changes to files or directories on the filesystem.Show changes to files or directories on the filesystem.
 - `docker cp [file-path] CONTAINER:[path]` Copy a local file to a directory in a container.Copy a local file to a directory in a container.
 
-### General Management
+### 3.4 `General` Management
 
 - `docker login` Log in to a Docker registry.
 - `docker logout` Log out of a Docker registry.
@@ -149,7 +151,7 @@ exit
 - `docker info` Display information about the system.
 - `docker system prune` Remove unused images, containers, and networks.
 
-### Networking
+### 3.5 `Networking`
 
 - `docker network ls` View available networks.
 - `docker network rm [network]` Remove a network.

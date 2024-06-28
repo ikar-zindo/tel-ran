@@ -26,3 +26,12 @@ ENV MYSQL_ROOT_PASSWORD=12345
 COPY init-db.sql /docker-entrypoint-initdb.d/
 
 EXPOSE 3306
+
+##
+# run .jar without maven build
+##
+FROM openjdk:17-jdk
+ARG JAR_DILE=target/*.jar
+COPY ./target/k-curry-jib.jar /usr/local/lib/k-curry-jib.jar
+EXPOSE 8888
+ENTRYPOINT ["java", "-jar", "/usr/local/lib/k-curry-jib.jar"]
