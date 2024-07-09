@@ -1,4 +1,5 @@
-## k-curry-jib-employee Build stage
+##
+# k-curry-jib-employee Build stage
 ##
 FROM maven:3.8.7-eclipse-temurin-17-alpine AS build
 COPY src /home/app/src
