@@ -13,7 +13,7 @@ docker build -t my-app-image .
 docker run my-app-image
 
 # customer run with container name and port
-docker run --name my-app-container -app 8080:8080 my-app-image
+docker run --name my-app-container -p 8080:8080 my-app-image
 ```
 
 ### 1.2 Run with `Database`
@@ -76,9 +76,8 @@ docker exec -it <CONTAINER_ID> bash
 mysql -u root -p<PASSWORD>
 
 SHOW DATABASES;
-USE <DATABASES>;
+USE <DATABASE>;
 SHOW TABLES;
-USE <TABLES>;
 
 exit
 exit
