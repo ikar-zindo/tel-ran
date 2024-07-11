@@ -1,0 +1,56 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kcj-app-pod
+  labels:
+    env: prod
+    app: main
+    tier: app
+    owner: ikar-zindo
+spec:
+  containers:
+    - name: container-db
+      image: mysql:8.3.0
+      ports:
+        - containerPort: 3306
+      env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: "12345"
+        - name: MYSQL_DATABASE
+          value: "kcj"
+    - name: container-backend
+      image: ikarzindo/kcj-customer-be:latest
+      ports:
+        - containerPort: 8889
+      env:
+        - name: DATASOURCE_DATABASE_HOST
+          value: "container-db"
+        - name: DATASOURCE_DATABASE_PORT
+          value: "3306"
+        - name: DATASOURCE_DATABASE_NAME
+          value: "kcj"
+        - name: DATASOURCE_DATABASE_USERNAME
+          value: "root"
+        - name: DATASOURCE_DATABASE_PASSWORD
+          value: "12345"
+    - name: container-frontend
+      image: ikarzindo/kcj-customer-fe:latest
+      ports:
+        - containerPort: 9000
+      env:
+        - name: NODE_ENV
+          value: "development"
+    - name: container-watchtower
+      image: containrrr/watchtower
+      volumeMounts:
+        - mountPath: /var/run/docker.sock
+          name: dockersock
+      env:
+        - name: WATCHTOWER_CLEANUP
+          value: "true"
+        - name: WATCHTOWER_POLL_INTERVAL
+          value: "30"
+  volumes:
+    - name: dockersock
+      hostPath:
+        path: /var/run/docker.sock

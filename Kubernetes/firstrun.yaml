@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: firstrun
+spec:
+  containers:
+  - name: firstrun
+    image: nginx

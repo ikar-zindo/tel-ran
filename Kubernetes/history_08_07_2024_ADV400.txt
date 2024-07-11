@@ -1,0 +1,39 @@
+  618  minikube status
+  619  kubectl get pods
+  620  kubectl get nods
+  621  kubectl get nod
+  622  kubectl get nodes
+  623  kubectl get pods
+  632  kubectl run adv-hello  --image=adv4000/k8sphp:latest --port=80
+  633  kubectl delete pods adv-hello
+  634  kubectl run adv-hello  --image=adv4000/k8sphp:latest --port=80
+  635  kubectl get pods
+  636  kubectl describe pods kcj-customer-fe
+  642  kubectl exec kcj-customer-fe-- date
+  643  kubectl exec -it kcj-customer-fe -- sh
+  644  kubectl logs kcj-customer-fe
+  645  kubectl port-forward kcj-customer-fe 9000:9000
+  646  kubectl set image deployment/adv4000-deploy k8sphp=ikarzindo/kcj-customer-fe:latest --save-config
+
+
+  647  kubectl create deployment adv4000-deploy --image adv4000/k8sphp:latest
+  650  kubectl autoscale deployment adv4000-deploy --min=4 --max=6 --cpu-percent=80
+  651  kubectl scale deployment adv4000-deploy --replicas 4
+  652  kubectl rollout status deploy/adv4000-deploy
+  653  kubectl rollout history deploy/adv4000-deploy
+  651  kubectl set image deployment/adv4000-deploy k8sphp=adv4000/k8sphp:latest --record=true
+  652  kubectl rollout undo deployment/adv4000-deploy
+  653  kubectl rollout undo deployment/adv4000-deploy --to-revision=3
+  654  kubectl rollout restart deployment/adv4000-deploy
+  655  kubectl delete deployment --all
+
+
+
+# Просмотр доступных контекстов
+kubectl config get-contexts
+
+# Переключение контекста
+kubectl config use-context gke_prod-428823_us-central1-a_kcj-cluster
+
+# Проверка текущего контекста
+kubectl config current-context

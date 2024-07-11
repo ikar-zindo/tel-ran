@@ -1,0 +1,52 @@
+Name:             adv-hello
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.59.137
+Start Time:       Mon, 08 Jul 2024 21:03:04 +0200
+Labels:           run=adv-hello
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.11
+IPs:
+  IP:  10.244.0.11
+Containers:
+  adv-hello:
+    Container ID:   docker://6461e06129ba3992b0811fb24e8f9d737a441f74dfec76a9269b53a66d4835f5
+    Image:          adv4000/k8sphp:latest
+    Image ID:       docker-pullable://adv4000/k8sphp@sha256:326243d50969a4be8b156bc15f539e49adf216958e6b4fb4e655d67b87c30b53
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Mon, 08 Jul 2024 21:03:35 +0200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-ffhsk (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-ffhsk:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  4m35s  default-scheduler  Successfully assigned default/adv-hello to minikube
+  Normal  Pulling    4m34s  kubelet            Pulling image "adv4000/k8sphp:latest"
+  Normal  Pulled     4m5s   kubelet            Successfully pulled image "adv4000/k8sphp:latest" in 29.35s (29.35s including waiting). Image size: 498353018 bytes.
+  Normal  Created    4m4s   kubelet            Created container adv-hello
+  Normal  Started    4m4s   kubelet            Started container adv-hello

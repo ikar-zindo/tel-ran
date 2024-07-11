@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kcj-deployment
+  labels:
+    app: kcj-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      project: kcj
+  template:
+    metadata:
+      labels:
+        project: kcj # service will look for those Pods Labels
+    spec:
+      containers:
+        - name: kcj-fe
+          image: adv4000/k8sphp:latest
+          ports:
+            - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kcj-single-pod-service
+  labels:
+    env: prod
+    owner: IvanBukrieiev
+spec:
+  selector:
+    project: kcj # selecting Pods with whose Labels
+  ports:
+    - name: app-listener
+      protocol: TCP
+      port: 80 # port on LoadBalancer
+      targetPort: 80 # port on Pod
+  type: LoadBalancer
