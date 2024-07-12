@@ -1,0 +1,2 @@
+apiVersion: argoproj.io/vlalphal
+kind: Application

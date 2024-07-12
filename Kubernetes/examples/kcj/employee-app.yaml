@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: employee-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: employee-app
+  template:
+    metadata:
+      labels:
+        app: employee-app
+    spec:
+      containers:
+        - name: employee-app
+          image: ikarzindo/kcj-employee-app:latest
+          env:
+            - name: DATASOURCE_DATABASE_HOST
+              value: "mysql"
+            - name: DATASOURCE_DATABASE_PORT
+              value: "3306"
+            - name: DATASOURCE_DATABASE_NAME
+              value: "kcj-db"
+            - name: DATASOURCE_DATABASE_USERNAME
+              value: "root"
+            - name: DATASOURCE_DATABASE_PASSWORD
+              value: "Ca3=2q4q+Au=9Ct"
+          ports:
+            - containerPort: 8880
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: employee-app
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8880
+  selector:
+    app: employee-app

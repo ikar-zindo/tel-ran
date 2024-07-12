@@ -1,0 +1,9 @@
+  500  gcloud init
+  501  gcloud services enable container.googleapis.com
+  502  gcloud container clusters create kcj-cluster
+  503  gcloud components update
+  504  gcloud components install gke-gcloud-auth-plugin
+  505  kubectl version --client --output=yaml
+  508  kubectl cluster-info
+  510  kubectl get componentstatuses
+  511  kubectl get nodes

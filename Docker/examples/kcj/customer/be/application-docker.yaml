@@ -1,5 +1,9 @@
 server:
-  port: 8889
+  port: 8890
+
+jwt:
+  access-token-key: '{"kty":"oct","k":"hi7S5RX5ZRZooHA0RKGctZ-KtR9FoESgCnH-3BNg5XI"}'
+  refresh-token-key: '{"kty":"oct","k":"956PBFst1FguLr5irJD-aQ"}'
 
 spring:
   main:
@@ -25,3 +29,8 @@ spring:
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.yaml
+
+# env
+rest:
+  api:
+    url: ${REST_API_URL}

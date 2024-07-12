@@ -470,3 +470,28 @@ e1@ENIGMA:~/kubernetes$ kubectl expose deployment kcj-customer-fe-deployment --t
 service/kcj-customer-fe-deployment exposed
 ```
 
+```bash
+gcloud container clusters create kcj-cluster
+
+gcloud container clusters delete kcj-cluster
+
+kubectl apply -f https://projectcontour.io/quickstart/contour.yaml
+
+kubectl apply -f mysql.yaml
+kubectl apply -f employee-app.yaml
+kubectl apply -f customer-be.yaml
+kubectl apply -f customer-fe.yaml
+
+kubectl delete -f mysql.yaml
+kubectl delete -f employee-app.yaml
+kubectl delete -f customer-be.yaml
+kubectl delete -f customer-fe.yaml
+
+```
+kubectl delete -f deployment-1-simple.yaml
+kubectl delete -f deployment-2-replicas.yaml
+kubectl delete -f deployment-3-autoscaling.yaml
+kubectl delete -f pod-my-web-v1.yaml
+kubectl delete -f service-1-loadbalancer-single.yaml
+kubectl delete -f service-1-loadbalancer-single-new.yaml
+kubectl delete -f service-2-loadbalancer-multi.yaml
