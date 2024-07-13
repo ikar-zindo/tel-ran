@@ -1,0 +1,15 @@
+  795  kubectl create configmap green-web-cm --from-file=green/index.html
+  796  kubectl get cm
+  797  kubectl describe cm green-web-cm
+  798  nano green/web-green-with-cm.yaml 
+  800  kubectl expose deployment green-web --type=LoadBalancer
+  802  kubectl get svc
+  803  curl -s 35.246.47.109:80 | head -4
+  804  kubectl create configmap blue-web-cm --from-file=blue/index.html
+  805  kubectl get cm
+  806  kubectl describe cm blue-web-cm
+  807  nano blue/web-blue-with-cm.yaml 
+  808  kubectl apply -f blue/web-blue-with-cm.yaml 
+  810  kubectl expose deployment blue-web --type=LoadBalancer
+  812  kubectl get svc
+  814  curl -s  34.89.118.212:80 | head -4

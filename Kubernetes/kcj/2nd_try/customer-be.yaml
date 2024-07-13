@@ -25,7 +25,11 @@ spec:
             - name: DATASOURCE_DATABASE_USERNAME
               value: "root"
             - name: DATASOURCE_DATABASE_PASSWORD
-              value: "Ca3=2q4q+Au=9Ct"
+              valueFrom:
+                secretKeyRef:
+                  key: MYSQL_ROOT_PASSWORD
+                  name: kcj-mysql-db-password
+#              value: "Ca3=2q4q+Au=9Ct"
             - name: REST_API_URL
               value: "http://customer-be:8890"
           ports:

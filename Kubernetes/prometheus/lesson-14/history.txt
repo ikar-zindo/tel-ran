@@ -1,0 +1,38 @@
+  821  kubectl expose deployment blue-app --name canary --type=LoadBalancer --dry-run=client -o yaml > canary-service.yaml
+  823  ls
+  824  kubectl get po
+  825  kubectl describe po blue-app-85db4f7f75-pb54q
+  826  kubectl describe po blue-app-85db4f7f75-pb54q | grep -i labels -A2
+  827  kubectl describe po green-app-86dfcf4f48-sq22l | grep -i labels -A2
+  828  vim canary-service.yaml 
+  829  kubectl apply -f canary-service.yaml 
+  831  kubectl get svc
+  832  curl 34.89.34.237:80
+  833  curl 34.89.34.237:80
+  834  curl 34.89.34.237:80
+  835  curl 34.89.34.237:80
+  836  curl 34.89.34.237:80
+  837  curl 34.89.34.237:80
+  838  curl 34.89.34.237:80
+  839  curl 34.89.34.237:80
+  840  curl 34.89.34.237:80
+  841  kubectl scale deployment blue-app  --replicas=5
+  842  kubectl get deploy
+  843  kubectl get rs
+  844  curl 34.89.34.237:80
+  845  curl 34.89.34.237:80
+  846  curl 34.89.34.237:80
+  847  curl 34.89.34.237:80
+  848  curl 34.89.34.237:80
+  849  curl 34.89.34.237:80
+  850  curl 34.89.34.237:80
+  851  curl 34.89.34.237:80
+  852  curl 34.89.34.237:80
+  853  curl 34.89.34.237:80
+  854  curl 34.89.34.237:80
+  855  curl 34.89.34.237:80
+  856  curl 34.89.34.237:80
+  857  curl 34.89.34.237:80
+  858  curl 34.89.34.237:80
+  859  curl 34.89.34.237:80
+  860  curl 34.89.34.237:80

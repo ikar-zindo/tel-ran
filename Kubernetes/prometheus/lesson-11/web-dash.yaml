@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-dash
+  labels:
+    k8s-app: web-dash
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: web-dash
+  template:
+    metadata:
+      labels:
+        k8s-app: web-dash
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-dash
+  labels:
+    k8s-app: web-dash
+spec:
+  type: LoadBalancer
+  selector:
+    k8s-app: web-dash
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 80

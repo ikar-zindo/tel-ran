@@ -1,0 +1,8 @@
+  772  kubectl apply -f app-blue-shared-vol.yaml
+  773  kubectl expose deployment blue-app --type=LoadBalancer
+  775  kubectl get deploy,po,svc
+  776  curl 34.105.148.20:80
+  777  kubectl apply -f app-green-shared-vol.yaml 
+  778  kubectl expose deployment green-app --type=LoadBalancer
+  781  kubectl get deploy,po,svc
+  782  curl 35.246.87.185:80

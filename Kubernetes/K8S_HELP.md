@@ -1,6 +1,6 @@
-# Minikube
+# K8s
 
-## 1
+## 1. `Minikube` 
 
 ### 1.1 Start a cluster using the virtualbox driver:
 
@@ -95,6 +95,8 @@ minikube addons enable dashboard
 minikube addons list
 
 minikube dashboard 
+
+minikube addons enable ingress 
 ```
 
 ---
@@ -307,7 +309,6 @@ kubectl get ds -A
 kubectl delete daemonset.apps fluentd-agent
 ```
 
-
 ### 8.3.2 View
 ```bash
 e1@ENIGMA:~/Desktop/k8s$ kubectl get deploy,rs,po -l app=mynginx
@@ -324,6 +325,7 @@ pod/mynginx-c94bc599f-xcqt9   1/1     Running   0          8s
 ```
 
 ## 9. Authentication & Authorization
+
 ###### Это уже восьмой пункт и я не знаю как его назвать
 ###### уже запутался вообще что здесь происходит
 
@@ -342,8 +344,6 @@ pod/mynginx-c94bc599f-xcqt9   1/1     Running   0          8s
 
 ```bash
 kubectl create namespace lfs158
-
-
 ```
 
 ## 10. Service
@@ -452,7 +452,14 @@ spec:
     nodePort: 31443
 ```
 
-Ресурс сервісу my-service використовується для подів з міткою **app==myapp**  та може мати один контейнер, що обслуговує порти **80** і **443**, як описано у двох рядках **targetPort**. Сервіс буде доступний в кластері за його **ClusterIP** і  на портах **8080** та **8443** як описано у двох рядках порт, а також він буде доступний для вхідних запитів ззовні кластера на двох полях **nodePort** **31080** і **31443**. Коли визначаються кілька портів, для кращого розуміння їх також необхідно назвати, як описано у двох полях **name** зі значеннями **http** та **https** відповідно. Цей сервіс налаштований, щоб переспрямовувати трафік з портів 8080 та 8443 в кластері, або з портів 31080 та 31443 ззовні кластера, на відповідні порти **80** та **443** контейнерів пода. 
+Ресурс сервісу my-service використовується для подів з міткою **app==myapp**  та може мати один контейнер, 
+що обслуговує порти **80** і **443**, як описано у двох рядках **targetPort**. 
+Сервіс буде доступний в кластері за його **ClusterIP** і  на портах **8080** та **8443** як описано у двох рядках порт, 
+а також він буде доступний для вхідних запитів ззовні кластера на двох полях **nodePort** **31080** і **31443**.
+Коли визначаються кілька портів, для кращого розуміння їх також необхідно назвати, 
+як описано у двох полях **name** зі значеннями **http** та **https** відповідно. 
+Цей сервіс налаштований, щоб переспрямовувати трафік з портів 8080 та 8443 в кластері, 
+або з портів 31080 та 31443 ззовні кластера, на відповідні порти **80** та **443** контейнерів пода. 
 
 #### 10.4 ADV4000
 
@@ -478,16 +485,15 @@ gcloud container clusters delete kcj-cluster
 kubectl apply -f https://projectcontour.io/quickstart/contour.yaml
 
 kubectl apply -f mysql.yaml
-kubectl apply -f employee-app.yaml
 kubectl apply -f customer-be.yaml
+kubectl apply -f employee-app.yaml
 kubectl apply -f customer-fe.yaml
 
 kubectl delete -f mysql.yaml
-kubectl delete -f employee-app.yaml
 kubectl delete -f customer-be.yaml
+kubectl delete -f employee-app.yaml
 kubectl delete -f customer-fe.yaml
 
-```
 kubectl delete -f deployment-1-simple.yaml
 kubectl delete -f deployment-2-replicas.yaml
 kubectl delete -f deployment-3-autoscaling.yaml
@@ -495,3 +501,303 @@ kubectl delete -f pod-my-web-v1.yaml
 kubectl delete -f service-1-loadbalancer-single.yaml
 kubectl delete -f service-1-loadbalancer-single-new.yaml
 kubectl delete -f service-2-loadbalancer-multi.yaml
+```
+
+## 11 Розгортання автономних застосунків
+
+### 11.1
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-dash
+  labels:
+    k8s-app: web-dash
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      k8s-app: web-dash
+  template:
+    metadata:
+      labels:
+        k8s-app: web-dash
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-dash
+  labels:
+    k8s-app: web-dash
+spec:
+  type: LoadBalancer
+  selector:
+    k8s-app: web-dash
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 80
+```
+
+```bash
+ kubectl get pods -L k8s-app,label2
+```
+
+### 11.2
+
+
+```bash
+kubectl create -f webserver.yaml
+```
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webserver
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:latest
+          ports:
+            - containerPort: 80
+```
+
+### 11.3 Альтернатиивный способ запука
+
+```bash
+kubectl create deployment webserver --image=nginx:alpine --replicas=3 --port=80
+```
+
+### 11.4 Service
+
+webserver-svc.yaml
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-service
+  labels:
+    app: nginx
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    app: nginx 
+```
+
+```bash
+kubectl create -f webserver-svc.yaml
+kubectl expose deployment webserver --name=web-service --type=NodePort
+```
+
+У цьому прикладі kubelet надсилає HTTP GET request до кінцевої точки застосунку /healthz на порті 8080. 
+Якщо запит повернеться з помилкою, то kubelet автоматично перезавантажить пошкоджений контейнер; 
+інакше він вважатиме, що із застосунком все гаразд:
+
+```yaml
+livenessProbe:
+  httpGet:
+    path: /healthz
+    port: 8080
+    httpHeaders:
+      - name: X-Custom-Header
+        value: Awesome
+  initialDelaySeconds: 15
+  periodSeconds: 5
+```
+
+---
+
+```bash
+kubectl create deployment web-cli --image=nginx
+kubectl get all -l app=web-cli
+```
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-cli-file
+  labels:
+    app: web-cli-file
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: web-cli-file
+  template:
+    metadata:
+      labels:
+        app: web-cli-file
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 80
+```
+
+```bash
+ kubectl create -f web-cli-file.yaml
+ kubectl get all -l app=web-cli-file
+```
+
+## 12. Volumes
+
+```yaml
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: low-latency
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "false"
+provisioner: csi-driver.example-vendor.example
+reclaimPolicy: Retain # default value is Delete
+allowVolumeExpansion: true
+mountOptions:
+  - discard # this might enable UNMAP / TRIM at the block storage layer
+volumeBindingMode: WaitForFirstConsumer
+parameters:
+  guaranteedReadWriteLatency: "true" # provider-specific
+```
+
+### 12.1
+
+log-config.yaml
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configmap-pod
+spec:
+  containers:
+    - name: test
+      image: busybox:1.28
+      command: ['sh', '-c', 'echo "The app is running!" && tail -f /dev/null']
+      volumeMounts:
+        - name: config-vol
+          mountPath: /etc/config
+  volumes:
+    - name: config-vol
+      configMap:
+        name: log-config
+        items:
+          - key: log_level
+            path: log_level
+```
+
+## 13. Secret
+
+kcj-mysql-db-password.yaml
+
+```yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  name: kcj-mysql-db-password
+type: Opaque
+data:
+  MYSQL_ROOT_PASSWORD: Q2EzPTJxNHErQXU9OUN0Cg==
+  MYSQL_DATABASE: kcj-db
+```
+
+```bash
+kubectl create -f kcj-mysql-db-password.yaml
+```
+
+## 14. Ingress
+
+### 14.1
+
+У наведеному вище прикладі запити користувачів до blue.example.com і green.example.com матимуть одну кінцеву точку Ingress, 
+а звідти будуть переспрямовані на webserver-blue-svc та webserver-green-svc відповідно.
+
+```yaml
+apiVersion: networking.k8s.io/v1 
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+  name: virtual-host-ingress
+  namespace: default
+spec:
+  rules:
+  - host: blue.example.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: webserver-blue-svc
+            port:
+              number: 80
+        path: /
+        pathType: ImplementationSpecific
+  - host: green.example.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: webserver-green-svc
+            port:
+              number: 80
+        path: /
+        pathType: ImplementationSpecific
+```
+
+### 14.2
+
+Ми також можемо визначити правила Fanout для Ingress, представлені в прикладі визначення і на діаграмі нижче, 
+коли запити до example.com/blue та example.com/green будуть переспрямовуватися 
+на webserver-blue-svc та webserver-green-svc відповідно:
+
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+  name: fan-out-ingress
+  namespace: default
+spec:
+  rules:
+  - host: example.com
+    http:
+      paths:
+      - path: /blue
+        backend:
+          service:
+            name: webserver-blue-svc
+            port:
+              number: 80
+        pathType: ImplementationSpecific
+      - path: /green
+        backend:
+          service:
+            name: webserver-green-svc
+            port:
+              number: 80
+        pathType: ImplementationSpecific
+```
