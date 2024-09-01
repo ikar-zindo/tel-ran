@@ -21,7 +21,8 @@
   651  kubectl scale deployment adv4000-deploy --replicas 4
   652  kubectl rollout status deploy/adv4000-deploy
   653  kubectl rollout history deploy/adv4000-deploy
-  651  kubectl set image deployment/adv4000-deploy k8sphp=adv4000/k8sphp:latest --record=true
+  651  kubectl set image deployment/adv4000-deploy k8sphp=adv4000/k8
+  sphp:latest --record=true
   652  kubectl rollout undo deployment/adv4000-deploy
   653  kubectl rollout undo deployment/adv4000-deploy --to-revision=3
   654  kubectl rollout restart deployment/adv4000-deploy
