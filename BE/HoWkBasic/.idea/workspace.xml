@@ -5,18 +5,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20ed1d0b-e526-429a-964b-ab723b3439b3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_16_06_23/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_16_06_23/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_16_06_23/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_16_06_23/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_16_06_23/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_16_06_23/Main4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_16_06_23/Main5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_16_06_23/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_16_06_23/TextBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SummarySession/src/main/java/SS_16_06_23/UIControl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/homeworks/HoWk1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/homeworks/HoWk2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/homeworks/HoWk2/MemoizedSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/homeworks/HoWk3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/homeworks/HoWk4/HoWkDawid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/homeworks/HoWk4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/homeworks/HoWk5/Merge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/last/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/last/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson1/GcdAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l1/GcdAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson1/SearchAlgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l1/SearchAlgs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson1/SortAlgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l1/SortAlgs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson12_Binary_Hash_Map/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l12_Binary_Hash_Map/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson12_Binary_Hash_Map/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l12_Binary_Hash_Map/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson13_binary_tree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l13_binary_tree/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson13_binary_tree/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l13_binary_tree/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson14_graph/graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l14_graph/graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson14_graph/graph/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l14_graph/graph/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson2/AlgAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l2_Fibonacci/AlgAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson2/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l2_Fibonacci/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l2_Fibonacci/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson2/RecursionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l2_Fibonacci/RecursionExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson2/task1/Alg.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l2_Fibonacci/task1/Alg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson2/task1/alg.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l2_Fibonacci/task1/alg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson3/BinarySearchForUniqueElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l3_FibonacciRecursion/BinarySearchForUniqueElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson3/FibonacciRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l3_FibonacciRecursion/FibonacciRecursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson3/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l3_FibonacciRecursion/task2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l4_hanoiTower/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson4/hanoiTower/hanoiTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l4_hanoiTower/hanoiTower/hanoiTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson4/task1/SortBinaryArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l4_hanoiTower/task1/SortBinaryArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson4/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l4_hanoiTower/task2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson4/task2/RecursiveProgression.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l4_hanoiTower/task2/RecursiveProgression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson5/mergeSortAlgorithm/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l5_Merge/mergeSortAlgorithm/Merge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson5/task1_mid/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l5_Merge/task1_mid/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson6/HoWk/Merge.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l6_task2_find_duplicate/HoWk/Merge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson6/task1_quick_sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l6_task2_find_duplicate/task1_quick_sort/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson6/task1_quick_sort/QuickSort1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l6_task2_find_duplicate/task1_quick_sort/QuickSort1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson6/task2_find_duplicate/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l6_task2_find_duplicate/task2_find_duplicate/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson7/HoWk/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l7_StackTest/HoWk/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson7/task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l7_StackTest/task1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson7/task1/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l7_StackTest/task1/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson7/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l7_StackTest/task2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson7/task2/StackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l7_StackTest/task2/StackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson7/task3_find_sum_0/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l7_StackTest/task3_find_sum_0/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lesson_09_11_23/HasZeroSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/lessoons/l_09_11_23/HasZeroSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/main/SortByFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Algorithms/src/main/java/main/SortByFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/src/main/java/HoWk1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/src/main/java/HoWk2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/src/main/java/HoWk2/MemoizedSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/src/main/java/HoWk3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/src/main/java/HoWk4/HoWkDawid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/src/main/java/HoWk4/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/AlgorithmsHoWk/src/main/java/HoWk5/Merge.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Ptactice/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Ptactice/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SummarySession/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Berlin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Berlin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Box.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Box.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Eighth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Eighth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FirstHoWk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FirstHoWk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FourthHoWk/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FourthHoWk/Converter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Germany.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Germany.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Munich.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Munich.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Ninth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Ninth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Potsdam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Potsdam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/SecondHoWk.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/SecondHoWk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Side.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Side.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Sixth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Sixth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Tenth.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Tenth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HoWkPro/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HoWkPro/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +101,9 @@
     &quot;state&quot;: &quot;OPEN&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -49,6 +115,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
   <component name="ProjectId" id="2Q0E0nCwnsv8pOmhW5DEULmyInG" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -60,19 +129,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/tel-ran/BE/ExtraHoWk_MikhailEgorov",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,7 +153,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Eleventh" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Eleventh" />
       <module name="HoWkBasic" />
@@ -89,9 +161,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ninth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ninth" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FourthHoWk.Main" />
       <module name="HoWkBasic" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FourthHoWk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,13 +197,21 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Twelfth" />
         <item itemvalue="Application.Tenth" />
         <item itemvalue="Application.Eleventh" />
-        <item itemvalue="Application.Ninth" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -146,6 +232,7 @@
       <workItem from="1686569429202" duration="1107000" />
       <workItem from="1686728831171" duration="5598000" />
       <workItem from="1686900829211" duration="1227000" />
+      <workItem from="1725211597027" duration="147000" />
     </task>
     <servers />
   </component>

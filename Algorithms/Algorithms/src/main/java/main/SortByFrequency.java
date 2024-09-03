@@ -15,7 +15,7 @@ public class SortByFrequency {
    Копировать код
    print(sort_by_frequency([4, 5, 6, 5, 4, 3]))
    # [5, 4, 3, 6]
-    */
+   */
    public static void main(String[] args) {
 
       long millis = 1718557886335L;
@@ -31,6 +31,7 @@ public class SortByFrequency {
 
       List<Integer> c = Arrays.asList(1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3, 2, 5, 5, 5);
       List<Integer> d = Arrays.asList(2, 1, 3, 3, 1, 5, 5, 5, 6, 6, 6, 6, 1, 1);
+
       System.out.println(sortByFreq(c));
       System.out.println(sortByFreq(d));
    }
@@ -50,14 +51,12 @@ public class SortByFrequency {
       int[] result = new int[frequencyOfOccurrence.size()];
       while (!frequencyOfOccurrence.isEmpty()) {
          int maxFreq = Integer.MIN_VALUE;
-         Integer keyToRemove = null;
 
          for (int i = 0; i < result.length; ) {
             for (Map.Entry<Integer, Integer> entry : frequencyOfOccurrence.entrySet()) {
                Integer value = entry.getValue();
                if (maxFreq < value) {
                   maxFreq = value;
-                  keyToRemove = entry.getKey();
                }
             }
 
